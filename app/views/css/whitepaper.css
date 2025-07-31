@@ -1,0 +1,9 @@
+body {
+    height: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+    .thesis {
+        max-width: 100%;
+    }
+}

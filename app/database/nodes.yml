@@ -1,0 +1,27 @@
+columns:
+  topic: string
+  description: text
+  embedding: json
+  parent_id:
+    type: integer
+    nullable: true
+  depth:
+    type: integer
+    default: 0
+  origin_id:
+    type: integer
+    nullable: true
+  heat_score:
+    type: float
+    nullable: true
+  path:
+    type: string
+    nullable: true
+  metadata:
+    type: json
+    nullable: true
+  file_path:
+    type: string
+    nullable: true
+
+timestamps: true

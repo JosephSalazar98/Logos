@@ -1,0 +1,484 @@
+[2025-07-30 02:24:45] Array
+(
+    [📥 body recibido] => Array
+        (
+            [signature] => 94CKZkcLbgYgDerp9HB1PfFc2H4yrY7oEgJEckHhuFS2SURkim9U1D92ToSR6kpZRsi85sQ8GFTyNDKfb4kZXWu
+            [amount] => 0.01
+            [token] => SOL
+        )
+
+)
+
+[2025-07-30 02:24:46] Array
+(
+    [🌐 respuesta de helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:24:46] Array
+(
+    [❌ error] => Transacción inválida o no encontrada
+    [tx] => 
+)
+
+[2025-07-30 02:26:47] Array
+(
+    [📥 body recibido] => Array
+        (
+            [signature] => 94CKZkcLbgYgDerp9HB1PfFc2H4yrY7oEgJEckHhuFS2SURkim9U1D92ToSR6kpZRsi85sQ8GFTyNDKfb4kZXWu
+            [amount] => 0.01
+            [token] => SOL
+        )
+
+)
+
+[2025-07-30 02:26:48] Array
+(
+    [🌐 intento 1 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:26:51] Array
+(
+    [🌐 intento 2 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:26:55] Array
+(
+    [🌐 intento 3 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:26:57] Array
+(
+    [🌐 intento 4 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:27:00] Array
+(
+    [🌐 intento 5 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:27:02] Array
+(
+    [❌ error] => Transacción inválida o no encontrada
+    [tx] => 
+)
+
+[2025-07-30 02:32:31] Array
+(
+    [📥 body recibido] => Array
+        (
+            [signature] => 3BvPLiRkSVKHGbtM9y2XzhQdtb8m7pkztuemZi5UkqePSsKfkEunr4AsPZ6xx8C6b5S4uDr63fqKnFo14iT5ZqE
+            [amount] => 0.01
+            [token] => SOL
+        )
+
+)
+
+[2025-07-30 02:32:32] Array
+(
+    [🌐 intento 1 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:32:35] Array
+(
+    [🌐 intento 2 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:32:37] Array
+(
+    [🌐 intento 3 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:32:39] Array
+(
+    [🌐 intento 4 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:32:42] Array
+(
+    [🌐 intento 5 respuesta helius] => Array
+        (
+        )
+
+)
+
+[2025-07-30 02:32:44] Array
+(
+    [❌ error] => Transacción inválida o no encontrada
+    [tx] => 
+)
+
+[2025-07-30 03:10:10] Array
+(
+    [📥 body recibido] => Array
+        (
+            [signature] => 94CKZkcLbgYgDerp9HB1PfFc2H4yrY7oEgJEckHhuFS2SURkim9U1D92ToSR6kpZRsi85sQ8GFTyNDKfb4kZXWu
+            [amount] => 0.01
+            [token] => SOL
+        )
+
+)
+
+[2025-07-30 03:10:11] Array
+(
+    [🌐 respuesta getTransaction] => Array
+        (
+            [jsonrpc] => 2.0
+            [result] => Array
+                (
+                    [blockTime] => 1753841989
+                    [meta] => Array
+                        (
+                            [computeUnitsConsumed] => 450
+                            [err] => 
+                            [fee] => 80000
+                            [innerInstructions] => Array
+                                (
+                                )
+
+                            [loadedAddresses] => Array
+                                (
+                                    [readonly] => Array
+                                        (
+                                        )
+
+                                    [writable] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [logMessages] => Array
+                                (
+                                    [0] => Program ComputeBudget111111111111111111111111111111 invoke [1]
+                                    [1] => Program ComputeBudget111111111111111111111111111111 success
+                                    [2] => Program ComputeBudget111111111111111111111111111111 invoke [1]
+                                    [3] => Program ComputeBudget111111111111111111111111111111 success
+                                    [4] => Program 11111111111111111111111111111111 invoke [1]
+                                    [5] => Program 11111111111111111111111111111111 success
+                                )
+
+                            [postBalances] => Array
+                                (
+                                    [0] => 50303113
+                                    [1] => 70000002
+                                    [2] => 1
+                                    [3] => 1
+                                )
+
+                            [postTokenBalances] => Array
+                                (
+                                )
+
+                            [preBalances] => Array
+                                (
+                                    [0] => 70383113
+                                    [1] => 50000002
+                                    [2] => 1
+                                    [3] => 1
+                                )
+
+                            [preTokenBalances] => Array
+                                (
+                                )
+
+                            [rewards] => Array
+                                (
+                                )
+
+                            [status] => Array
+                                (
+                                    [Ok] => 
+                                )
+
+                        )
+
+                    [slot] => 356635723
+                    [transaction] => Array
+                        (
+                            [message] => Array
+                                (
+                                    [accountKeys] => Array
+                                        (
+                                            [0] => 3kYY3piES6rjjAmzTBtjgxW5sEc4k5L2L3VsLPB7FbqL
+                                            [1] => AR6HNvgpaW1zVE15j1k2vG8UzZZeVqE8RZY1ZEagX645
+                                            [2] => 11111111111111111111111111111111
+                                            [3] => ComputeBudget111111111111111111111111111111
+                                        )
+
+                                    [header] => Array
+                                        (
+                                            [numReadonlySignedAccounts] => 0
+                                            [numReadonlyUnsignedAccounts] => 2
+                                            [numRequiredSignatures] => 1
+                                        )
+
+                                    [instructions] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [accounts] => Array
+                                                        (
+                                                        )
+
+                                                    [data] => 3b1H8Rq1T3d1
+                                                    [programIdIndex] => 3
+                                                    [stackHeight] => 
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [accounts] => Array
+                                                        (
+                                                        )
+
+                                                    [data] => LKoyXd
+                                                    [programIdIndex] => 3
+                                                    [stackHeight] => 
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [accounts] => Array
+                                                        (
+                                                            [0] => 0
+                                                            [1] => 1
+                                                        )
+
+                                                    [data] => 3Bxs3ztNaW5EjZkb
+                                                    [programIdIndex] => 2
+                                                    [stackHeight] => 
+                                                )
+
+                                        )
+
+                                    [recentBlockhash] => HRsUfF6qwJJFZwFCYo31BjXHAZFZGYuc8uF3w3QnLRyw
+                                )
+
+                            [signatures] => Array
+                                (
+                                    [0] => 94CKZkcLbgYgDerp9HB1PfFc2H4yrY7oEgJEckHhuFS2SURkim9U1D92ToSR6kpZRsi85sQ8GFTyNDKfb4kZXWu
+                                )
+
+                        )
+
+                    [version] => legacy
+                )
+
+            [id] => 1
+        )
+
+)
+
+[2025-07-30 03:10:12] Array
+(
+    [✅ crédito actualizado] => 1
+)
+
+[2025-07-30 03:10:29] Array
+(
+    [📥 body recibido] => Array
+        (
+            [signature] => 94CKZkcLbgYgDerp9HB1PfFc2H4yrY7oEgJEckHhuFS2SURkim9U1D92ToSR6kpZRsi85sQ8GFTyNDKfb4kZXWu
+            [amount] => 0.01
+            [token] => SOL
+        )
+
+)
+
+[2025-07-30 03:12:21] Array
+(
+    [📥 body recibido] => Array
+        (
+            [signature] => 2hH4nru26s1s45tUoiaTizaBYaHhDAtK7MxQRQ9dEHapc6mvWmDtX5tPtakf2bp4B6LDcSLvs4rB9xjc1JgrbgxN
+            [amount] => 0.01
+            [token] => SOL
+        )
+
+)
+
+[2025-07-30 03:12:22] Array
+(
+    [🌐 respuesta getTransaction] => Array
+        (
+            [jsonrpc] => 2.0
+            [result] => Array
+                (
+                    [blockTime] => 1753838759
+                    [meta] => Array
+                        (
+                            [computeUnitsConsumed] => 450
+                            [err] => 
+                            [fee] => 80000
+                            [innerInstructions] => Array
+                                (
+                                )
+
+                            [loadedAddresses] => Array
+                                (
+                                    [readonly] => Array
+                                        (
+                                        )
+
+                                    [writable] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [logMessages] => Array
+                                (
+                                    [0] => Program ComputeBudget111111111111111111111111111111 invoke [1]
+                                    [1] => Program ComputeBudget111111111111111111111111111111 success
+                                    [2] => Program ComputeBudget111111111111111111111111111111 invoke [1]
+                                    [3] => Program ComputeBudget111111111111111111111111111111 success
+                                    [4] => Program 11111111111111111111111111111111 invoke [1]
+                                    [5] => Program 11111111111111111111111111111111 success
+                                )
+
+                            [postBalances] => Array
+                                (
+                                    [0] => 88423113
+                                    [1] => 33000000
+                                    [2] => 1
+                                    [3] => 1
+                                )
+
+                            [postTokenBalances] => Array
+                                (
+                                )
+
+                            [preBalances] => Array
+                                (
+                                    [0] => 98503113
+                                    [1] => 23000000
+                                    [2] => 1
+                                    [3] => 1
+                                )
+
+                            [preTokenBalances] => Array
+                                (
+                                )
+
+                            [rewards] => Array
+                                (
+                                )
+
+                            [status] => Array
+                                (
+                                    [Ok] => 
+                                )
+
+                        )
+
+                    [slot] => 356627666
+                    [transaction] => Array
+                        (
+                            [message] => Array
+                                (
+                                    [accountKeys] => Array
+                                        (
+                                            [0] => 3kYY3piES6rjjAmzTBtjgxW5sEc4k5L2L3VsLPB7FbqL
+                                            [1] => AR6HNvgpaW1zVE15j1k2vG8UzZZeVqE8RZY1ZEagX645
+                                            [2] => 11111111111111111111111111111111
+                                            [3] => ComputeBudget111111111111111111111111111111
+                                        )
+
+                                    [header] => Array
+                                        (
+                                            [numReadonlySignedAccounts] => 0
+                                            [numReadonlyUnsignedAccounts] => 2
+                                            [numRequiredSignatures] => 1
+                                        )
+
+                                    [instructions] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [accounts] => Array
+                                                        (
+                                                        )
+
+                                                    [data] => 3qi1MbrtkR83
+                                                    [programIdIndex] => 3
+                                                    [stackHeight] => 
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [accounts] => Array
+                                                        (
+                                                        )
+
+                                                    [data] => Fj2Eoy
+                                                    [programIdIndex] => 3
+                                                    [stackHeight] => 
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [accounts] => Array
+                                                        (
+                                                            [0] => 0
+                                                            [1] => 1
+                                                        )
+
+                                                    [data] => 3Bxs4NN8M2Yn4TLb
+                                                    [programIdIndex] => 2
+                                                    [stackHeight] => 
+                                                )
+
+                                        )
+
+                                    [recentBlockhash] => 9TkGsd3WVLCgTGjv1Qh4TJnfrjUiyWCnVTjjvN2bFAD
+                                )
+
+                            [signatures] => Array
+                                (
+                                    [0] => 2hH4nru26s1s45tUoiaTizaBYaHhDAtK7MxQRQ9dEHapc6mvWmDtX5tPtakf2bp4B6LDcSLvs4rB9xjc1JgrbgxN
+                                )
+
+                        )
+
+                    [version] => legacy
+                )
+
+            [id] => 1
+        )
+
+)
+
+[2025-07-30 03:12:22] Array
+(
+    [0] => ❌ transferencia no válida o no encontrada
+)
+

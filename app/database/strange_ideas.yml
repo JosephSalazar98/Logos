@@ -1,0 +1,7 @@
+columns:
+  idea: text
+  source: string
+  confidence: float
+
+relationships:
+  - Node

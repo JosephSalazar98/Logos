@@ -1,0 +1,9 @@
+columns:
+  wallet:
+    type: string
+    unique: true
+  credits:
+    type: integer
+    default: 0
+
+timestamps: true

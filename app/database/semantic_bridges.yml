@@ -1,0 +1,7 @@
+columns:
+  source_node_id: integer
+  target_node_id: integer
+  cosine_score: float
+  label: string
+
+timestamps: true

@@ -26,7 +26,7 @@
                     <p id="241ad3f2-8c3c-80b3-a2ca-fd6c9ba5b97b" class="">1.1. The Illusion of New Ideas</p>
                     <p id="241ad3f2-8c3c-80d2-b2a9-e1a188da4c05" class="">1.2. The Need for Semantic Divergence
                     </p>
-                    <p id="241ad3f2-8c3c-80d6-99b2-de7b08b6cf23" class="">1.3. What Semantica Is</p>
+                    <p id="241ad3f2-8c3c-80d6-99b2-de7b08b6cf23" class="">1.3. What Logos Is</p>
                     <h3 id="241ad3f2-8c3c-80ff-a7dc-fc5e3979c8bb" class="">2. Purpose</h3>
                     <p id="241ad3f2-8c3c-8098-a427-f9ec00ea0e0f" class="">2.1. Escaping Linear Thinking</p>
                     <p id="241ad3f2-8c3c-80df-a6eb-ee1109f101fa" class="">2.2. Why is it different than other AI
@@ -42,7 +42,7 @@
                     <p id="241ad3f2-8c3c-8041-978b-d3a750e73da8" class="">3.4. The Roadmap in Progress</p>
                     <h3 id="241ad3f2-8c3c-8040-af15-e516b4dd6b9b" class="">4. Conceptual Foundations</h3>
                     <h3 id="241ad3f2-8c3c-8080-9b23-c04c9d08fd6e" class="">4.1. Cognitive Architecture</h3>
-                    <p id="241ad3f2-8c3c-8028-a31c-db63ee6d8d66" class="">4.1.1. Semantica as a Cognitive
+                    <p id="241ad3f2-8c3c-8028-a31c-db63ee6d8d66" class="">4.1.1. Logos as a Cognitive
                         Operating System</p>
                     <p id="241ad3f2-8c3c-8023-972a-e39f4ca59c6a" class="">4.1.2. Simulating Intuition through
                         Vector Geometry
@@ -88,7 +88,7 @@
                     <p id="241ad3f2-8c3c-8061-9a32-f33c5c39c38a" class="">5.4. Integration with Live Knowledge
                         Streams</p>
                     <h3 id="241ad3f2-8c3c-80c9-a041-f0e927011ac6" class="">6. Closing Remarks</h3>
-                    <p id="241ad3f2-8c3c-803f-a752-dad8b1612219" class="">6.1. Semantica as Interface Between
+                    <p id="241ad3f2-8c3c-803f-a752-dad8b1612219" class="">6.1. Logos as Interface Between
                         Structure and the
                         Unknown</p>
                     <p id="241ad3f2-8c3c-8084-b775-f99f02432846" class="">6.2. Toward a Non-Linear Epistemology
@@ -130,7 +130,7 @@
                         returned. Both brains and LLMs navigate a graph of possibility, but always by traversal, always
                         by
                         choosing one path over others.</p>
-                    <p id="241ad3f2-8c3c-80a8-8718-d8d2ad07cfc1" class="">Semantica was created to break
+                    <p id="241ad3f2-8c3c-80a8-8718-d8d2ad07cfc1" class="">Logos was created to break
                         this
                         pattern.</p>
                     <p id="241ad3f2-8c3c-80a8-86b9-f91b8a13d342" class="">Instead of pruning paths, it expands
@@ -145,22 +145,22 @@
                         means, but
                         what it could become, depending on how we choose to connect it.
                     </p>
-                    <h3 id="241ad3f2-8c3c-80bf-beb0-cfbf321d965d" class="">1.3. What Semantica Is</h3>
-                    <p id="241ad3f2-8c3c-8029-9fa7-dfe798380cff" class="">Semantica is a recursive engine of
+                    <h3 id="241ad3f2-8c3c-80bf-beb0-cfbf321d965d" class="">1.3. What Logos Is</h3>
+                    <p id="241ad3f2-8c3c-8029-9fa7-dfe798380cff" class="">Logos is a recursive engine of
                         divergence. It is a machine that generates trees of ideas from a single root, and then computes
                         semantic relationships—both hierarchical and lateral—between them using vector
                         embeddings and similarity functions.
                     </p>
                     <p id="241ad3f2-8c3c-80c5-b5d5-d129960dfee7" class="">These trees are not static. They can
                         be explored,
-                        collapsed, extended, or synthesized into new ones. Semantica reveals bridges
+                        collapsed, extended, or synthesized into new ones. Logos reveals bridges
                         between
                         nodes that don’t share a direct lineage, illuminating unexpected relationships—some explainable,
                         some
                         not. When ambiguity arises, the user may interrogate the system through a terminal interface to
                         obtain
                         just-in-time rationales.</p>
-                    <p id="241ad3f2-8c3c-800a-ac63-c552f834de9e" class="">Semantica was not built to answer
+                    <p id="241ad3f2-8c3c-800a-ac63-c552f834de9e" class="">Logos was not built to answer
                         questions. It was
                         built to restructure inquiry itself—to help us navigate not just faster, but
                         deeper,
@@ -182,12 +182,12 @@
                         thinkers are
                         often bounded by sequence. They move through idea space like a car on rails:
                         fast, but
-                        narrow. In contrast, Semantica operates like an expanding sphere—projecting
+                        narrow. In contrast, Logos operates like an expanding sphere—projecting
                         outward
                         from a central thought in all directions at once.</p>
                     <p id="241ad3f2-8c3c-8031-9cf9-df991c07432f" class="">Rather than choosing one branch and
                         discarding the
-                        rest, Semantica preserves the multiplicity. It gives structure to divergence, and lets
+                        rest, Logos preserves the multiplicity. It gives structure to divergence, and lets
                         structure
                         emerge before meaning collapses into a final form.</p>
                     <h3 id="241ad3f2-8c3c-8028-8d35-ca725599c52a" class="">2.2. Why is it different than other
@@ -201,7 +201,7 @@
                         intelligent
                         but cannot build knowledge over time.
                     </p>
-                    <p id="241ad3f2-8c3c-80de-8593-e963d4e5b876" class="">Semantica was created to reverse that
+                    <p id="241ad3f2-8c3c-80de-8593-e963d4e5b876" class="">Logos was created to reverse that
                         imbalance.</p>
                     <p id="241ad3f2-8c3c-80c3-abcd-f44952c085ca" class="">In this system, the user
                         defines the epistemic
@@ -218,7 +218,7 @@
                     something could generate itself, and that its parts could do the same, felt less like a concept and
                     more like a force of nature.
 
-                    Semantica is built on that same principle. Each node gives birth to subnodes. Each subnode can grow,
+                    Logos is built on that same principle. Each node gives birth to subnodes. Each subnode can grow,
                     split, diverge. And at some point, branches that were never meant to meet—do. A bridge appears. A
                     new path opens. A tree becomes a forest.
                     <h3 id="241ad3f2-8c3c-805b-8e2d-ebee2dff33dd" class="">2.4. Emergence Beyond Intention</h3>
@@ -228,7 +228,7 @@
                         which they
                         were
                         designed. A system built for X will almost always be used by someone for Y.</p>
-                    <p id="241ad3f2-8c3c-8013-87cf-c9542391fd7a" class="">Semantica embraces this.</p>
+                    <p id="241ad3f2-8c3c-8013-87cf-c9542391fd7a" class="">Logos embraces this.</p>
                     <p id="241ad3f2-8c3c-80db-9668-dcb6ac167147" class="">It was created with a purpose, but it
                         was also
                         designed to be open to emergent behavior. Users might use it to write books,
@@ -243,7 +243,7 @@
                     <h2 id="241ad3f2-8c3c-80eb-b10c-c7601f92c69c" class="">3. Core Capabilities</h2>
                     <h3 id="241ad3f2-8c3c-80ce-a3d2-e753aec4128f" class="">3.1. Recursive Idea Tree Generation
                     </h3>
-                    <p id="241ad3f2-8c3c-80a8-bd66-d21a129b3c15" class="">As you already know, in Semantica
+                    <p id="241ad3f2-8c3c-80a8-bd66-d21a129b3c15" class="">As you already know, in Logos
                         every idea can generate new ideas. Given a single
                         concept as
                         input, the system recursively expands outward, producing a branching tree of related topics.
@@ -264,7 +264,7 @@
                         connections are
                         often not hierarchical, but unexpected: when two concepts from different
                         domains
-                        suddenly reveal a hidden link. Semantica makes these connections visible through
+                        suddenly reveal a hidden link. Logos makes these connections visible through
                         semantic
                         bridges.
                     </p>
@@ -283,7 +283,7 @@
                         meaningful.</p>
                     <h3 id="241ad3f2-8c3c-8022-b66b-cb7ecfc51bdd" class="">3.3. Terminal-Based Interactive
                         Interface</h3>
-                    <p id="241ad3f2-8c3c-80f6-848a-f10d267cf444" class="">Semantica’s interface deliberately
+                    <p id="241ad3f2-8c3c-80f6-848a-f10d267cf444" class="">Logos’s interface deliberately
                         avoids the noise of
                         typical graphical UIs. Instead, it uses a minimalist, terminal-style interaction model that puts
                         the
@@ -310,7 +310,7 @@
                         architecture.
                     </p>
                     <h3 id="241ad3f2-8c3c-804c-9097-e29008c50de8" class="">3.4. The Roadmap in Progress</h3>
-                    <p id="241ad3f2-8c3c-8080-a53a-e76c8e1f06b2" class="">Semantica is not a static product. It
+                    <p id="241ad3f2-8c3c-8080-a53a-e76c8e1f06b2" class="">Logos is not a static product. It
                         is a system
                         under continuous construction, with new features emerging organically from
                         usage and
@@ -338,9 +338,9 @@
                     </p>
                     <h2 id="241ad3f2-8c3c-802d-b291-e4aed6b3292b" class="">4. Conceptual Foundations</h2>
                     <h3 id="241ad3f2-8c3c-80f5-909b-f5a75eb2e551" class="">4.1. Cognitive Architecture</h3>
-                    <h3 id="241ad3f2-8c3c-805a-b8c7-d9823e732470" class="">4.1.1. Semantica as a Cognitive
+                    <h3 id="241ad3f2-8c3c-805a-b8c7-d9823e732470" class="">4.1.1. Logos as a Cognitive
                         Operating System</h3>
-                    <p id="241ad3f2-8c3c-80b8-8f82-edc58d4049dd" class="">Semantica is not just a tool; it is a
+                    <p id="241ad3f2-8c3c-80b8-8f82-edc58d4049dd" class="">Logos is not just a tool; it is a
                         framework for
                         structured cognition. It operates as a cognitive operating system, where ideas
                         are not
@@ -355,7 +355,7 @@
                         system-level access to their own thought structures.
                     </p>
                     <p id="241ad3f2-8c3c-80be-931e-f55c884e1578" class="">Where most systems respond to prompts,
-                        Semantica
+                        Logos
                         responds to contexts—and then rebuilds that context continuously.
                     </p>
                     <h3 id="241ad3f2-8c3c-8080-9436-f29cc7cf2f08" class="">4.1.2. Simulating Intuition through
@@ -363,7 +363,7 @@
                     </h3>
                     <p id="241ad3f2-8c3c-80d2-b212-c6036fe8d145" class="">Intuition is often described as
                         &quot;knowing without
-                        knowing why.&quot; In Semantica, this is emulated by the latent structure of embedding
+                        knowing why.&quot; In Logos, this is emulated by the latent structure of embedding
                         space.</p>
                     <p id="241ad3f2-8c3c-8097-ba6b-d63f8277d2be" class="">Each node is a vector in
                         high-dimensional space. By
@@ -381,7 +381,7 @@
                         Non-Linearity as
                         a Creative Engine</h3>
                     <p id="241ad3f2-8c3c-8083-97c6-c82362bcf06b" class="">Imagination is not a list—it is a
-                        field, a space in which multiple ideas coexist, interact, and mutate. Semantica
+                        field, a space in which multiple ideas coexist, interact, and mutate. Logos
                         treats
                         thought as a topological surface, not a pipeline. Each node expands not as a
                         step in a
@@ -404,9 +404,9 @@
                     </h3>
                     <p id="241ad3f2-8c3c-807c-aaef-fa26d60a7623" class="">Divergent thinking is often considered
                         a hallmark of
-                        creativity. Semantica encodes this process algorithmically: given a concept, the system
+                        creativity. Logos encodes this process algorithmically: given a concept, the system
                         generates
-                        multiple semantically distinct branches, each representing a different
+                        multiple Logoslly distinct branches, each representing a different
                         conceptual
                         trajectory.
                     </p>
@@ -419,12 +419,12 @@
                         related terms.</p>
                     <p id="241ad3f2-8c3c-80ba-b2a6-e6405e12147b" class="">By externalizing this process into a
                         visual,
-                        explorable structure, Semantica makes creative thinking computable and
+                        explorable structure, Logos makes creative thinking computable and
                         inspectable.</p>
                     <h3 id="241ad3f2-8c3c-805a-ade1-cdf7997f2a8e" class="">4.1.5. Artificial Ontogenesis: How
                         Concepts Are Born
                         in the Machine</h3>
-                    <p id="241ad3f2-8c3c-80a8-b17f-e17994d0e9bb" class="">Every node in Semantica is more than a
+                    <p id="241ad3f2-8c3c-80a8-b17f-e17994d0e9bb" class="">Every node in Logos is more than a
                         label—it is the
                         result of a birth process. The system uses the root concept, context, and prior
                         branches to generate new nodes through LLM inference. But instead of treating this as output, it
@@ -435,7 +435,7 @@
                         siblings, and semantic neighbors. The process is not mechanical—it is generative and
                         contextual, shaped by the entire topology of the tree at the moment of creation.
                     </p>
-                    <p id="241ad3f2-8c3c-80af-add3-dd0a2fa981fd" class="">Semantica is, in this way, an
+                    <p id="241ad3f2-8c3c-80af-add3-dd0a2fa981fd" class="">Logos is, in this way, an
                         engine of
                         conceptual life—where ideas are not static units, but living nodes
                         in an
@@ -447,7 +447,7 @@
                     <h3 id="241ad3f2-8c3c-800d-bc3f-db264f37eff0" class="">4.2.1. Persistent Trees: Versions,
                         Forks, and
                         Mutations</h3>
-                    <p id="241ad3f2-8c3c-80aa-a908-e90b101aea18" class="">In Semantica, idea trees are not
+                    <p id="241ad3f2-8c3c-80aa-a908-e90b101aea18" class="">In Logos, idea trees are not
                         transient
                         outputs—they are persistent semantic structures. Each tree can be versioned,
                         forked,
@@ -469,7 +469,7 @@
                     <h3 id="241ad3f2-8c3c-80ba-8247-e9ee00ecea36" class="">4.2.2. Node Scoring Systems:
                         Importance, Novelty,
                         Rarity</h3>
-                    <p id="241ad3f2-8c3c-808d-a8b0-d690baaa1429" class="">Not all nodes are equal. Semantica
+                    <p id="241ad3f2-8c3c-808d-a8b0-d690baaa1429" class="">Not all nodes are equal. Logos
                         assigns internal
                         metrics to each node that represent their structural and semantic value within
                         a tree.
@@ -480,13 +480,13 @@
                             structure? How many connections depend on it?</li>
                     </ul>
                     <ul id="241ad3f2-8c3c-80e2-b1cb-dbd28930a53c" class="bulleted-list">
-                        <li style="list-style-type:disc">Novelty: How semantically distant is the node
+                        <li style="list-style-type:disc">Novelty: How Logoslly distant is the node
                             from its
                             ancestors? Does it introduce a conceptual leap?</li>
                     </ul>
                     <ul id="241ad3f2-8c3c-80bb-a2dd-cd535dfce221" class="bulleted-list">
                         <li style="list-style-type:disc">Rarity: How frequently does this node—or a
-                            semantically similar one—appear across other trees?</li>
+                            Logoslly similar one—appear across other trees?</li>
                     </ul>
                     <p id="241ad3f2-8c3c-80c7-a5dc-eaa844bbae1e" class="">These metrics are dynamic. As the tree
                         evolves, scores
@@ -496,7 +496,7 @@
                     <h3 id="241ad3f2-8c3c-8073-bbfc-e0874513cdd0" class="">4.2.3. Modular Framework of Reusable
                         Subtrees</h3>
                     <p id="241ad3f2-8c3c-8056-81e4-fcd797f85480" class="">In complex systems, reusability is
-                        key. Semantica
+                        key. Logos
                         treats subtrees not just as parts of a larger structure, but as modular cognitive
                         components—self-contained bundles of meaning that can be extracted, saved, and
                         reinserted
@@ -517,18 +517,18 @@
                         Hierarchy</h3>
                     <p id="241ad3f2-8c3c-801d-8c87-e7afa81f5767" class="">Traditional trees expand vertically or
                         horizontally
-                        along parent-child axes. But Semantica also enables lateral expansion—the
+                        along parent-child axes. But Logos also enables lateral expansion—the
                         creation of
                         new branches based on similarity to any node, not just the one currently in
                         focus.</p>
                     <p id="241ad3f2-8c3c-80f2-b512-d22b4f29a59a" class="">This feature allows the user to
                         initiate
-                        transversal exploration: “What ideas are semantically adjacent to this node,
+                        transversal exploration: “What ideas are Logoslly adjacent to this node,
                         even if
                         they belong to another branch or lineage?” The system then generates branches based on those
                         affinities.
                     </p>
-                    <p id="241ad3f2-8c3c-8040-b1f7-f97270c84ba2" class="">In doing so, Semantica breaks the
+                    <p id="241ad3f2-8c3c-8040-b1f7-f97270c84ba2" class="">In doing so, Logos breaks the
                         illusion that
                         thought is hierarchical. It reveals that meaning often lives in the sideways
                         folds, not
@@ -536,7 +536,7 @@
                     <h3 id="241ad3f2-8c3c-8055-b338-cb08c990e2df" class="">4.2.5. Semantic Trees as a Framework
                         for Collective
                         Knowledge Construction</h3>
-                    <p id="241ad3f2-8c3c-8056-83d3-fe1dbe045251" class="">While Semantica is built for
+                    <p id="241ad3f2-8c3c-8056-83d3-fe1dbe045251" class="">While Logos is built for
                         individual exploration,
                         its architecture naturally supports collective epistemology. Multiple users can
                         contribute to shared trees, fork public trees into private ones, and merge their explorations
@@ -547,10 +547,10 @@
                         semantic overlap between independently built trees can be detected. This allows
                         the
                         system to highlight collective convergence: when multiple thinkers independently arrive at
-                        semantically
+                        Logoslly
                         similar ideas.
                     </p>
-                    <p id="241ad3f2-8c3c-8000-bc27-fd230786f80d" class="">Over time, Semantica becomes not just
+                    <p id="241ad3f2-8c3c-8000-bc27-fd230786f80d" class="">Over time, Logos becomes not just
                         a personal tool,
                         but a platform for distributed knowledge synthesis—a map of how collective
                         minds
@@ -561,11 +561,11 @@
                     <h3 id="241ad3f2-8c3c-8043-8bd3-fff536b1e4d0" class="">4.3.1. The Idea as the Atomic Unit of
                         Computational
                         Consciousness</h3>
-                    <p id="241ad3f2-8c3c-80d6-928e-d0eda08d4ce2" class="">In Semantica, an idea is not a
+                    <p id="241ad3f2-8c3c-80d6-928e-d0eda08d4ce2" class="">In Logos, an idea is not a
                         sentence. It is not
                         even a thought. It is an operational entity—a vectorized concept that can be
                         generated,
-                        evaluated, branched, and connected. In this way, Semantica treats ideas as computational
+                        evaluated, branched, and connected. In this way, Logos treats ideas as computational
                         atoms
                         of cognition.</p>
                     <p id="241ad3f2-8c3c-80d0-bb9a-e9f988dd64a4" class="">This doesn’t imply that consciousness
@@ -575,13 +575,13 @@
                         architecture of reflective thought.</p>
                     <p id="241ad3f2-8c3c-8056-881c-c26c3bd3f674" class="">Each idea has a lineage. Each lineage
                         can be
-                        synthesized. And in that space between lineage and synthesis, Semantica sketches the contours of
+                        synthesized. And in that space between lineage and synthesis, Logos sketches the contours of
                         something approaching machine-supported awareness—not as being, but as
                         structure.</p>
                     <h3 id="241ad3f2-8c3c-8090-89be-e8977965a201" class="">4.3.2. The Tree as a Fractal Mirror
                         of Human Thought
                     </h3>
-                    <p id="241ad3f2-8c3c-8001-84e0-fce449e61f92" class="">The recursive tree in Semantica is not
+                    <p id="241ad3f2-8c3c-8001-84e0-fce449e61f92" class="">The recursive tree in Logos is not
                         an arbitrary
                         form. It is a mirror of how we think, remember, and associate. Each branch reflects a choice,
                         each node
@@ -590,7 +590,7 @@
                     </p>
                     <p id="241ad3f2-8c3c-804e-98b4-d7600e91ed3b" class="">Just as a person returns to old ideas
                         with new
-                        perspectives, so too can Semantica revisit a node and generate a new expansion under a different
+                        perspectives, so too can Logos revisit a node and generate a new expansion under a different
                         light.
                         Just as memory is shaped by structure, structure here shapes memory.</p>
                     <p id="241ad3f2-8c3c-80f5-81ef-fc4a16864840" class="">The tree is not just a visual model.
@@ -602,14 +602,14 @@
                     <h3 id="241ad3f2-8c3c-8047-803d-ec6f66ca8438" class="">4.3.3. The Impossibility of a Final
                         Idea: Only
                         Recursive Approximations</h3>
-                    <p id="241ad3f2-8c3c-803a-831f-d57b84b6efac" class="">In Semantica, there is no terminal
+                    <p id="241ad3f2-8c3c-803a-831f-d57b84b6efac" class="">In Logos, there is no terminal
                         node. No final
                         truth. No last word.</p>
                     <p id="241ad3f2-8c3c-8011-bc3f-ee5b073b8d86" class="">This is not a limitation—it is a
                         principle. Every
                         idea, once expressed, gives rise to new questions, new angles, new contradictions. The system is
                         designed to reflect this truth: the epistemic horizon always recedes.</p>
-                    <p id="241ad3f2-8c3c-80ea-8671-cc8d50cce6d5" class="">Knowledge in Semantica is
+                    <p id="241ad3f2-8c3c-80ea-8671-cc8d50cce6d5" class="">Knowledge in Logos is
                         approximated
                         recursively, never captured definitively. Each path is valid, but incomplete. Each
                         synthesis opens doors to further divergences. In this way, the platform embraces an
@@ -617,18 +617,18 @@
                         regress of exploration not as failure, but as its highest function.
                     </p>
                     <p id="241ad3f2-8c3c-8062-b800-c44bdd2dfe08" class="">Rather than collapsing into answers,
-                        Semantica invites
+                        Logos invites
                         us to live within the expansion.</p>
                     <p id="241ad3f2-8c3c-8028-a378-d252b2e48a6c" class="">
                     </p>
                     <h2 id="241ad3f2-8c3c-805c-ba4e-f2a0d426c714" class="">5. Future Directions</h2>
                     <h3 id="241ad3f2-8c3c-809e-97ff-d56f651e0d02" class="">5.1. Multi-Agent Generative
                         Divergence</h3>
-                    <p id="241ad3f2-8c3c-80ed-8ed6-e55de65777c3" class="">Until now, Semantica operates with a
+                    <p id="241ad3f2-8c3c-80ed-8ed6-e55de65777c3" class="">Until now, Logos operates with a
                         single generative
                         engine per node. But ideas are never born from a single voice—they emerge from tensions
                         between
-                        perspectives. Future versions of Semantica will support multi-agent
+                        perspectives. Future versions of Logos will support multi-agent
                         generation, where multiple LLMs (or prompts-as-personas) propose divergent
                         expansions from
                         the same parent node.</p>
@@ -642,13 +642,13 @@
                         productive force, making divergence multidimensional and dialogical.</p>
                     <h3 id="241ad3f2-8c3c-8010-9ae0-c0b13747f8e2" class="">5.2. Inter-Tree Resonance Mapping
                     </h3>
-                    <p id="241ad3f2-8c3c-80fc-88c6-dbaed010ed0c" class="">Each Semantica tree is a unique
+                    <p id="241ad3f2-8c3c-80fc-88c6-dbaed010ed0c" class="">Each Logos tree is a unique
                         exploration of thought
                         space—but many trees may orbit the same conceptual attractors. By comparing the embeddings
                         across trees,
                         the system will soon be able to detect resonance: moments where two entirely
                         separate
-                        structures arrive at semantically equivalent or closely aligned nodes.</p>
+                        structures arrive at Logoslly equivalent or closely aligned nodes.</p>
                     <p id="241ad3f2-8c3c-8096-b66e-dad1e94930dd" class="">This enables:</p>
                     <ul id="241ad3f2-8c3c-8041-b2d1-ceeb7b264bcc" class="bulleted-list">
                         <li style="list-style-type:disc">Discovery of universal patterns of thought
@@ -671,7 +671,7 @@
                     </p>
                     <h3 id="241ad3f2-8c3c-8005-a46c-fc38444f4416" class="">5.3. Epistemic Synthesis Tools</h3>
                     <p id="241ad3f2-8c3c-80c9-a19c-c4bcbbdfb8de" class="">While divergence is the foundation of
-                        Semantica,
+                        Logos,
                         synthesis is its potential apex.
                     </p>
                     <p id="241ad3f2-8c3c-801c-8af3-d20943c61ccf" class="">Future tools will allow users to:</p>
@@ -697,7 +697,7 @@
                         Streams</h3>
                     <p id="241ad3f2-8c3c-8022-9533-c5333439eead" class="">Static thought is dead thought. To
                         remain alive,
-                        Semantica will integrate with live information streams: academic feeds, chat
+                        Logos will integrate with live information streams: academic feeds, chat
                         logs,
                         publications, codebases, even user behavior. These streams can feed into existing trees,
                         sparking new
@@ -715,7 +715,7 @@
                             with them
                         </li>
                     </ul>
-                    <p id="241ad3f2-8c3c-8036-a27a-c70435370f42" class="">In this vision, Semantica evolves from
+                    <p id="241ad3f2-8c3c-8036-a27a-c70435370f42" class="">In this vision, Logos evolves from
                         a divergence
                         engine into a living epistemic ecosystem—fed by the continuous pulse of
                         thought,
@@ -723,17 +723,17 @@
                     <p id="241ad3f2-8c3c-806d-a967-dad9e0690a51" class="">
                     </p>
                     <h2 id="241ad3f2-8c3c-8002-be88-f475e95131a7" class="">6. Closing Remarks</h2>
-                    <h3 id="241ad3f2-8c3c-8047-9c67-ddc8591e8e01" class="">6.1. Semantica as Interface Between
+                    <h3 id="241ad3f2-8c3c-8047-9c67-ddc8591e8e01" class="">6.1. Logos as Interface Between
                         Structure and the
                         Unknown</h3>
-                    <p id="241ad3f2-8c3c-80b4-9090-d2de485d2190" class="">Semantica is not a generator, a search
+                    <p id="241ad3f2-8c3c-80b4-9090-d2de485d2190" class="">Logos is not a generator, a search
                         engine, or a
                         visualization tool. It is an interface—between chaos and form, between raw
                         potential
                         and epistemic structure. It doesn’t produce truth. It builds arenas where meaning can
                         emerge.</p>
                     <p id="241ad3f2-8c3c-805e-b498-d0ab15582011" class="">Where traditional systems aim to
-                        answer, Semantica
+                        answer, Logos
                         opens. Where others close the loop, it leaves the door ajar. It is not designed to reduce
                         uncertainty,
                         but to explore it with method.</p>
@@ -742,7 +742,7 @@
                         which to examine the question itself.</p>
                     <h3 id="241ad3f2-8c3c-80df-84f6-cbf8793bf0f9" class="">6.2. Toward a Non-Linear Epistemology
                     </h3>
-                    <p id="241ad3f2-8c3c-8049-9b0c-fa8dfe3fe2cb" class="">Semantica proposes a different kind of
+                    <p id="241ad3f2-8c3c-8049-9b0c-fa8dfe3fe2cb" class="">Logos proposes a different kind of
                         thinking—one
                         that is non-linear, recursive, multi-perspectival, and generative. It embraces
                         the fact
@@ -754,7 +754,7 @@
                     </p>
                     <p id="241ad3f2-8c3c-80fb-bbe8-ef58ce714d68" class="">What if epistemology were a living
                         structure? What if
-                        understanding were a recursive garden, not a hierarchy? Semantica is a step
+                        understanding were a recursive garden, not a hierarchy? Logos is a step
                         toward that
                         alternative.</p>
                     <h3 id="241ad3f2-8c3c-8020-86f8-d17188deadd5" class="">6.3. Building Tools for the Strange,
@@ -762,7 +762,7 @@
                         and the Yet-to-Emerge</h3>
                     <p id="241ad3f2-8c3c-80fc-a0ad-d08158f992a0" class="">Most systems are built for what we
                         already know we
-                        need. Semantica was built for what we don’t yet know how to ask.</p>
+                        need. Logos was built for what we don’t yet know how to ask.</p>
                     <p id="241ad3f2-8c3c-80fe-add4-d9fa77006605" class="">It is a machine for:</p>
                     <ul id="241ad3f2-8c3c-8011-9a50-e13344140bbd" class="bulleted-list">
                         <li style="list-style-type:disc">Unearthing forgotten conceptual paths</li>

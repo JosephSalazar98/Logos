@@ -1184,6 +1184,11 @@ dialog#signatureDialog {
     border-radius: 3px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit
+}
+
 .thesis a {
     color: #1a0dab;
     text-decoration: none;
@@ -1194,7 +1199,6 @@ dialog#signatureDialog {
 }
 
 .dialog__info-block {
-    background-color: #101231;
     font-size: 0.85rem;
     color: #c3c8fa;
     line-height: 1.4;

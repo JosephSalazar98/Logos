@@ -18,11 +18,11 @@
                      <span
                          class="session-resume__value">:{{ ' ' . 'semantic_tree_' . ($lastRoot->id ?? 'x') . '.txt' }}</span>
                  </div>
-                 <div class="session-resume__item">
+                 {{-- <div class="session-resume__item">
                      <span class="session-resume__label">Similar</span>
                      <span
                          class="session-resume__value">:{{ ' ' . 'similarities_' . ($lastRoot->id ?? 'x') . '.txt' }}</span>
-                 </div>
+                 </div> --}}
              </div>
          </section>
 

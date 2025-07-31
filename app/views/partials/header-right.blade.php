@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="header__stats">
-            <div class="header__stat">
+            <a class="header__stat" href="https://x.com/Eserya77" target="_blank">
 
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@
                 </svg>
 
                 <p>Twitter</p>
-            </div>
+            </a>
             <div class="header__stat">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

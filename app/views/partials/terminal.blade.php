@@ -1,7 +1,7 @@
 <div class="god">
     <div class="terminal-chat" x-data="terminalChat" x-init="showWelcome();">
         <div class="terminal-chat__header">
-            <span class="terminal-chat__header-label">[ SEMANTICA TERMINAL v0.1 ]</span>
+            <span class="terminal-chat__header-label">[ LOGOS TERMINAL v0.1 ]</span>
         </div>
 
         <div class="terminal-chat__log" x-ref="log">
@@ -31,7 +31,7 @@
     </div>
 
     <script>
-        const welcomeMessage = `Welcome to Semantica CLI\nType /help for available commands.`;
+        const welcomeMessage = `Welcome to Logos CLI\nType /help for available commands.`;
 
         document.addEventListener('alpine:init', () => {
             Alpine.data('terminalChat', () => ({
@@ -124,7 +124,7 @@
                             const nodeId = parts[1];
 
                             if (!nodeId || isNaN(nodeId)) {
-                                await this.typewriter(id, '⚠️ Invalid node ID. Usage: /node 123');
+                                await this.typewriter(id, 'Invalid node ID. Usage: /node 123');
                                 return;
                             }
 
@@ -147,7 +147,7 @@ You can reference this entry by saying "Node ${node.id}".`;
                                 await this.typewriter(id, text);
 
                             } catch {
-                                await this.typewriter(id, '❌ Node not found or error in request.');
+                                await this.typewriter(id, 'Node not found or error in request.');
                             }
                             return;
                         }
@@ -158,7 +158,7 @@ You can reference this entry by saying "Node ${node.id}".`;
 
                             if (!bridgeId || isNaN(bridgeId)) {
                                 await this.typewriter(id,
-                                    '⚠️ Invalid bridge ID. Usage: /bridge 12');
+                                    'Invalid bridge ID. Usage: /bridge 12');
                                 return;
                             }
 
@@ -183,7 +183,7 @@ Use /node ${bridge.source.id} or /node ${bridge.target.id} to explore linked nod
 
                             } catch {
                                 await this.typewriter(id,
-                                    '❌ Bridge not found or error in request.');
+                                    'Bridge not found or error in request.');
                             }
 
                             return;

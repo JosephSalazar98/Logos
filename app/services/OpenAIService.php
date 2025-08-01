@@ -35,14 +35,34 @@ class OpenAIService
 
 
 
-    public static function chat(array $messages, float $temperature = 0.7, string $model = 'gpt-3.5-turbo'): string
-    {
+    public static function chat(
+        array $messages,
+        float $temperature = 0.7,
+        string $model = 'gpt-3.5-turbo',
+        ?int $maxTokens = null,
+        ?float $frequency_penalty = null,
+        ?float $presence_penalty = null
+    ): string {
+        $payload = [
+            'model' => $model,
+            'temperature' => $temperature,
+            'messages' => $messages,
+        ];
+
+        if ($maxTokens !== null) {
+            $payload['max_tokens'] = $maxTokens;
+        }
+
+        if ($frequency_penalty !== null) {
+            $payload['frequency_penalty'] = $frequency_penalty;
+        }
+
+        if ($presence_penalty !== null) {
+            $payload['presence_penalty'] = $presence_penalty;
+        }
+
         $response = self::client()->post('chat/completions', [
-            'json' => [
-                'model' => $model,
-                'temperature' => $temperature,
-                'messages' => $messages
-            ]
+            'json' => $payload
         ]);
 
         $json = json_decode($response->getBody(), true);

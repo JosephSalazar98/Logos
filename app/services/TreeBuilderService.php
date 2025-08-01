@@ -14,35 +14,68 @@ class TreeBuilderService
         return Node::create([
             'topic' => $topic,
             'description' => OpenAIService::chat([
-                ['role' => 'system', 'content' => 'Explain the following topic in 2–3 concise sentences, assuming the reader is intelligent but unfamiliar with the concept.'],
-                ['role' => 'user', 'content' => $topic],
-            ], 0.5),
+                ['role' => 'user', 'content' => 'Explain the following topic in 2–3 concise sentences, assuming the reader is intelligent but unfamiliar with the concept: ' . $topic],
+            ], 0.5, 'gpt-3.5-turbo', 150),
             'embedding' => OpenAIService::embed($topic),
             'parent_id' => null,
             'depth' => 0,
         ]);
     }
 
+    protected static function log($data)
+    {
+        $entry = '[' . date('Y-m-d H:i:s') . '] ' . print_r($data, true) . PHP_EOL;
+        file_put_contents(__DIR__ . '/../myshits/payments.log', $entry, FILE_APPEND);
+    }
+
     public static function expand(Node $node, int $maxDepth): void
     {
         if ($node->depth >= $maxDepth) return;
 
-        $subtopicsText = OpenAIService::chat([
-            ['role' => 'system', 'content' => 'Given a topic, return 5 short, distinct subtopics. Just list them clearly.'],
-            ['role' => 'user', 'content' => $node->topic],
-        ], 0.7);
+        $usedTopics = Node::where('origin_id', $node->origin_id ?? $node->id)
+            ->pluck('topic')
+            ->map(fn($t) => strtolower(trim($t)))
+            ->unique()
+            ->values()
+            ->toArray();
 
-        $subtopics = array_filter(array_map('trim', explode("\n", $subtopicsText)));
+        $blacklist = implode(' | ', array_map(fn($t) => '"' . $t . '"', array_slice($usedTopics, 0, 50)));
+
+        self::log($blacklist);
+
+        $userPrompt = <<<EOT
+Given the topic "$node->topic", generate exactly 3, subtopic titles related to the topic from a different academic field. 
+Avoid anything conceptually similar to: [$blacklist].
+
+Each subtopic must:
+- be less than 10 words
+- be meaningfully related to the topic
+- Do NOT repeat structural patterns like "[X] in Y", "[X] for Z", or "[X] and A". Avoid using the same core term (like "quantum") in more than one suggestion
+
+Return the 3 subtopics separated by a pipe (|). Do NOT include numbering, explanations, or any other text.
+Example format: Subtopic A | Subtopic B | Subtopic C
+EOT;
+
+
+        $subtopicsText = OpenAIService::chat([
+            ['role' => 'user', 'content' => $userPrompt],
+        ], 0.5, 'gpt-3.5-turbo', 150, '0.8', '0.6');
+
+
+        $subtopics = array_filter(array_map('trim', explode('|', $subtopicsText)));
         $subtopics = array_slice($subtopics, 0, 3);
 
         foreach ($subtopics as $topic) {
             $topic = trim($topic);
+
+            if (in_array(strtolower($topic), $usedTopics)) continue;
             if (Node::where('topic', $topic)->exists()) continue;
 
             $description = OpenAIService::chat([
-                ['role' => 'system', 'content' => 'Explain the following topic in 2–3 concise sentences, assuming the reader is intelligent but unfamiliar with the concept.'],
-                ['role' => 'user', 'content' => $topic],
-            ], 0.5);
+                ['role' => 'user', 'content' => "Explain the following topic in 2–3 concise sentences, assuming the reader is intelligent but unfamiliar with the concept: $topic"],
+            ], 0.5, 'gpt-3.5-turbo', 150);
+
+
             $embedding = OpenAIService::embed($description);
 
             $child = Node::create([
@@ -58,6 +91,7 @@ class TreeBuilderService
         }
     }
 
+
     public static function createBridgesForRoot(Node $root): void
     {
         $nodes = Node::where('origin_id', $root->id)->orWhere('id', $root->id)->get();
@@ -65,10 +99,12 @@ class TreeBuilderService
         foreach ($nodes as $i => $a) {
             foreach ($nodes as $j => $b) {
                 if ($j <= $i || $a->id === $b->id) continue;
+                if ($a->parent_id && $a->parent_id === $b->parent_id) continue;
+
 
                 $score = SimilarityHelper::cosine($a->embedding, $b->embedding);
 
-                if ($score >= 0.8) {
+                if ($score <= 0.8 && $score >= 0.7) {
                     SemanticBridge::create([
                         'source_node_id' => $a->id,
                         'target_node_id' => $b->id,

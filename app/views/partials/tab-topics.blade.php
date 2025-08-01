@@ -22,10 +22,10 @@
                 ↳ file: <a href="/trees/{{ $topic->file_path }}">{{ $topic->file_path }}</a>
             </div>
 
-            <div class="topic-card-terminal__actions">
+            {{-- <div class="topic-card-terminal__actions">
                 <a href="/tree/{{ $topic->id }}">expand tree</a>
                 <button @click="openModal({{ $topic->id }})">details</button>
-            </div>
+            </div> --}}
         </div>
     @endforeach
 </div>

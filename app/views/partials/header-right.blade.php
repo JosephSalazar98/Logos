@@ -16,7 +16,7 @@
                         stroke="#C6C9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <p>3x3bFd...DaWbonk</p>
+                <p>Copy CA</p>
             </div>
         </div>
 
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="header__stats">
-            <a class="header__stat" href="https://x.com/Eserya77" target="_blank">
+            <a class="header__stat" href="https://x.com/logosaixyz" target="_blank">
 
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
 
                 <p>Twitter</p>
             </a>
-            <div class="header__stat">
+            {{-- <a class="header__stat">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -87,8 +87,8 @@
 
 
                 <p>DexScreener</p>
-            </div>
-            <div class="header__stat">
+            </a> --}}
+            <a href="https://t.me/+xBkm8h0ECjI0Njgx" target="_blank" class="header__stat">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.249 15.723"
@@ -98,7 +98,7 @@
 
 
                 <p>Telegram</p>
-            </div>
+            </a>
 
         </div>
     @endif

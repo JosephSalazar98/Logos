@@ -16,7 +16,7 @@
                         stroke="#C6C9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <p>Copy CA</p>
+                <p>Ewth31q5joFCRaLKAEEL9FchdWiBaZPYZX2YjtKvbonk</p>
             </div>
         </div>
 

@@ -5,10 +5,11 @@ namespace App\Controllers;
 use App\Models\Node;
 use App\Models\StrangeIdea;
 use App\Models\SemanticBridge;
-use App\Services\OpenAIService;
+use App\Services\OpenAI\OpenAIService;
 use App\Helpers\SimilarityHelper;
-use App\Services\StrangeIdeaService;
-use App\Services\TreeBuilderService;
+use App\Services\Trees\FastTreeService;
+use App\Services\Trees\StrangeIdeaService;
+use App\Services\Trees\TreeBuilderService;
 
 class TreeController extends Controller
 {
@@ -27,6 +28,21 @@ class TreeController extends Controller
         TreeBuilderService::export($root);
 
         return response()->json(['status' => 'done', 'root_id' => $root->id]);
+    }
+
+    public function generateBridges(int $rootId)
+    {
+        $root = Node::find($rootId);
+
+        if (!$root) {
+            return response()->json([
+                'error' => 'Root node not found.'
+            ], 404);
+        }
+
+        $result = TreeBuilderService::createBridgesForRoot($root);
+
+        return response()->json($result);
     }
 
     public function generateStrangeIdea(): array
@@ -57,6 +73,38 @@ class TreeController extends Controller
                 'id' => $bridge->target->id,
                 'topic' => $bridge->target->topic
             ]
+        ]);
+    }
+
+    public function import()
+    {
+        $treeData = request()->body();
+
+        if (
+            !$treeData ||
+            !isset($treeData['topic']) ||
+            !isset($treeData['description']) ||
+            !isset($treeData['children'])
+        ) {
+            return response()->json(['error' => 'Missing or invalid tree data'], 400);
+        }
+
+        try {
+            $root = FastTreeService::fromJsonTree($treeData);
+
+            TreeBuilderService::createBridgesForRoot($root);
+            StrangeIdeaService::generateFromRoot($root);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'error' => 'Import failed',
+                'message' => $e->getMessage()
+            ], 500);
+        }
+
+        return response()->json([
+            'status' => 'imported',
+            'root_id' => $root->id,
+            'topic' => $root->topic
         ]);
     }
 }

@@ -16,7 +16,7 @@
                         stroke="#C6C9FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <p>Ewth31q5joFCRaLKAEEL9FchdWiBaZPYZX2YjtKvbonk</p>
+                <p>Ewth31...tKvbonk</p>
             </div>
         </div>
 

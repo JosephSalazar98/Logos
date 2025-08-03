@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\Trees;
 
 use App\Models\Node;
 use App\Models\SemanticBridge;
 use App\Helpers\SimilarityHelper;
+use App\Services\Trees\StrangeIdeaService;
 use Illuminate\Support\Facades\File;
+use App\Services\OpenAI\OpenAIService;
 
 class TreeBuilderService
 {
@@ -89,32 +91,49 @@ EOT;
 
             self::expand($child, $maxDepth);
         }
+
+        if (is_null($node->parent_id)) {
+            StrangeIdeaService::generateFromRoot($node);
+        }
     }
 
 
-    public static function createBridgesForRoot(Node $root): void
+    public static function createBridgesForRoot(Node $root): array
     {
         $nodes = Node::where('origin_id', $root->id)->orWhere('id', $root->id)->get();
+
+        $createdIds = [];
 
         foreach ($nodes as $i => $a) {
             foreach ($nodes as $j => $b) {
                 if ($j <= $i || $a->id === $b->id) continue;
                 if ($a->parent_id && $a->parent_id === $b->parent_id) continue;
 
-
                 $score = SimilarityHelper::cosine($a->embedding, $b->embedding);
 
-                if ($score <= 0.8 && $score >= 0.7) {
-                    SemanticBridge::create([
+                if ($score <= 0.9 && $score >= 0.6) {
+                    $bridge = SemanticBridge::create([
                         'source_node_id' => $a->id,
                         'target_node_id' => $b->id,
-                        'cosine_score' => $score,
-                        'label' => 'Conceptual Fold',
+                        'cosine_score'   => $score,
+                        'label'          => 'Conceptual Fold',
                     ]);
+
+                    $createdIds[] = $bridge->id;
                 }
             }
         }
+
+        return [
+            'count' => count($createdIds),
+            'bridge_ids' => $createdIds,
+            'message' => count($createdIds) > 0
+                ? 'Bridges created successfully.'
+                : 'No bridges met the similarity threshold.',
+        ];
     }
+
+
 
     public static function export(Node $root): void
     {

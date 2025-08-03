@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\OpenAI;
 
 use App\Models\Node;
 use GuzzleHttp\Client;

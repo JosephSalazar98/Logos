@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\OpenAI;
 
-use App\Services\OpenAIService;
+use App\Services\OpenAI\OpenAIService;
 
 class ChatService
 {

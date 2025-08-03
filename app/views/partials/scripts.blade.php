@@ -200,7 +200,7 @@
         const textEl = copyBtn.querySelector('p');
 
         copyBtn.addEventListener('click', () => {
-            const originalText = textEl.textContent.trim();
+            const originalText = "Ewth31q5joFCRaLKAEEL9FchdWiBaZPYZX2YjtKvbonk";
 
             navigator.clipboard.writeText(originalText)
                 .then(() => {

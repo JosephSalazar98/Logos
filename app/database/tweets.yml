@@ -1,0 +1,14 @@
+columns:
+  tweet_id:
+    type: string
+    unique: true
+  text:
+    type: text
+  username:
+    type: string
+  likes:
+    type: string
+  url:
+    type: string
+  x_created_at:
+    type: datetime

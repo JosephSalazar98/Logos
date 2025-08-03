@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Services\ChatService;
+use App\Services\OpenAI\ChatService;
 
 class ChatController extends Controller
 {

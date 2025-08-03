@@ -18,7 +18,8 @@
         "leafs/vite": "^0.3.0",
         "leafs/auth": "^4.2",
         "guzzlehttp/guzzle": "^7.9",
-        "illuminate/pagination": "^12.21"
+        "illuminate/pagination": "^12.21",
+        "predis/predis": "^3.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24"

@@ -35,19 +35,19 @@ class IdeaController extends Controller
 
     public function topics()
     {
-        $topics = Node::whereNull('parent_id')->latest()->paginate(8);
+        $topics = Node::whereNull('parent_id')->latest()->paginate(4);
         return response()->view('partials.tab-topics', ['topics' => $topics]);
     }
 
     public function bridges()
     {
-        $bridges = SemanticBridge::with(['source', 'target'])->latest()->paginate(8);
+        $bridges = SemanticBridge::with(['source', 'target'])->latest()->paginate(4);
         return response()->view('partials.tab-bridges', ['bridges' => $bridges]);
     }
 
     public function ideas()
     {
-        $strangeIdeas = StrangeIdea::with('node')->latest()->paginate(8);
+        $strangeIdeas = StrangeIdea::with('node')->latest()->paginate(4);
         return response()->view('partials.tab-ideas', ['strangeIdeas' => $strangeIdeas]);
     }
 }

@@ -50,13 +50,15 @@ app()->get('/api/tree/bridges', 'TreeController@createSemanticBridges');
 app()->get('/api/tree/strange', 'TreeController@generateStrangeIdea');
 app()->get('/api/strange/{id}', 'TreeController@generateStrangeIdeaFrom');
 app()->get('/api/bridges/{id}', 'TreeController@showBridge');
+app()->get('/api/txt/{id}', 'TreeController@generateTxt');
 
 /**
  * ────────────────────────────────────────────────────────────────
  *  LOGOS / TWEET RESPONSE
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/logos/respondcronp', 'LogosController@respondCronPreview');
+app()->get('/logos/respondcron', 'LogosController@respondCron');
+app()->post('/logos/respondtweet', 'LogosController@respondTweet');
 
 /**
  * ────────────────────────────────────────────────────────────────

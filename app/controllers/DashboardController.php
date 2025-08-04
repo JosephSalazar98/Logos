@@ -17,6 +17,7 @@ class DashboardController extends Controller
         $ideasGenerated = StrangeIdea::count();
         $filesSaved = $this->countSavedFiles();
 
+
         response()->render('index', compact(
             'lastRoot',
             'strangeIdea',

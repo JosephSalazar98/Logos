@@ -206,7 +206,7 @@
                 .then(() => {
                     textEl.textContent = 'Copied!';
                     setTimeout(() => {
-                        textEl.textContent = originalText;
+                        textEl.textContent = "Ewth31...tKvbonk";
                     }, 1500);
                 })
                 .catch(err => {

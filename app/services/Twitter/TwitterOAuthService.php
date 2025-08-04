@@ -112,8 +112,6 @@ class TwitterOAuthService
         return $this->makeRequest('https://api.twitter.com/2/tweets', 'POST', $accessToken, $body);
     }
 
-    // TwitterOAuthService.php
-
     public function postSimpleTweet(string $text): array
     {
         $token = $this->getToken();
@@ -129,7 +127,20 @@ class TwitterOAuthService
         return $result;
     }
 
+    public function postReplyToTweet(string $text, string $inReplyTo): array
+    {
+        $token = $this->getToken();
+        if (!$token) return ['error' => 'No token'];
 
+        $result = $this->postTweet($text, $token['access_token'], $inReplyTo);
+
+        if (isset($result['title']) && $result['title'] === 'Unauthorized') {
+            $token = $this->refreshToken($token['refresh_token']);
+            $result = $this->postTweet($text, $token['access_token'], $inReplyTo);
+        }
+
+        return $result;
+    }
 
     public function getToken(): ?array
     {

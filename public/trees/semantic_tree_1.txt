@@ -1,0 +1,293 @@
+{
+    "id": 1,
+    "topic": "Cryptocurrencies",
+    "description": "Cryptocurrencies are digital or virtual currencies secured by cryptography and typically decentralized through blockchain technology. They enable peer-to-peer transactions without intermediaries and have disrupted traditional finance.",
+    "depth": 0,
+    "children": [
+        {
+            "id": 2,
+            "topic": "Blockchain Technology",
+            "description": "Blockchain is a distributed ledger system that records transactions across multiple computers in a secure, transparent, and immutable manner. It is the foundational technology behind cryptocurrencies.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 3,
+                    "topic": "Consensus Mechanisms",
+                    "description": "Consensus mechanisms like Proof of Work and Proof of Stake ensure that transactions on a blockchain are validated and agreed upon by network participants.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 4,
+                            "topic": "Proof of Work vs Proof of Stake",
+                            "description": "PoW and PoS are two primary methods for achieving consensus. PoW requires computational effort, while PoS selects validators based on token ownership.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 5,
+                            "topic": "Delegated Proof of Stake",
+                            "description": "DPoS is a consensus model where token holders elect a limited number of delegates to validate transactions, improving scalability and efficiency.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 6,
+                            "topic": "Security Risks in Consensus",
+                            "description": "Consensus mechanisms face threats like 51% attacks or long-range attacks, requiring protocol-level defenses to ensure network integrity.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "topic": "Smart Contracts",
+                    "description": "Smart contracts are self-executing code on a blockchain that automatically enforces agreements, enabling trustless interactions without intermediaries.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 8,
+                            "topic": "DeFi Protocols",
+                            "description": "DeFi protocols use smart contracts to offer financial services like lending, trading, and yield farming without traditional institutions.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 9,
+                            "topic": "Bugs and Exploits in Smart Contracts",
+                            "description": "Vulnerabilities in smart contracts can lead to large-scale losses. Auditing and formal verification are key to minimizing risk.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 10,
+                            "topic": "Cross-Chain Smart Contracts",
+                            "description": "Cross-chain smart contracts allow interoperability between blockchains, expanding use cases but increasing complexity.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "topic": "Blockchain Scalability",
+                    "description": "Scalability refers to a blockchain&#039;s ability to handle increasing transaction volume without compromising speed or cost.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 12,
+                            "topic": "Layer 2 Solutions",
+                            "description": "Layer 2 technologies like rollups and state channels process transactions off-chain to reduce congestion and fees on the main network.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 13,
+                            "topic": "Sharding",
+                            "description": "Sharding divides the blockchain into smaller partitions (shards) to process transactions in parallel, increasing throughput.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 14,
+                            "topic": "Trade-offs Between Speed and Decentralization",
+                            "description": "Efforts to improve speed often reduce decentralization. Finding a balance is a key design challenge for scalable blockchains.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "topic": "Cryptocurrency Markets",
+            "description": "Cryptocurrency markets are digital platforms where users trade crypto assets. They are volatile, speculative, and operate 24\/7 globally.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 16,
+                    "topic": "Centralized vs Decentralized Exchanges",
+                    "description": "CEXs are user-friendly and regulated, while DEXs offer privacy and autonomy by allowing peer-to-peer trading via smart contracts.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 17,
+                            "topic": "Liquidity Pools in DEXs",
+                            "description": "Liquidity pools enable decentralized trading by allowing users to supply assets in exchange for a share of transaction fees.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 18,
+                            "topic": "Order Book Mechanics in CEXs",
+                            "description": "Order books match buyers and sellers based on price and quantity. They offer precision but require central trust.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 19,
+                            "topic": "Regulatory Pressure on Exchanges",
+                            "description": "Governments are increasingly regulating exchanges to prevent money laundering and protect investors, impacting market dynamics.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 20,
+                    "topic": "Market Volatility",
+                    "description": "Crypto markets experience high volatility due to speculation, low liquidity, and regulatory news, making them risky yet profitable.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 21,
+                            "topic": "Whale Manipulation",
+                            "description": "Large holders (whales) can influence prices by executing massive trades, causing sudden market movements and panic.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 22,
+                            "topic": "Technical Analysis in Crypto",
+                            "description": "Traders use chart patterns and indicators to predict price movements. While popular, its effectiveness is debated in crypto.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 23,
+                            "topic": "Sentiment Analysis Tools",
+                            "description": "Tools that analyze social media and news sentiment help predict short-term trends in crypto markets.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 24,
+                    "topic": "Stablecoins",
+                    "description": "Stablecoins are cryptocurrencies pegged to stable assets like USD. They reduce volatility and serve as a bridge to traditional finance.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 25,
+                            "topic": "Collateralized Stablecoins",
+                            "description": "These are backed by fiat or crypto reserves to maintain a stable value. Examples include USDC and DAI.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 26,
+                            "topic": "Algorithmic Stablecoins",
+                            "description": "They rely on code and market incentives to maintain their peg, often vulnerable to collapse during market stress.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 27,
+                            "topic": "Regulatory Challenges",
+                            "description": "Stablecoins face increasing scrutiny due to their systemic risk and resemblance to traditional banking instruments.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "topic": "Cryptocurrency Regulation",
+            "description": "Crypto regulation varies globally, shaping how cryptocurrencies are used, taxed, and developed. It affects innovation, adoption, and investor protection.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 29,
+                    "topic": "KYC and AML Compliance",
+                    "description": "Know Your Customer (KYC) and Anti-Money Laundering (AML) policies require user identification to prevent illicit financial activities.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 30,
+                            "topic": "Privacy Trade-offs",
+                            "description": "While KYC improves transparency, it conflicts with the privacy ethos of crypto, prompting debates over surveillance and freedom.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 31,
+                            "topic": "Decentralized ID Systems",
+                            "description": "Decentralized identity solutions aim to provide KYC without compromising privacy, using blockchain to manage credentials.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 32,
+                            "topic": "Impact on Exchange Adoption",
+                            "description": "Strict KYC rules may limit user onboarding in certain regions, impacting liquidity and market access.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "topic": "Crypto Taxation",
+                    "description": "Governments are defining tax rules for crypto gains, mining income, and staking rewards, creating new compliance burdens.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 34,
+                            "topic": "Capital Gains Reporting",
+                            "description": "Crypto users must often report gains as capital income, requiring accurate record-keeping and triggering tax events on trades.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 35,
+                            "topic": "DeFi Tax Uncertainty",
+                            "description": "Tax treatment of DeFi income like yield farming is unclear in many jurisdictions, creating legal gray areas for users.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 36,
+                            "topic": "International Tax Harmonization",
+                            "description": "Countries are collaborating on unified crypto tax standards to prevent evasion and establish consistency across borders.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 37,
+                    "topic": "CBDCs vs Cryptocurrencies",
+                    "description": "Central Bank Digital Currencies (CBDCs) are government-issued digital money. They contrast with decentralized cryptocurrencies in control and privacy.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 38,
+                            "topic": "Design Trade-offs in CBDCs",
+                            "description": "CBDCs must balance privacy, programmability, and monetary control, with design choices affecting public trust and adoption.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 39,
+                            "topic": "Competition with Stablecoins",
+                            "description": "CBDCs may displace stablecoins by offering state-backed alternatives, affecting the structure of digital finance.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 40,
+                            "topic": "Surveillance Risks",
+                            "description": "CBDCs raise concerns over potential government surveillance of financial activity, sparking debates about civil liberties.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

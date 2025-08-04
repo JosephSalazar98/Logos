@@ -5,8 +5,9 @@ namespace App\Controllers;
 use Leaf\Controller;
 use App\Models\Tweet;
 use App\Services\Trees\FastTreeService;
-use App\Services\Logos\LogosResponderService;
 use App\Services\Logos\ReplyComposerService;
+use App\Services\Logos\LogosResponderService;
+use App\Services\Twitter\TwitterOAuthService;
 use App\Services\OpenAI\TweetEvaluatorService;
 
 class LogosController extends Controller
@@ -18,7 +19,7 @@ class LogosController extends Controller
         response()->json($result);
     }
 
-    public function respondCronPreview()
+    public function respondCron()
     {
         if (!$this->isAuthorized()) {
             return response()->json(['error' => 'Unauthorized'], 403);
@@ -44,6 +45,17 @@ class LogosController extends Controller
 
         $replyText = (new ReplyComposerService())->generateReplyText($baseTopic, $tweet->text);
 
+        try {
+            $oauth = new TwitterOAuthService();
+            $response = $oauth->postReplyToTweet($replyText, $tweet->tweet_id);
+            $replyTweetId = $response['data']['id'] ?? null;
+        } catch (\Throwable $e) {
+            return response()->json([
+                'error'     => 'Failed to post tweet',
+                'exception' => $e->getMessage(),
+            ], 500);
+        }
+
         return response()->json([
             'tweet_id'        => $tweet->tweet_id,
             'tweet_text'      => $tweet->text,
@@ -51,6 +63,68 @@ class LogosController extends Controller
             'base_topic'      => $baseTopic,
             'generated_reply' => $replyText,
             'tree_root_id'    => $root->id,
+            'reply_tweet_id'  => $replyTweetId,
+            'status'          => 'posted',
+        ]);
+    }
+
+    public function respondTweet()
+    {
+        $payload = request()->body()->all();
+
+        $key = $payload['key'] ?? null;
+        $tweetIdParam = $payload['tweet_id'] ?? null;
+
+        if ($key !== _env('LOGOS_CRON_KEY')) {
+            return response()->json(['error' => 'Unauthorized'], 403);
+        }
+
+        // 🔎 Load tweet either manually by ID or fallback to oldest
+        if ($tweetIdParam) {
+            $tweet = Tweet::where('tweet_id', $tweetIdParam)->first();
+        } else {
+            $tweet = Tweet::orderBy('x_created_at')->first();
+        }
+
+        if (!$tweet) {
+            return response()->json(['message' => 'No tweets to process.']);
+        }
+
+        if (!TweetEvaluatorService::shouldRespondTo($tweet->text)) {
+            return $this->respondNotWorthIt($tweet);
+        }
+
+        $baseTopic = TweetEvaluatorService::extractBaseTopic($tweet->text);
+
+        try {
+            $root = FastTreeService::generateTreeForTopic($baseTopic);
+        } catch (\Exception $e) {
+            return $this->handleTreeError($tweet, $baseTopic, $e);
+        }
+
+        $replyText = (new ReplyComposerService())->generateReplyText($baseTopic, $tweet->text);
+
+        try {
+            $oauth = new TwitterOAuthService();
+            $response = $oauth->postReplyToTweet($replyText, $tweet->tweet_id);
+            $replyTweetId = $response['data']['id'] ?? null;
+        } catch (\Throwable $e) {
+            return response()->json([
+                'error'     => 'Failed to post tweet',
+                'exception' => $e->getMessage(),
+            ], 500);
+        }
+
+        return response()->json([
+            'tweet_id'            => $tweet->tweet_id,
+            'tweet_text'          => $tweet->text,
+            'verdict'             => 'Yes',
+            'base_topic'          => $baseTopic,
+            'generated_reply'     => $replyText,
+            'tree_root_id'        => $root->id,
+            'reply_tweet_id'      => $replyTweetId,
+            'status'              => 'posted',
+            'replied_to_tweet_id' => $tweet->tweet_id,
         ]);
     }
 

@@ -60,8 +60,8 @@
                      <th class="semantic-table__cell semantic-table__cell--head">id</th>
                      <th class="semantic-table__cell semantic-table__cell--head">file</th>
                      <th class="semantic-table__cell semantic-table__cell--head">topic</th>
-                     <th class="semantic-table__cell semantic-table__cell--head">cosine</th>
-                     <th class="semantic-table__cell semantic-table__cell--head">link</th>
+                     {{--                      <th class="semantic-table__cell semantic-table__cell--head">cosine</th>
+ --}} <th class="semantic-table__cell semantic-table__cell--head">link</th>
                  </tr>
              </thead>
              <tbody class="semantic-table__body">
@@ -72,8 +72,8 @@
                              {{ basename($node->file_path) ?? 'error in system' }}
                          </td>
                          <td class="semantic-table__cell">{{ $node->topic }}</td>
-                         <td class="semantic-table__cell semantic-table__cell--cosine">
-                             {{ number_format($node->cosine_score ?? 0.9, 3) }}</td>
+                         {{-- <td class="semantic-table__cell semantic-table__cell--cosine">
+                             {{ number_format($node->cosine_score ?? 0.9, 3) }}</td> --}}
                          <td class="semantic-table__cell semantic-table__cell--cosine">
                              <a href="/trees/{{ $node->file_path }}" target="_blank">
                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"

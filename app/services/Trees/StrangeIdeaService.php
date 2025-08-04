@@ -50,8 +50,9 @@ Given these two topics:
 
 2. {$b->topic}
 
-Imagine you're reasoning in your head and generate a new, rational idea, based upon the two topics from earlier. The idea must explain why it's worth exploring, and what could this idea lead to.
-Generate it following this framework: "Something hot and innovative between these two topics could be ... I wonder if this could ... for example we could [say an innovative tangible and conceivable idea], this would [why would this cause]"
+Imagine you're reasoning in your head and generate a new, rational and disruptive idea, based upon the two topics from earlier. The idea must explain why it's worth exploring, and what could this idea lead to.
+
+Generate it following this framework: "An idea is [your disruptive idea], this can [how is it disruptive] this will [what would this be better than how it is now]"
 Avoid generic reflections, abstract filler.
 
 Only output the paragraph. No intro. No explanations. No list format. Begin:
@@ -63,7 +64,9 @@ EOT;
             ], 1);
 
             $quote = trim($responseText);
-            $confidence = round(mt_rand(50, 90) / 100, 2);
+
+            $semantic_distance = $bridge->cosine_score;
+            $confidence = round(1 - $semantic_distance, 2);
 
             StrangeIdea::create([
                 'node_id'    => $root->id,

@@ -94,6 +94,8 @@ class TreeController extends Controller
 
             TreeBuilderService::createBridgesForRoot($root);
             StrangeIdeaService::generateFromRoot($root);
+            TreeBuilderService::export($root); // ← this line was missing
+
         } catch (\Throwable $e) {
             return response()->json([
                 'error' => 'Import failed',
@@ -106,5 +108,14 @@ class TreeController extends Controller
             'root_id' => $root->id,
             'topic' => $root->topic
         ]);
+    }
+
+    public function generateTxt(int $rootId)
+    {
+        $root = Node::find($rootId);
+
+        if (!$root) return ['error' => 'Node not found'];
+
+        return TreeBuilderService::export($root);
     }
 }

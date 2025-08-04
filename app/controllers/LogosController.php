@@ -31,9 +31,9 @@ class LogosController extends Controller
             return response()->json(['message' => 'No tweets to process.']);
         }
 
-        if (!TweetEvaluatorService::shouldRespondTo($tweet->text)) {
+        /* if (!TweetEvaluatorService::shouldRespondTo($tweet->text)) {
             return $this->respondNotWorthIt($tweet);
-        }
+        } */
 
         $baseTopic = TweetEvaluatorService::extractBaseTopic($tweet->text);
 
@@ -43,7 +43,7 @@ class LogosController extends Controller
             return $this->handleTreeError($tweet, $baseTopic, $e);
         }
 
-        $replyText = (new ReplyComposerService())->generateReplyText($baseTopic, $tweet->text);
+        $replyText = (new ReplyComposerService())->generateReplyWithIdea($baseTopic, $tweet->text);
 
         try {
             $oauth = new TwitterOAuthService();
@@ -70,7 +70,7 @@ class LogosController extends Controller
 
     public function respondTweet()
     {
-        $payload = request()->body()->all();
+        $payload = request()->body();
 
         $key = $payload['key'] ?? null;
         $tweetIdParam = $payload['tweet_id'] ?? null;
@@ -102,7 +102,7 @@ class LogosController extends Controller
             return $this->handleTreeError($tweet, $baseTopic, $e);
         }
 
-        $replyText = (new ReplyComposerService())->generateReplyText($baseTopic, $tweet->text);
+        $replyText = (new ReplyComposerService())->generateReplyWithIdea($baseTopic, $tweet->text);
 
         try {
             $oauth = new TwitterOAuthService();
@@ -126,6 +126,12 @@ class LogosController extends Controller
             'status'              => 'posted',
             'replied_to_tweet_id' => $tweet->tweet_id,
         ]);
+    }
+
+    public function postSimpleTweet()
+    {
+        $oauth = new TwitterOAuthService();
+        return $oauth->postSimpleTweet("The value of a thought is not in its originality, but in its ability to destabilize what you considered finished.");
     }
 
     // ------------------------------

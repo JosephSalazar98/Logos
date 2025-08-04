@@ -26,7 +26,7 @@ class TwitterOAuthService
         $this->scopes       = ['tweet.read', 'users.read', 'tweet.write', 'offline.access'];
 
         // LOCAL ONLY
-        $this->tokenPath = __DIR__ . '/../../storage/twitter_token.json';
+        $this->tokenPath = dirname(__DIR__, 3) . '/storage/twitter_token.json';
 
         $this->generateCodeChallenge();
     }
@@ -150,7 +150,7 @@ class TwitterOAuthService
 
     public function makeRequest(string $url, string $method, string $accessToken, array $payload = []): array
     {
-        $client = new Client();
+        $client = new Client(['verify' => false]);
 
         $options = [
             'headers' => [

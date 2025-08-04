@@ -59,6 +59,7 @@ app()->get('/api/txt/{id}', 'TreeController@generateTxt');
  */
 app()->get('/logos/respondcron', 'LogosController@respondCron');
 app()->post('/logos/respondtweet', 'LogosController@respondTweet');
+app()->get('/logos/test', 'LogosController@postSimpleTweet');
 
 /**
  * ────────────────────────────────────────────────────────────────

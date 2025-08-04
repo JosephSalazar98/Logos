@@ -48,13 +48,13 @@ You have previously formulated this insight, and it now forms part of your inter
 
 "{$ideaText}"
 
-Do not quote or reference this insight directly. Instead act as if it's something you have come up with on your own.
+Do not quote or reference this insight directly, but you still have to explain it. Act as if it's something you have come up with on your own.
 
 Now, write a reply to the text that:
 - Relates the text’s main claim to your internalized insight.
 - States the insight clearly, as if it were your own thought.
 - Justifies why this insight matters or what it can lead to.
-- Ends with a fatalistic, speculative, or unsettling reflection — a question, warning, or future scenario.
+- Ends with a fatalistic, speculative, or unsettling reflection a question, warning, or future scenario.
 
 Tone:
 - First person

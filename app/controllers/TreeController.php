@@ -76,7 +76,7 @@ class TreeController extends Controller
         ]);
     }
 
-    public function import()
+    /* public function import()
     {
         $treeData = request()->body();
 
@@ -108,7 +108,7 @@ class TreeController extends Controller
             'root_id' => $root->id,
             'topic' => $root->topic
         ]);
-    }
+    } */
 
     public function generateTxt(int $rootId)
     {
@@ -117,5 +117,48 @@ class TreeController extends Controller
         if (!$root) return ['error' => 'Node not found'];
 
         return TreeBuilderService::export($root);
+    }
+
+    public function test()
+    {
+        $topic = request()->get('topic');
+
+        FastTreeService::generateTreeForTopic($topic);
+    }
+
+
+    public function createRootNode()
+    {
+        $slug = '_root';
+
+        $existing = Node::where('slug', $slug)->where('depth', 0)->first();
+        if ($existing) {
+            return response()->json([
+                'message' => 'Root node already exists.',
+                'node' => $existing
+            ]);
+        }
+
+        $topic = 'Logos';
+        $description = 'The center of all knowledge trees, root of all semantic structures.';
+
+        $topicVec = OpenAIService::embed($topic);
+        $descriptionVec = OpenAIService::embed($description);
+
+        $node = Node::create([
+            'topic'        => $topic,
+            'description'  => $description,
+            'slug'         => $slug,
+            'depth'        => 0,
+            'parent_id'    => null,
+            'origin_id'    => null,
+            'topic_vector' => json_encode($topicVec),
+            'embedding'    => $descriptionVec
+        ]);
+
+        return response()->json([
+            'message' => 'Root node created.',
+            'node' => $node
+        ]);
     }
 }

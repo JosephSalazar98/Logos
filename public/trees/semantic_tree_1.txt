@@ -1,98 +1,98 @@
 {
     "id": 1,
-    "topic": "Cryptocurrencies",
-    "description": "Cryptocurrencies are digital or virtual currencies secured by cryptography and typically decentralized through blockchain technology. They enable peer-to-peer transactions without intermediaries and have disrupted traditional finance.",
+    "topic": "Logos",
+    "description": "The center of all knowledge trees, root of all semantic structures.",
     "depth": 0,
     "children": [
         {
             "id": 2,
-            "topic": "Blockchain Technology",
-            "description": "Blockchain is a distributed ledger system that records transactions across multiple computers in a secure, transparent, and immutable manner. It is the foundational technology behind cryptocurrencies.",
-            "depth": 1,
+            "topic": "Artificial Intelligence",
+            "description": "Artificial Intelligence is the simulation of human intelligence processes by machines, especially computer systems. It involves the use of algorithms to perform tasks such as learning, problem-solving, and decision-making.",
+            "depth": 0,
             "children": [
                 {
                     "id": 3,
-                    "topic": "Consensus Mechanisms",
-                    "description": "Consensus mechanisms like Proof of Work and Proof of Stake ensure that transactions on a blockchain are validated and agreed upon by network participants.",
-                    "depth": 2,
+                    "topic": "Machine Learning",
+                    "description": "Machine Learning is a subset of AI that enables machines to learn from data without being explicitly programmed. It uses algorithms to analyze and make predictions based on patterns in the data.",
+                    "depth": 1,
                     "children": [
                         {
                             "id": 4,
-                            "topic": "Proof of Work vs Proof of Stake",
-                            "description": "PoW and PoS are two primary methods for achieving consensus. PoW requires computational effort, while PoS selects validators based on token ownership.",
-                            "depth": 3,
+                            "topic": "Deep Learning",
+                            "description": "Deep Learning is a type of Machine Learning that uses neural networks with multiple layers to extract high-level features from data. It is used in tasks such as image and speech recognition.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 5,
-                            "topic": "Delegated Proof of Stake",
-                            "description": "DPoS is a consensus model where token holders elect a limited number of delegates to validate transactions, improving scalability and efficiency.",
-                            "depth": 3,
+                            "topic": "Reinforcement Learning",
+                            "description": "Reinforcement Learning is a type of Machine Learning where an agent learns to make decisions by interacting with an environment and receiving rewards or penalties. It is used in game playing and robotics.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 6,
-                            "topic": "Security Risks in Consensus",
-                            "description": "Consensus mechanisms face threats like 51% attacks or long-range attacks, requiring protocol-level defenses to ensure network integrity.",
-                            "depth": 3,
+                            "topic": "Supervised Learning",
+                            "description": "Supervised Learning is a type of Machine Learning where the model is trained on labeled data, with input-output pairs provided. It is used in tasks such as classification and regression.",
+                            "depth": 2,
                             "children": []
                         }
                     ]
                 },
                 {
                     "id": 7,
-                    "topic": "Smart Contracts",
-                    "description": "Smart contracts are self-executing code on a blockchain that automatically enforces agreements, enabling trustless interactions without intermediaries.",
-                    "depth": 2,
+                    "topic": "Natural Language Processing",
+                    "description": "Natural Language Processing is a branch of AI that enables computers to understand, interpret, and generate human language. It involves tasks such as text analysis, sentiment analysis, and language translation.",
+                    "depth": 1,
                     "children": [
                         {
                             "id": 8,
-                            "topic": "DeFi Protocols",
-                            "description": "DeFi protocols use smart contracts to offer financial services like lending, trading, and yield farming without traditional institutions.",
-                            "depth": 3,
+                            "topic": "Sentiment Analysis",
+                            "description": "Sentiment Analysis is a type of NLP that involves determining the sentiment or emotion expressed in text. It is used in social media monitoring, customer feedback analysis, and brand reputation management.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 9,
-                            "topic": "Bugs and Exploits in Smart Contracts",
-                            "description": "Vulnerabilities in smart contracts can lead to large-scale losses. Auditing and formal verification are key to minimizing risk.",
-                            "depth": 3,
+                            "topic": "Language Translation",
+                            "description": "Language Translation is the process of converting text from one language to another while preserving the original meaning. It is used in tools such as Google Translate and language localization.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 10,
-                            "topic": "Cross-Chain Smart Contracts",
-                            "description": "Cross-chain smart contracts allow interoperability between blockchains, expanding use cases but increasing complexity.",
-                            "depth": 3,
+                            "topic": "Named Entity Recognition",
+                            "description": "Named Entity Recognition is a task in NLP that involves identifying and classifying named entities in text, such as names of people, organizations, and locations. It is used in information extraction and text mining.",
+                            "depth": 2,
                             "children": []
                         }
                     ]
                 },
                 {
                     "id": 11,
-                    "topic": "Blockchain Scalability",
-                    "description": "Scalability refers to a blockchain&#039;s ability to handle increasing transaction volume without compromising speed or cost.",
-                    "depth": 2,
+                    "topic": "Computer Vision",
+                    "description": "Computer Vision is a field of AI that enables computers to interpret and understand the visual world. It involves tasks such as image recognition, object detection, and image generation.",
+                    "depth": 1,
                     "children": [
                         {
                             "id": 12,
-                            "topic": "Layer 2 Solutions",
-                            "description": "Layer 2 technologies like rollups and state channels process transactions off-chain to reduce congestion and fees on the main network.",
-                            "depth": 3,
+                            "topic": "Object Detection",
+                            "description": "Object Detection is a computer vision task that involves locating and classifying objects in images or videos. It is used in applications such as surveillance, autonomous vehicles, and medical imaging.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 13,
-                            "topic": "Sharding",
-                            "description": "Sharding divides the blockchain into smaller partitions (shards) to process transactions in parallel, increasing throughput.",
-                            "depth": 3,
+                            "topic": "Image Segmentation",
+                            "description": "Image Segmentation is a technique in computer vision that divides an image into multiple segments to simplify its analysis. It is used in medical imaging, autonomous driving, and satellite image analysis.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 14,
-                            "topic": "Trade-offs Between Speed and Decentralization",
-                            "description": "Efforts to improve speed often reduce decentralization. Finding a balance is a key design challenge for scalable blockchains.",
-                            "depth": 3,
+                            "topic": "Facial Recognition",
+                            "description": "Facial Recognition is a technology that identifies or verifies a person from a digital image or video frame. It is used in security systems, access control, and social media tagging.",
+                            "depth": 2,
                             "children": []
                         }
                     ]
@@ -101,189 +101,878 @@
         },
         {
             "id": 15,
-            "topic": "Cryptocurrency Markets",
-            "description": "Cryptocurrency markets are digital platforms where users trade crypto assets. They are volatile, speculative, and operate 24\/7 globally.",
-            "depth": 1,
+            "topic": "Large Language Models",
+            "description": "Large language models are advanced AI systems that can understand and generate human language. They have been used in various applications such as natural language processing and machine translation.",
+            "depth": 0,
             "children": [
                 {
                     "id": 16,
-                    "topic": "Centralized vs Decentralized Exchanges",
-                    "description": "CEXs are user-friendly and regulated, while DEXs offer privacy and autonomy by allowing peer-to-peer trading via smart contracts.",
-                    "depth": 2,
+                    "topic": "Transformer Architecture",
+                    "description": "The transformer architecture is a type of neural network design commonly used in large language models. It allows for parallel processing of input data and has been instrumental in improving model performance.",
+                    "depth": 1,
                     "children": [
                         {
                             "id": 17,
-                            "topic": "Liquidity Pools in DEXs",
-                            "description": "Liquidity pools enable decentralized trading by allowing users to supply assets in exchange for a share of transaction fees.",
-                            "depth": 3,
-                            "children": []
+                            "topic": "Self-Attention Mechanism",
+                            "description": "Self-attention is a key component of the transformer architecture that enables the model to weigh the importance of different input tokens when making predictions. It helps capture long-range dependencies in the data.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 18,
+                                    "topic": "Multi-Head Attention",
+                                    "description": "Multi-head attention is a variant of the self-attention mechanism where the model attends to different parts of the input sequence simultaneously. This allows the model to learn more complex patterns and relationships.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19,
+                                    "topic": "Scaled Dot-Product Attention",
+                                    "description": "Scaled dot-product attention is a type of attention mechanism used in transformers that scales the dot products of the query and key vectors by the square root of the dimensionality. This helps stabilize the gradients during training.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20,
+                                    "topic": "Positional Encoding",
+                                    "description": "Positional encoding is a technique used in transformers to inject information about the position of tokens in the input sequence. It helps the model differentiate between tokens with the same value but different positions.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
                         },
-                        {
-                            "id": 18,
-                            "topic": "Order Book Mechanics in CEXs",
-                            "description": "Order books match buyers and sellers based on price and quantity. They offer precision but require central trust.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 19,
-                            "topic": "Regulatory Pressure on Exchanges",
-                            "description": "Governments are increasingly regulating exchanges to prevent money laundering and protect investors, impacting market dynamics.",
-                            "depth": 3,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 20,
-                    "topic": "Market Volatility",
-                    "description": "Crypto markets experience high volatility due to speculation, low liquidity, and regulatory news, making them risky yet profitable.",
-                    "depth": 2,
-                    "children": [
                         {
                             "id": 21,
-                            "topic": "Whale Manipulation",
-                            "description": "Large holders (whales) can influence prices by executing massive trades, causing sudden market movements and panic.",
-                            "depth": 3,
-                            "children": []
+                            "topic": "BERT Model",
+                            "description": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model developed by Google that has significantly advanced the field of natural language processing. It uses a transformer architecture with bidirectional training.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 22,
+                                    "topic": "Masked Language Model",
+                                    "description": "The masked language model is a training objective used in BERT where a random subset of tokens in the input sequence are masked, and the model is trained to predict the masked tokens based on the context.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 23,
+                                    "topic": "Next Sentence Prediction",
+                                    "description": "Next sentence prediction is another training objective used in BERT where the model is trained to predict whether two input sentences follow each other in the original text. This helps the model capture relationships between sentences.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 24,
+                                    "topic": "Fine-Tuning",
+                                    "description": "Fine-tuning is a technique used to adapt a pre-trained language model like BERT to a specific downstream task by further training it on task-specific data. This helps improve the model's performance on the task.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
                         },
-                        {
-                            "id": 22,
-                            "topic": "Technical Analysis in Crypto",
-                            "description": "Traders use chart patterns and indicators to predict price movements. While popular, its effectiveness is debated in crypto.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 23,
-                            "topic": "Sentiment Analysis Tools",
-                            "description": "Tools that analyze social media and news sentiment help predict short-term trends in crypto markets.",
-                            "depth": 3,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 24,
-                    "topic": "Stablecoins",
-                    "description": "Stablecoins are cryptocurrencies pegged to stable assets like USD. They reduce volatility and serve as a bridge to traditional finance.",
-                    "depth": 2,
-                    "children": [
                         {
                             "id": 25,
-                            "topic": "Collateralized Stablecoins",
-                            "description": "These are backed by fiat or crypto reserves to maintain a stable value. Examples include USDC and DAI.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 26,
-                            "topic": "Algorithmic Stablecoins",
-                            "description": "They rely on code and market incentives to maintain their peg, often vulnerable to collapse during market stress.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 27,
-                            "topic": "Regulatory Challenges",
-                            "description": "Stablecoins face increasing scrutiny due to their systemic risk and resemblance to traditional banking instruments.",
-                            "depth": 3,
-                            "children": []
+                            "topic": "GPT Model",
+                            "description": "GPT (Generative Pre-trained Transformer) is a series of language models developed by OpenAI that are trained to generate human-like text. They use a transformer architecture with autoregressive training.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 26,
+                                    "topic": "Autoregressive Generation",
+                                    "description": "Autoregressive generation is a method used in GPT models where the model predicts the next token in the sequence based on the tokens it has already generated. This allows the model to generate coherent and contextually relevant text.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 27,
+                                    "topic": "Beam Search",
+                                    "description": "Beam search is a decoding algorithm used in GPT models to generate text by considering multiple candidate sequences in parallel. It helps the model explore different possibilities and improve the quality of generated text.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 28,
+                                    "topic": "Top-k Sampling",
+                                    "description": "Top-k sampling is a sampling strategy used in GPT models to generate text by selecting from the top k most likely tokens at each step. This helps control the diversity and quality of the generated text.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
                         }
                     ]
                 }
             ]
         },
         {
-            "id": 28,
-            "topic": "Cryptocurrency Regulation",
-            "description": "Crypto regulation varies globally, shaping how cryptocurrencies are used, taxed, and developed. It affects innovation, adoption, and investor protection.",
-            "depth": 1,
+            "id": 29,
+            "topic": "Cryptocurrencies",
+            "description": "Cryptocurrencies are digital or virtual currencies that use cryptography for security. They operate independently of a central authority, making them decentralized and secure. Bitcoin is the first and most well-known cryptocurrency.",
+            "depth": 0,
             "children": [
                 {
-                    "id": 29,
-                    "topic": "KYC and AML Compliance",
-                    "description": "Know Your Customer (KYC) and Anti-Money Laundering (AML) policies require user identification to prevent illicit financial activities.",
-                    "depth": 2,
+                    "id": 30,
+                    "topic": "Blockchain Technology",
+                    "description": "Blockchain is a distributed ledger technology that securely records transactions across a network of computers. It ensures transparency, security, and immutability of data. Smart contracts are self-executing contracts with the terms directly written into code.",
+                    "depth": 1,
                     "children": [
                         {
-                            "id": 30,
-                            "topic": "Privacy Trade-offs",
-                            "description": "While KYC improves transparency, it conflicts with the privacy ethos of crypto, prompting debates over surveillance and freedom.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
                             "id": 31,
-                            "topic": "Decentralized ID Systems",
-                            "description": "Decentralized identity solutions aim to provide KYC without compromising privacy, using blockchain to manage credentials.",
-                            "depth": 3,
+                            "topic": "Decentralized Applications (DApps)",
+                            "description": "DApps are applications that run on a decentralized network like Ethereum. They operate autonomously and are resistant to censorship. Examples include decentralized finance (DeFi) platforms and decentralized social networks.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 32,
-                            "topic": "Impact on Exchange Adoption",
-                            "description": "Strict KYC rules may limit user onboarding in certain regions, impacting liquidity and market access.",
-                            "depth": 3,
+                            "topic": "Consensus Mechanisms",
+                            "description": "Consensus mechanisms are protocols used to achieve agreement on a single data value among distributed processes or systems. Proof of Work (PoW) and Proof of Stake (PoS) are common consensus algorithms in blockchain networks.",
+                            "depth": 2,
+                            "children": []
+                        },
+                        {
+                            "id": 33,
+                            "topic": "Tokenization",
+                            "description": "Tokenization is the process of converting rights to an asset into a digital token on a blockchain. It enables fractional ownership, increased liquidity, and automated compliance. Security tokens represent ownership in real-world assets.",
+                            "depth": 2,
                             "children": []
                         }
                     ]
                 },
                 {
-                    "id": 33,
-                    "topic": "Crypto Taxation",
-                    "description": "Governments are defining tax rules for crypto gains, mining income, and staking rewards, creating new compliance burdens.",
-                    "depth": 2,
+                    "id": 34,
+                    "topic": "Cryptocurrency Mining",
+                    "description": "Mining is the process of validating transactions and adding them to the blockchain. Miners compete to solve complex mathematical puzzles to earn rewards in the form of new coins. Mining requires specialized hardware and consumes significant energy.",
+                    "depth": 1,
                     "children": [
                         {
-                            "id": 34,
-                            "topic": "Capital Gains Reporting",
-                            "description": "Crypto users must often report gains as capital income, requiring accurate record-keeping and triggering tax events on trades.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
                             "id": 35,
-                            "topic": "DeFi Tax Uncertainty",
-                            "description": "Tax treatment of DeFi income like yield farming is unclear in many jurisdictions, creating legal gray areas for users.",
-                            "depth": 3,
+                            "topic": "Halving Events",
+                            "description": "Halving events occur approximately every four years in Bitcoin's protocol, reducing the block reward by half. This mechanism is designed to control inflation and ensure scarcity. Halvings have historically led to increased price volatility.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 36,
-                            "topic": "International Tax Harmonization",
-                            "description": "Countries are collaborating on unified crypto tax standards to prevent evasion and establish consistency across borders.",
-                            "depth": 3,
+                            "topic": "Mining Pools",
+                            "description": "Mining pools are groups of miners who combine their computational resources to increase the chances of earning rewards. Pools distribute the rewards based on each miner's contribution. Pool mining reduces variance in income but centralizes control.",
+                            "depth": 2,
+                            "children": []
+                        },
+                        {
+                            "id": 37,
+                            "topic": "Proof of Work vs. Proof of Stake",
+                            "description": "Proof of Work (PoW) and Proof of Stake (PoS) are consensus algorithms used in blockchain networks. PoW requires miners to solve cryptographic puzzles, while PoS validators are chosen based on the amount of cryptocurrency they hold. Each has its own advantages and drawbacks.",
+                            "depth": 2,
                             "children": []
                         }
                     ]
                 },
                 {
-                    "id": 37,
-                    "topic": "CBDCs vs Cryptocurrencies",
-                    "description": "Central Bank Digital Currencies (CBDCs) are government-issued digital money. They contrast with decentralized cryptocurrencies in control and privacy.",
-                    "depth": 2,
+                    "id": 38,
+                    "topic": "Cryptocurrency Exchanges",
+                    "description": "Exchanges are platforms where users can buy, sell, and trade cryptocurrencies. They provide liquidity, price discovery, and a variety of trading pairs. Centralized exchanges (CEXs) are operated by a single entity, while decentralized exchanges (DEXs) operate without a central authority.",
+                    "depth": 1,
                     "children": [
                         {
-                            "id": 38,
-                            "topic": "Design Trade-offs in CBDCs",
-                            "description": "CBDCs must balance privacy, programmability, and monetary control, with design choices affecting public trust and adoption.",
-                            "depth": 3,
-                            "children": []
-                        },
-                        {
                             "id": 39,
-                            "topic": "Competition with Stablecoins",
-                            "description": "CBDCs may displace stablecoins by offering state-backed alternatives, affecting the structure of digital finance.",
-                            "depth": 3,
+                            "topic": "Order Types",
+                            "description": "Order types specify the conditions under which a trade will be executed on a cryptocurrency exchange. Market orders buy or sell at the current market price, while limit orders set a specific price at which the trade should be executed. Stop-loss orders trigger a market order when the price reaches a certain level.",
+                            "depth": 2,
                             "children": []
                         },
                         {
                             "id": 40,
-                            "topic": "Surveillance Risks",
-                            "description": "CBDCs raise concerns over potential government surveillance of financial activity, sparking debates about civil liberties.",
-                            "depth": 3,
+                            "topic": "Security Measures",
+                            "description": "Security is a critical aspect of cryptocurrency exchanges due to the risk of hacking and theft. Measures include two-factor authentication (2FA), cold storage of funds, and regular security audits. Insurance funds may be set up to reimburse users in case of a security breach.",
+                            "depth": 2,
                             "children": []
+                        },
+                        {
+                            "id": 41,
+                            "topic": "Regulatory Compliance",
+                            "description": "Cryptocurrency exchanges must comply with regulations to prevent money laundering, fraud, and other illicit activities. Know Your Customer (KYC) and Anti-Money Laundering (AML) procedures are common requirements. Some jurisdictions have specific licensing requirements for operating an exchange.",
+                            "depth": 2,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 42,
+                    "topic": "Bitcoin",
+                    "description": "Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries. It was invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+                    "depth": 0,
+                    "children": [
+                        {
+                            "id": 43,
+                            "topic": "Blockchain Technology",
+                            "description": "Blockchain technology is a decentralized, distributed ledger that records the provenance of a digital asset. It is the underlying technology behind cryptocurrencies like Bitcoin, providing a secure and transparent way to record transactions.",
+                            "depth": 1,
+                            "children": [
+                                {
+                                    "id": 44,
+                                    "topic": "Smart Contracts",
+                                    "description": "Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller directly written into lines of code. They automatically enforce and facilitate the performance of credible transactions without third parties.",
+                                    "depth": 2,
+                                    "children": []
+                                },
+                                {
+                                    "id": 45,
+                                    "topic": "Cryptographic Hash Functions",
+                                    "description": "Cryptographic hash functions are algorithms that take an input and produce a fixed-size string of bytes. They are used in various aspects of blockchain technology, such as creating digital signatures and securing data integrity.",
+                                    "depth": 2,
+                                    "children": []
+                                },
+                                {
+                                    "id": 46,
+                                    "topic": "Consensus Mechanisms",
+                                    "description": "Consensus mechanisms are protocols that achieve an agreement on a single data value among distributed processes or systems. They play a crucial role in blockchain networks to ensure the validity and security of transactions.",
+                                    "depth": 2,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 47,
+                            "topic": "Cryptocurrency Mining",
+                            "description": "Cryptocurrency mining is the process of validating transactions and adding them to a public ledger called the blockchain. Miners compete to solve complex mathematical problems in order to confirm transactions and secure the network.",
+                            "depth": 1,
+                            "children": [
+                                {
+                                    "id": 48,
+                                    "topic": "Proof of Work",
+                                    "description": "Proof of Work is a consensus algorithm used by cryptocurrencies like Bitcoin to achieve distributed consensus. Miners compete to solve cryptographic puzzles and the first one to find the solution gets to add a new block to the blockchain.",
+                                    "depth": 2,
+                                    "children": []
+                                },
+                                {
+                                    "id": 49,
+                                    "topic": "Mining Pools",
+                                    "description": "Mining pools are groups of miners who work together to combine their computational power and increase their chances of solving a block and earning rewards. They distribute the rewards among pool members based on their contributions.",
+                                    "depth": 2,
+                                    "children": []
+                                },
+                                {
+                                    "id": 50,
+                                    "topic": "Halving Events",
+                                    "description": "Halving events are pre-programmed reductions in the rewards that miners receive for adding new blocks to the blockchain. They occur at regular intervals and are designed to control the supply of cryptocurrencies like Bitcoin.",
+                                    "depth": 2,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 51,
+                            "topic": "Decentralized Finance (DeFi)",
+                            "description": "Decentralized Finance (DeFi) refers to the use of blockchain technology and cryptocurrencies to recreate traditional financial systems without the need for intermediaries. It enables peer-to-peer transactions, lending, borrowing, and other financial services.",
+                            "depth": 1,
+                            "children": [
+                                {
+                                    "id": 52,
+                                    "topic": "Liquidity Pools",
+                                    "description": "Liquidity pools are pools of tokens locked in a smart contract that provide liquidity for decentralized exchanges. Users can deposit their tokens into these pools to facilitate trading and earn fees in return.",
+                                    "depth": 2,
+                                    "children": []
+                                },
+                                {
+                                    "id": 53,
+                                    "topic": "Yield Farming",
+                                    "description": "Yield farming is the practice of staking or lending cryptocurrencies in decentralized finance protocols to earn rewards in the form of additional tokens. It involves moving assets between different protocols to maximize returns.",
+                                    "depth": 2,
+                                    "children": []
+                                },
+                                {
+                                    "id": 54,
+                                    "topic": "Decentralized Autonomous Organizations (DAOs)",
+                                    "description": "Decentralized Autonomous Organizations (DAOs) are organizations governed by smart contracts and run by their members, without a central authority. They enable decentralized decision-making and management of resources.",
+                                    "depth": 2,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "topic": "Ethereum",
+            "description": "Ethereum is a decentralized platform that enables developers to build and deploy smart contracts and decentralized applications (DApps). It uses blockchain technology to create a secure and transparent network for various applications.",
+            "depth": 0,
+            "children": [
+                {
+                    "id": 56,
+                    "topic": "Smart Contracts",
+                    "description": "Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller directly written into lines of code. They automatically enforce and execute the terms of the contract without the need for intermediaries.",
+                    "depth": 1,
+                    "children": [
+                        {
+                            "id": 57,
+                            "topic": "Decentralized Finance (DeFi)",
+                            "description": "Decentralized Finance (DeFi) refers to financial services built on decentralized networks, primarily based on blockchain technology. It aims to create an open and accessible financial system without traditional intermediaries.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 58,
+                                    "topic": "Lending Platforms",
+                                    "description": "Lending platforms in DeFi allow users to borrow or lend cryptocurrencies without the need for a centralized authority. Users can earn interest on their holdings or borrow assets for various purposes.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 59,
+                                    "topic": "Decentralized Exchanges (DEXs)",
+                                    "description": "Decentralized Exchanges (DEXs) enable users to trade cryptocurrencies directly with each other without the need for a centralized intermediary. They provide more privacy, security, and control over assets.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 60,
+                                    "topic": "Automated Market Makers (AMMs)",
+                                    "description": "Automated Market Makers (AMMs) are algorithms that enable users to trade cryptocurrencies in a decentralized manner. They use liquidity pools to facilitate trades and set prices based on mathematical formulas.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 61,
+                            "topic": "Non-Fungible Tokens (NFTs)",
+                            "description": "Non-Fungible Tokens (NFTs) are unique digital assets that represent ownership of a specific item or piece of content. They have gained popularity in digital art, collectibles, gaming, and other industries.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 62,
+                                    "topic": "NFT Marketplaces",
+                                    "description": "NFT marketplaces are platforms where users can buy, sell, and trade non-fungible tokens. They provide a marketplace for digital artists, collectors, and creators to showcase and monetize their work.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 63,
+                                    "topic": "Gaming and NFTs",
+                                    "description": "The intersection of gaming and NFTs allows players to own and trade in-game assets as non-fungible tokens. This enables true ownership and value transfer of virtual items across different games.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 64,
+                                    "topic": "NFT Standards",
+                                    "description": "NFT standards define the technical specifications and protocols for creating and exchanging non-fungible tokens. They ensure interoperability and compatibility across different blockchain platforms.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 65,
+                            "topic": "Decentralized Autonomous Organizations (DAOs)",
+                            "description": "Decentralized Autonomous Organizations (DAOs) are organizations governed by smart contracts and run by their members without a central authority. They enable decentralized decision-making and governance.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 66,
+                                    "topic": "DAO Governance",
+                                    "description": "DAO governance refers to the mechanisms and processes through which decisions are made within a decentralized autonomous organization. It involves voting, proposals, and community participation.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 67,
+                                    "topic": "DAO Treasury Management",
+                                    "description": "DAO treasury management involves the allocation and management of funds within a decentralized autonomous organization. It includes budgeting, funding proposals, and financial transparency.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 68,
+                                    "topic": "DAO Legal Frameworks",
+                                    "description": "DAO legal frameworks address the regulatory and legal challenges faced by decentralized autonomous organizations. They aim to provide legal recognition and protection for DAO activities.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 69,
+                    "topic": "Blockchain Scalability",
+                    "description": "Blockchain scalability refers to the ability of a blockchain network to handle a large number of transactions efficiently. It involves improving transaction throughput, reducing latency, and enhancing network performance.",
+                    "depth": 1,
+                    "children": [
+                        {
+                            "id": 70,
+                            "topic": "Layer 2 Solutions",
+                            "description": "Layer 2 solutions are protocols built on top of existing blockchains to improve scalability and reduce transaction costs. They enable off-chain computations and transactions while leveraging the security of the underlying blockchain.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 71,
+                                    "topic": "Payment Channels",
+                                    "description": "Payment channels are off-chain solutions that allow users to conduct multiple transactions without involving the main blockchain. They enable faster and cheaper micropayments while maintaining security.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 72,
+                                    "topic": "Sidechains",
+                                    "description": "Sidechains are independent blockchains that are interoperable with the main blockchain but operate separately. They can offload transactions from the main chain, improving scalability and performance.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 73,
+                                    "topic": "Plasma Chains",
+                                    "description": "Plasma chains are a type of sidechain that relies on a system of smart contracts to manage assets and transactions. They enable high-throughput and low-cost transactions while maintaining security.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 74,
+                            "topic": "Sharding",
+                            "description": "Sharding is a scalability technique that partitions the blockchain network into smaller shards, each capable of processing transactions independently. It aims to increase throughput and efficiency by parallelizing transaction processing.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 75,
+                                    "topic": "Shard Chains",
+                                    "description": "Shard chains are individual chains within a sharded blockchain network that process transactions for a specific shard. They enable parallel processing of transactions, improving overall network scalability.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 76,
+                                    "topic": "Cross-Shard Transactions",
+                                    "description": "Cross-shard transactions involve transferring assets or data between different shards within a sharded blockchain network. They require coordination and communication between shards to ensure consistency.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 77,
+                                    "topic": "Sharding Security",
+                                    "description": "Sharding security mechanisms protect the integrity and confidentiality of transactions within a sharded blockchain network. They prevent attacks and ensure data consistency across shards.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 78,
+                            "topic": "State Channels",
+                            "description": "State channels are off-chain protocols that enable parties to interact and transact privately without involving the main blockchain. They allow for instant transactions, reduced fees, and increased scalability.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 79,
+                                    "topic": "State Channel Networks",
+                                    "description": "State channel networks are interconnected channels that facilitate off-chain interactions and transactions among multiple parties. They provide scalability and privacy benefits for blockchain applications.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 80,
+                                    "topic": "State Channel Security",
+                                    "description": "State channel security mechanisms ensure the integrity and fairness of off-chain transactions within state channels. They prevent fraud and disputes through cryptographic protocols and smart contracts.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 81,
+                                    "topic": "State Channel Use Cases",
+                                    "description": "State channels have various use cases, including micropayments, gaming, and decentralized applications. They enable fast and cost-effective transactions without overloading the main blockchain.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 82,
+                    "topic": "Decentralized Identity",
+                    "description": "Decentralized identity refers to the concept of users owning and controlling their digital identities without relying on centralized authorities. It enables secure and privacy-preserving identity management on the blockchain.",
+                    "depth": 1,
+                    "children": [
+                        {
+                            "id": 83,
+                            "topic": "Self-Sovereign Identity",
+                            "description": "Self-sovereign identity empowers individuals to own, control, and manage their digital identities autonomously. It allows users to selectively disclose personal information while maintaining privacy and security.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 84,
+                                    "topic": "Verifiable Credentials",
+                                    "description": "Verifiable credentials are digital statements that attest to the authenticity of personal information or qualifications. They enable users to prove their identity or credentials without revealing sensitive data.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 85,
+                                    "topic": "Decentralized Identifiers (DIDs)",
+                                    "description": "Decentralized Identifiers (DIDs) are unique identifiers that enable self-sovereign identity on the blockchain. They allow users to create and control their digital identities without reliance on centralized authorities.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 86,
+                                    "topic": "Identity Wallets",
+                                    "description": "Identity wallets are secure digital wallets that store and manage verifiable credentials and decentralized identifiers. They enable users to control their personal information and share it securely.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 87,
+                            "topic": "Decentralized Identity Protocols",
+                            "description": "Decentralized identity protocols define standards and frameworks for implementing self-sovereign identity solutions. They establish interoperability and security principles for decentralized identity systems.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 88,
+                                    "topic": "Decentralized Identity Providers",
+                                    "description": "Decentralized identity providers offer services and solutions for managing self-sovereign identity on the blockchain. They enable users to create, verify, and control their digital identities.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 89,
+                                    "topic": "Decentralized Identity Use Cases",
+                                    "description": "Decentralized identity has applications in various sectors, including healthcare, finance, and government. It enables secure and efficient identity management for individuals and organizations.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 90,
+                                    "topic": "Identity Management Platforms",
+                                    "description": "Identity management platforms provide tools and services for implementing decentralized identity solutions. They offer features such as identity verification, authentication, and access control.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 91,
+                            "topic": "Privacy-Enhancing Technologies",
+                            "description": "Privacy-enhancing technologies protect user data and preserve anonymity in decentralized identity systems. They ensure confidentiality, integrity, and control over personal information in digital interactions.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 92,
+                                    "topic": "Zero-Knowledge Proofs",
+                                    "description": "Zero-knowledge proofs allow parties to prove the validity of a statement without revealing the underlying information. They enable privacy-preserving transactions and identity verification on the blockchain.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 93,
+                                    "topic": "Homomorphic Encryption",
+                                    "description": "Homomorphic encryption enables computations on encrypted data without decrypting it, preserving privacy and security. It allows for secure data processing and analysis in decentralized identity systems.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 94,
+                                    "topic": "Data Minimization Techniques",
+                                    "description": "Data minimization techniques reduce the collection and storage of personal data to the minimum necessary for a specific purpose. They help limit privacy risks and protect user information in decentralized identity systems.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 95,
+            "topic": "Tokenization of assets",
+            "description": "Tokenization of assets refers to the process of converting real-world assets into digital tokens on a blockchain. This enables fractional ownership, increased liquidity, and streamlined transfer of ownership.",
+            "depth": 0,
+            "children": [
+                {
+                    "id": 96,
+                    "topic": "Smart contracts",
+                    "description": "Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They enable automated transactions and enforce agreements without the need for intermediaries.",
+                    "depth": 1,
+                    "children": [
+                        {
+                            "id": 97,
+                            "topic": "Decentralized finance (DeFi)",
+                            "description": "Decentralized finance (DeFi) refers to financial services built on blockchain technology that do not rely on traditional intermediaries. DeFi applications enable users to access a range of financial services in a decentralized manner.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 98,
+                                    "topic": "Lending protocols",
+                                    "description": "Lending protocols are platforms that allow users to borrow or lend digital assets without the need for traditional financial institutions. Users can earn interest by providing liquidity to the platform.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 99,
+                                    "topic": "Automated market makers (AMMs)",
+                                    "description": "Automated market makers (AMMs) are algorithms that enable decentralized token exchanges by using liquidity pools rather than order books. They facilitate trading and provide liquidity for various tokens.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 100,
+                                    "topic": "Yield farming",
+                                    "description": "Yield farming is the process of earning rewards by providing liquidity to DeFi protocols. Users can stake their assets in liquidity pools and earn additional tokens as rewards.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 101,
+                            "topic": "Non-fungible tokens (NFTs)",
+                            "description": "Non-fungible tokens (NFTs) are unique digital assets that represent ownership of a specific item or piece of content. NFTs have gained popularity in art, gaming, and collectibles.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 102,
+                                    "topic": "Digital art",
+                                    "description": "Digital art refers to artwork that is created and stored digitally. NFTs have revolutionized the art industry by providing a way to authenticate and sell digital artworks as unique tokens.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 103,
+                                    "topic": "Gaming assets",
+                                    "description": "Gaming assets are in-game items or characters that can be tokenized as NFTs. This enables players to truly own their digital assets and trade them in a secure and transparent manner.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 104,
+                                    "topic": "Collectibles",
+                                    "description": "Collectibles such as trading cards, rare items, and memorabilia can be tokenized as NFTs, allowing collectors to prove ownership and trade these items on blockchain platforms.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 105,
+                            "topic": "Decentralized autonomous organizations (DAOs)",
+                            "description": "Decentralized autonomous organizations (DAOs) are organizations governed by code and run by their members. DAOs use blockchain technology to enable transparent decision-making and governance processes.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 106,
+                                    "topic": "Voting mechanisms",
+                                    "description": "Voting mechanisms in DAOs allow members to participate in decision-making processes by casting votes on proposals. This ensures democratic governance and community involvement.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 107,
+                                    "topic": "Token-based governance",
+                                    "description": "Token-based governance in DAOs gives voting power to token holders based on the number of tokens they own. This incentivizes participation and aligns the interests of members with the success of the organization.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 108,
+                                    "topic": "Funding proposals",
+                                    "description": "DAOs can fund projects and initiatives through funding proposals submitted by members. This allows the community to collectively decide on investments and allocations of resources.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 109,
+                    "topic": "Security tokens",
+                    "description": "Security tokens represent ownership in real-world assets such as equity, real estate, or commodities. These tokens are subject to regulatory requirements and offer investors fractional ownership with legal rights.",
+                    "depth": 1,
+                    "children": [
+                        {
+                            "id": 110,
+                            "topic": "Regulatory compliance",
+                            "description": "Regulatory compliance is crucial for security tokens to ensure that issuers and investors comply with relevant laws and regulations. Compliance measures may include KYC\/AML checks and investor accreditation.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 111,
+                                    "topic": "KYC\/AML checks",
+                                    "description": "Know Your Customer (KYC) and Anti-Money Laundering (AML) checks are procedures to verify the identity of token holders and prevent illicit activities. These checks are essential for regulatory compliance.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 112,
+                                    "topic": "Investor accreditation",
+                                    "description": "Investor accreditation requires investors in security tokens to meet certain financial criteria or qualifications. Accredited investors are deemed to have the knowledge and experience to assess investment risks.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 113,
+                                    "topic": "Compliance reporting",
+                                    "description": "Compliance reporting involves regular reporting to regulatory authorities to demonstrate adherence to legal requirements. Issuers of security tokens must provide transparency and accountability to regulators.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 114,
+                            "topic": "Fractional ownership",
+                            "description": "Security tokens enable fractional ownership of high-value assets, allowing investors to own a portion of real estate, art, or other assets. Fractional ownership provides liquidity and diversification opportunities.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 115,
+                                    "topic": "Real estate",
+                                    "description": "Fractional ownership of real estate through security tokens allows investors to own a share of properties without the need for large capital investments. This opens up real estate investment opportunities to a wider range of investors.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 116,
+                                    "topic": "Art and collectibles",
+                                    "description": "Security tokens can represent ownership of art pieces and collectibles, allowing investors to own a fraction of valuable artworks. This democratizes access to art investments and enhances liquidity in the art market.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 117,
+                                    "topic": "Venture capital",
+                                    "description": "Fractional ownership of venture capital investments through security tokens enables investors to access early-stage opportunities and diversify their investment portfolios. This provides more liquidity and flexibility in the venture capital space.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 118,
+                            "topic": "Secondary market trading",
+                            "description": "Security tokens can be traded on secondary markets, providing liquidity to investors who wish to buy or sell their tokenized assets. Secondary market trading allows for price discovery and increased market efficiency.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 119,
+                                    "topic": "Token exchanges",
+                                    "description": "Token exchanges facilitate the trading of security tokens between buyers and sellers. These platforms provide liquidity, price transparency, and a regulated environment for trading tokenized assets.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 120,
+                                    "topic": "Liquidity providers",
+                                    "description": "Liquidity providers play a crucial role in maintaining liquidity on token exchanges by offering tokens for trading. They earn fees for providing liquidity and contribute to market efficiency.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 121,
+                                    "topic": "Market regulations",
+                                    "description": "Market regulations govern the trading of security tokens on secondary markets to protect investors and ensure fair and transparent trading practices. Regulatory compliance is key to maintaining market integrity.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 122,
+                    "topic": "Blockchain interoperability",
+                    "description": "Blockchain interoperability refers to the ability of different blockchain networks to communicate and share data with each other. Interoperability solutions aim to overcome the limitations of isolated blockchains and enable seamless interaction.",
+                    "depth": 1,
+                    "children": [
+                        {
+                            "id": 123,
+                            "topic": "Cross-chain communication",
+                            "description": "Cross-chain communication protocols enable the transfer of assets and information between different blockchains. These protocols facilitate interoperability and allow users to access services across multiple blockchain networks.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 124,
+                                    "topic": "Atomic swaps",
+                                    "description": "Atomic swaps are peer-to-peer trades between users on different blockchains without the need for intermediaries. This trustless exchange method ensures secure and instant transactions across disparate networks.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 125,
+                                    "topic": "Interledger protocols",
+                                    "description": "Interledger protocols provide a standardized framework for routing payments across different blockchains and payment networks. These protocols enable seamless interoperability and cross-chain transactions.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 126,
+                                    "topic": "Bridge protocols",
+                                    "description": "Bridge protocols establish connections between separate blockchains to facilitate the transfer of assets and data. These protocols bridge the gap between different networks and enhance interoperability.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 127,
+                            "topic": "Scalability solutions",
+                            "description": "Scalability solutions address the challenge of processing a high volume of transactions on blockchain networks. These solutions aim to improve throughput, reduce latency, and enhance the overall performance of decentralized applications.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 128,
+                                    "topic": "Layer 2 scaling",
+                                    "description": "Layer 2 scaling solutions build additional layers on top of existing blockchains to offload transaction processing and improve scalability. These solutions enhance network capacity without compromising security.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 129,
+                                    "topic": "Sharding",
+                                    "description": "Sharding divides the blockchain network into smaller shards, each capable of processing transactions independently. This parallel processing approach increases scalability by distributing the workload across multiple shards.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 130,
+                                    "topic": "State channels",
+                                    "description": "State channels allow users to conduct off-chain transactions that are settled on the blockchain only when necessary. This reduces the burden on the main chain and improves transaction speed and cost efficiency.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 131,
+                            "topic": "Oracles",
+                            "description": "Oracles are trusted data sources that provide external information to smart contracts on the blockchain. Oracles enable blockchain applications to interact with real-world data and trigger automated actions based on external events.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 132,
+                                    "topic": "Price oracles",
+                                    "description": "Price oracles supply real-time price data to decentralized applications for accurate pricing and valuation of assets. Price oracles are essential for DeFi platforms, decentralized exchanges, and prediction markets.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 133,
+                                    "topic": "Event oracles",
+                                    "description": "Event oracles deliver external event data to smart contracts, triggering predefined actions based on specific conditions. Event oracles enable blockchain applications to respond to real-world events in a decentralized manner.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 134,
+                                    "topic": "Randomness oracles",
+                                    "description": "Randomness oracles provide verifiable randomness to blockchain applications for generating unpredictable outcomes in games, lotteries, and other applications. Randomness oracles ensure fairness and transparency in decentralized systems.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
                         }
                     ]
                 }

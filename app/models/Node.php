@@ -14,6 +14,8 @@ class Node extends Model
     ];
 
     protected $fillable = [
+        'slug',
+        'topic_vector',
         'topic',
         'description',
         'embedding',

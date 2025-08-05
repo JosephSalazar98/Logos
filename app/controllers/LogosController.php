@@ -4,7 +4,10 @@ namespace App\Controllers;
 
 use Leaf\Controller;
 use App\Models\Tweet;
+use App\Helpers\Logger;
+use App\Models\StrangeIdea;
 use App\Services\Trees\FastTreeService;
+use App\Services\Trees\StrangeIdeaService;
 use App\Services\Logos\ReplyComposerService;
 use App\Services\Logos\LogosResponderService;
 use App\Services\Twitter\TwitterOAuthService;
@@ -18,6 +21,62 @@ class LogosController extends Controller
         $result = $logos->findAndReplyFromRootNode();
         response()->json($result);
     }
+
+    public function respondCronManualTopicAndToID()
+    {
+        if (request()->get('key') !== _env('LOGOS_CRON_KEY')) {
+            return response()->json(['error' => 'Unauthorized'], 403);
+        }
+
+        $tweetId = request()->get('tweet_id');
+        $baseTopic = request()->get('base_topic');
+        $originalText = request()->get('tweet_text');
+
+        if (!$tweetId || !$baseTopic || !$originalText) {
+            return response()->json(['error' => 'Missing tweet_id, base_topic or tweet_text'], 422);
+        }
+
+        try {
+            $root = FastTreeService::generateTreeForTopic($baseTopic);
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Tree generation failed', 'exception' => $e->getMessage()], 500);
+        }
+
+        $idea = StrangeIdeaService::generateFromRootAndTweet($root, $originalText);
+
+
+        $ideaText = $idea['quote'] ?? '[error generating idea]';
+
+
+
+        $replyText = (new ReplyComposerService())->generateReplyWithIdea($ideaText, $originalText);
+
+
+        try {
+            $oauth = new TwitterOAuthService();
+            $response = $oauth->postReplyToTweet($replyText, $tweetId);
+            $replyTweetId = $response['data']['id'] ?? null;
+        } catch (\Throwable $e) {
+            return response()->json([
+                'error'     => 'Failed to post tweet',
+                'exception' => $e->getMessage(),
+            ], 500);
+        }
+
+        return response()->json([
+            'tweet_id'        => $tweetId,
+            'tweet_text'      => $originalText,
+            'verdict'         => 'Yes',
+            'base_topic'      => $baseTopic,
+            'generated_reply' => $replyText,
+            'tree_root_id'    => $root->id,
+            'reply_tweet_id'  => $replyTweetId,
+            'status'          => 'posted',
+        ]);
+    }
+
+
+
 
     public function respondCron()
     {

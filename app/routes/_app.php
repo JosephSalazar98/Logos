@@ -60,6 +60,7 @@ app()->get('/api/txt/{id}', 'TreeController@generateTxt');
 app()->get('/logos/respondcron', 'LogosController@respondCron');
 app()->post('/logos/respondtweet', 'LogosController@respondTweet');
 app()->get('/logos/test', 'LogosController@postSimpleTweet');
+app()->post('/logos/manual', 'LogosController@respondCronManualTopicAndToID');
 
 /**
  * ────────────────────────────────────────────────────────────────
@@ -113,6 +114,10 @@ app()->post('/tweets/import',   'TweetController@import');
 app()->post('/tree/import', 'TreeController@import');
 app()->get('/tree/bridges/{id}', 'TreeController@generateBridges');
 
+app()->get('/root', 'TreeController@createRootNode');
+app()->post('/treetest', 'TreeController@test');
+
+
 /**
  * ────────────────────────────────────────────────────────────────
  *  DEBUG / TESTING
@@ -126,3 +131,6 @@ app()->get('/try', function () {
         'ACCESS_SECRET'   => _env('ACCESS_TOKEN_SECRET'),
     ]);
 });
+
+
+//INITIAL

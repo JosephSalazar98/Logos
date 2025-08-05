@@ -2,6 +2,13 @@ columns:
   topic: text
   description: text
   embedding: json
+  slug:
+    type: string
+    unique: true
+    nullable: true
+  topic_vector:
+    type: text
+    nullable: true
   parent_id:
     type: integer
     nullable: true
@@ -25,3 +32,15 @@ columns:
     nullable: true
 
 timestamps: true
+
+seeds:
+  count: 1
+  data:
+    topic: "Logos"
+    description: "The center of all knowledge"
+    embedding: "[]"
+    slug: "_root"
+    topic_vector: "[]"
+    parent_id: null
+    depth: 0
+    origin_id: null

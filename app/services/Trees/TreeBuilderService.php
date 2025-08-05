@@ -24,11 +24,6 @@ class TreeBuilderService
         ]);
     }
 
-    protected static function log($data)
-    {
-        $entry = '[' . date('Y-m-d H:i:s') . '] ' . print_r($data, true) . PHP_EOL;
-        file_put_contents(__DIR__ . '/../myshits/payments.log', $entry, FILE_APPEND);
-    }
 
     public static function expand(Node $node, int $maxDepth): void
     {
@@ -43,7 +38,6 @@ class TreeBuilderService
 
         $blacklist = implode(' | ', array_map(fn($t) => '"' . $t . '"', array_slice($usedTopics, 0, 50)));
 
-        self::log($blacklist);
 
         $userPrompt = <<<EOT
 Given the topic "$node->topic", generate exactly 3, subtopic titles related to the topic from a different academic field. 

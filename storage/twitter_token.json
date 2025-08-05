@@ -1,7 +1,1 @@
-{
-    "token_type": "bearer",
-    "expires_in": 7200,
-    "access_token": "Qm5INjdaWnpkZkJHSEd5c3NvWlVvR3dGMm9aVG8xY21RV0hZZnQ2bm5TMFdQOjE3NTQyNzg4MjgzNjY6MToxOmF0OjE",
-    "scope": "tweet.write users.read tweet.read offline.access",
-    "refresh_token": "LXJza09sQjg0OXpXUTFUUjNQaXRuNjR4Y1QxdmRrTGIybUZvbHRvemZhZUZ3OjE3NTQyNzg4MjgzNjY6MTowOnJ0OjE"
-}
+{"token_type":"bearer","expires_in":7200,"access_token":"MU9ZVTlTZUs5VFU2Q0VQUm52YUdaa1BzVl9NOGg2eXA0RnhkOVRQWGNLWlpHOjE3NTQzNDQ0MjIwODI6MTowOmF0OjE","scope":"tweet.write users.read tweet.read offline.access","refresh_token":"bkNaYWZvV3lZZTZaNUtJRHZEOThKR0Fycm4wa29FZ0gyYUhQQzNHbmpZYU9yOjE3NTQzNDQ0MjIwODI6MToxOnJ0OjE"}

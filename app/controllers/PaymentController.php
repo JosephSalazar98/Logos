@@ -8,11 +8,7 @@ use GuzzleHttp\Client;
 
 class PaymentController extends Controller
 {
-    protected function log($data)
-    {
-        $entry = '[' . date('Y-m-d H:i:s') . '] ' . print_r($data, true) . PHP_EOL;
-        file_put_contents(__DIR__ . '/../myshits/payments.log', $entry, FILE_APPEND);
-    }
+
 
     public function confirm()
     {

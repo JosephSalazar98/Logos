@@ -21,6 +21,10 @@ app()->get('/', 'DashboardController@index');
 app()->get('/whitepaper', fn() => response()->render('pages.whitepaper'));
 app()->get('/terminal', 'TerminalController@index');
 
+app()->get('/topics/{slug}', 'IdeaController@showTopic');
+app()->get('/brain', 'BrainController@index');
+
+
 /**
  * ────────────────────────────────────────────────────────────────
  *  AUTH & WALLET

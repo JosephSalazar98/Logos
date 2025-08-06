@@ -28,21 +28,28 @@ class DashboardController extends Controller
         ));
     }
 
-    private function getLastRootNode()
+    private function getGenesisId()
     {
-        return Node::whereNull('parent_id')->latest()->first();
+        return Node::where('slug', '_root')->value('id');
     }
 
-    private function getLatestStrangeIdeaFromRoot()
+    private function getLastRootNode()
     {
-        return StrangeIdea::whereHas('node', fn($q) => $q->whereNull('parent_id'))
+        return Node::where('parent_id', $this->getGenesisId())
             ->latest()
             ->first();
     }
 
+    private function getLatestStrangeIdeaFromRoot()
+    {
+        return StrangeIdea::whereHas('node', function ($q) {
+            $q->where('parent_id', $this->getGenesisId());
+        })->latest()->first();
+    }
+
     private function getRecentRootNodes()
     {
-        return Node::whereNull('parent_id')
+        return Node::where('parent_id', $this->getGenesisId())
             ->whereNotNull('file_path')
             ->latest()
             ->take(5)
@@ -51,6 +58,8 @@ class DashboardController extends Controller
 
     private function countSavedFiles()
     {
-        return Node::whereNull('parent_id')->whereNotNull('file_path')->count();
+        return Node::where('parent_id', $this->getGenesisId())
+            ->whereNotNull('file_path')
+            ->count();
     }
 }

@@ -10,27 +10,13 @@ class IdeaController extends Controller
 {
     public function index()
     {
-        $topics = Node::whereNull('parent_id')
+        $genesisId = Node::where('slug', '_root')->value('id');
+
+        $topics = Node::where('parent_id', $genesisId)
             ->orderBy('created_at', 'desc')
-            ->paginate(1, ['*'], 'topics_page')
-            ->withPath('/ideas');
+            ->paginate(12);
 
-        $bridges = SemanticBridge::with(['source', 'target'])
-            ->orderBy('cosine_score', 'desc')
-            ->paginate(5, ['*'], 'bridges_page')
-            ->withPath('/ideas');
-
-        $strangeIdeas = StrangeIdea::with('node')
-            ->orderBy('created_at', 'desc')
-            ->paginate(5, ['*'], 'ideas_page')
-            ->withPath('/ideas');
-
-
-        response()->render('pages.idea', [
-            'topics' => $topics,
-            'bridges' => $bridges,
-            'strangeIdeas' => $strangeIdeas
-        ]);
+        response()->render('pages.idea', ['topics' => $topics]);
     }
 
     public function topics()
@@ -49,5 +35,31 @@ class IdeaController extends Controller
     {
         $strangeIdeas = StrangeIdea::with('node')->latest()->paginate(4);
         return response()->view('partials.tab-ideas', ['strangeIdeas' => $strangeIdeas]);
+    }
+
+    public function showTopic($slug)
+    {
+        $topic = Node::where('slug', $slug)
+            ->with('children')
+            ->firstOrFail();
+
+        $tree = [];
+
+        $path = dirname(__DIR__, 2) . '/public/trees/' . $topic->file_path;
+
+        if (file_exists($path)) {
+            $json = file_get_contents($path);
+            $tree = json_decode($json, true); // <- lo pasamos como array
+        }
+
+        // puedes seguir incluyendo los bridges si quieres
+        $bridges = SemanticBridge::with(['source', 'target'])
+            ->where('source_node_id', $topic->id)
+            ->orWhere('target_node_id', $topic->id)
+            ->orderBy('cosine_score', 'desc')
+            ->take(5)
+            ->get();
+
+        return response()->view('pages.topic', compact('topic', 'bridges', 'tree'));
     }
 }

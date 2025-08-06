@@ -5,6 +5,7 @@ namespace App\Controllers;
 use Leaf\Controller;
 use App\Models\Tweet;
 use App\Helpers\Logger;
+use App\Helpers\TextSanitizer;
 use App\Models\StrangeIdea;
 use App\Services\Trees\FastTreeService;
 use App\Services\Trees\StrangeIdeaService;
@@ -50,7 +51,7 @@ class LogosController extends Controller
 
 
         $replyText = (new ReplyComposerService())->generateReplyWithIdea($ideaText, $originalText);
-
+        $replyText = TextSanitizer::cleanGptReply($replyText);
 
         try {
             $oauth = new TwitterOAuthService();

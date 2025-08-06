@@ -110,6 +110,22 @@ class TreeController extends Controller
         ]);
     } */
 
+    public function exportAll()
+    {
+        $roots = Node::whereNotNull('slug')
+            ->get();
+
+        foreach ($roots as $root) {
+            FastTreeService::generateTxt($root->id);
+        }
+
+        return response()->json([
+            'exported' => $roots->count(),
+            'status' => 'ok',
+        ]);
+    }
+
+
     public function generateTxt(int $rootId)
     {
         $root = Node::find($rootId);

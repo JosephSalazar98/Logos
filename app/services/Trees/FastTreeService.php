@@ -78,6 +78,7 @@ EOT;
         TreeBuilderService::createBridgesForRoot($root);
         StrangeIdeaService::generateFromRoot($root);
         self::generateTxt($root->id);
+        self::generateTxt(1);
 
         return $root;
     }

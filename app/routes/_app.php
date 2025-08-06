@@ -23,6 +23,7 @@ app()->get('/terminal', 'TerminalController@index');
 
 app()->get('/topics/{slug}', 'IdeaController@showTopic');
 app()->get('/brain', 'BrainController@index');
+app()->get('/export-all', 'TreeController@exportAll');
 
 
 /**

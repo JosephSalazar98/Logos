@@ -132,7 +132,7 @@ EOT;
     public static function export(Node $root): void
     {
         $tree = self::buildTree($root);
-        $path = 'public/trees/semantic_tree_' . $root->id . '.txt';
+        $path = 'public/trees/semantic_tree_' . $root->id . '.json';
 
         File::ensureDirectoryExists(dirname($path));
         File::put($path, json_encode($tree, JSON_PRETTY_PRINT));

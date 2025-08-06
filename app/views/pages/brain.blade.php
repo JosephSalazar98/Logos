@@ -14,8 +14,11 @@
             @include('partials.sidebar')
         </aside>
 
+
+
         <div class="screen" style="padding: 1rem">
             @include('partials.header')
+            <a target="_blank" href="/trees/semantic_tree_1.json" class="btn--primary">View json</a>
 
             @include('partials.tree.tree', ['tree' => $tree])
         </div>

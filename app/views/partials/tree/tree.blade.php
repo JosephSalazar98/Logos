@@ -12,6 +12,8 @@
         height: 100%;
         background: repeating-conic-gradient(#0e0e0e 0% 25%, #101010 0% 50%) 50% / 80px 80px;
         cursor: grab;
+        border: 1px solid rgba(99, 102, 241, 0.5);
+        border-radius: 5px
     }
 
     #tree:active {

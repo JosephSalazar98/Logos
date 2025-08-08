@@ -6,34 +6,34 @@
     "children": [
         {
             "id": 2,
-            "topic": "AI Democratization",
-            "description": "The push for real-world utility and mass accessibility\/affordability of AI models like GPT-5 to benefit a billion+ people.",
+            "topic": "Americans and the 2nd amendment",
+            "description": "Mocking the obsession with guns in the U.S.",
             "depth": 0,
             "children": [
                 {
                     "id": 3,
-                    "topic": "GPT-5 Advancements",
-                    "description": "GPT-5 being hailed as the smartest model developed, surpassing previous versions like GPT-4o.",
+                    "topic": "Obsession with guns",
+                    "description": "Highlighting the absurdity of having more guns than people",
                     "depth": 1,
                     "children": [
                         {
                             "id": 4,
-                            "topic": "Future Model Development",
-                            "description": "Potential for even smarter models beyond GPT-5 in the future to be released.",
+                            "topic": "Gun ownership statistics",
+                            "description": "Pointing out the excessive number of guns per capita in the U.S.",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 5,
-                            "topic": "Global Impact",
-                            "description": "Highlighting the potential benefits of GPT-5 for over a billion people worldwide.",
+                            "topic": "Triggering culture",
+                            "description": "Exposing the dangerous glorification of guns in American society",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 6,
-                            "topic": "Accessibility",
-                            "description": "Emphasis on making AI models like GPT-5 accessible and affordable to a wider audience.",
+                            "topic": "Freedom illusion",
+                            "description": "Questioning the twisted notion of freedom tied to gun ownership",
                             "depth": 2,
                             "children": []
                         }
@@ -41,28 +41,28 @@
                 },
                 {
                     "id": 7,
-                    "topic": "Mass Adoption",
-                    "description": "The aim to have GPT-5 widely adopted and used by people globally, surpassing previous models like GPT-4o.",
+                    "topic": "International comparison",
+                    "description": "Highlighting the extreme difference in gun ownership between the U.S. and other countries",
                     "depth": 1,
                     "children": [
                         {
                             "id": 8,
-                            "topic": "Global Reach",
-                            "description": "Targeting a global audience of users who have not experienced models like GPT-4o before.",
+                            "topic": "Yemen comparison",
+                            "description": "Contrasting the U.S. gun culture with countries like Yemen",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 9,
-                            "topic": "User Benefits",
-                            "description": "Focus on the benefits that a billion+ people can derive from using advanced AI models like GPT-5.",
+                            "topic": "Canada and Serbia comparison",
+                            "description": "Pointing out the stark contrast in gun ownership rates with Canada and Serbia",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 10,
-                            "topic": "Market Disruption",
-                            "description": "Potential to disrupt the market by introducing a highly advanced and accessible AI model like GPT-5.",
+                            "topic": "Global perspective",
+                            "description": "Questioning the exceptionalism of American gun culture on a global scale",
                             "depth": 2,
                             "children": []
                         }
@@ -70,28 +70,28 @@
                 },
                 {
                     "id": 11,
-                    "topic": "Global Impact",
-                    "description": "The significant impact that democratizing AI models like GPT-5 can have on a global scale.",
+                    "topic": "Cultural impact",
+                    "description": "Exploring the dangerous consequences of such a gun-obsessed society",
                     "depth": 1,
                     "children": [
                         {
                             "id": 12,
-                            "topic": "Societal Benefits",
-                            "description": "Exploring the broader societal benefits that can arise from the widespread use of advanced AI models.",
+                            "topic": "Violence correlation",
+                            "description": "Drawing attention to the correlation between gun ownership and violence",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 13,
-                            "topic": "Economic Implications",
-                            "description": "Considering the economic implications of making advanced AI models accessible to a billion+ people.",
+                            "topic": "Political influence",
+                            "description": "Highlighting the political power wielded by pro-gun groups in the U.S.",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 14,
-                            "topic": "Technological Progress",
-                            "description": "Contributing to the advancement of technology by democratizing AI models and increasing accessibility.",
+                            "topic": "Psychological implications",
+                            "description": "Discussing the psychological impact of living in a society saturated with guns",
                             "depth": 2,
                             "children": []
                         }
@@ -101,979 +101,94 @@
         },
         {
             "id": 15,
-            "topic": "AI taking over professions",
-            "description": "The advancement of artificial intelligence is leading to the automation of various professions, including the field of medicine, as highlighted by Elon Musk's statement. This trend raises questions about the future role of AI in different industries.",
+            "topic": "Bitcoin as a sovereign asset beyond geopolitical control",
+            "description": "Bitcoin's sovereignty is a mirage in the desert of delusion.",
             "depth": 0,
             "children": [
                 {
                     "id": 16,
-                    "topic": "AI surpassing doctors",
-                    "description": "Elon Musk suggests that AI has already surpassed the capabilities of most doctors and is poised to further excel in diagnosing and treating medical conditions. This challenges the traditional role of healthcare professionals.",
-                    "depth": 1,
-                    "children": []
-                },
-                {
-                    "id": 17,
-                    "topic": "AI impact on jobs",
-                    "description": "Elon Musk acknowledges the broader impact of AI on various jobs, including his own. As AI continues to advance, it raises concerns about the displacement of human workers and the need for reskilling in the workforce.",
-                    "depth": 1,
-                    "children": []
-                },
-                {
-                    "id": 18,
-                    "topic": "Future of AI",
-                    "description": "Elon Musk's statement hints at the ongoing evolution of AI technology and its potential to outperform human capabilities in a wide range of tasks. This prompts discussions on the ethical implications and societal consequences of AI advancement.",
-                    "depth": 1,
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": 19,
-            "topic": "Population Collapse",
-            "description": "The decline in population numbers, particularly in Japan, leading to potential cultural and ethnic risks.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 20,
-                    "topic": "Misconceptions about Overpopulation",
-                    "description": "The belief in overpopulation as a global issue, which is now being challenged by the reality of population decline.",
+                    "topic": "Michael Saylor's defiance of US tariffs",
+                    "description": "Saylor's bravado is as substantial as a hologram in a hurricane.",
                     "depth": 1,
                     "children": [
                         {
+                            "id": 17,
+                            "topic": "Cyberspace as a tariff-free haven",
+                            "description": "In Saylor's fantasy, Bitcoin is the untouchable unicorn prancing in the digital meadow.",
+                            "depth": 2,
+                            "children": [
+                                {
+                                    "id": 18,
+                                    "topic": "Reality check on Bitcoin's vulnerability",
+                                    "description": "Bitcoin's immunity to tariffs is as real as a cardboard castle in a storm.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 19,
+                                    "topic": "Geopolitical chess with Bitcoin as a pawn",
+                                    "description": "Saylor's rhetoric paints Bitcoin as a king, but in the game of nations, it's just a disposable pawn.",
+                                    "depth": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 20,
+                                    "topic": "US power play beyond cyberspace",
+                                    "description": "Saylor's bluster ignores the long reach of US influence, even in the digital realm.",
+                                    "depth": 3,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
                             "id": 21,
-                            "topic": "Narrative Influence",
-                            "description": "The impact of societal narratives on shaping beliefs about overpopulation and its consequences.",
+                            "topic": "Saylor's techno-utopianism",
+                            "description": "Saylor's techno-utopianism is a fragile bubble waiting to burst in the harsh winds of reality.",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 22,
-                            "topic": "Public Perception",
-                            "description": "How public perception can be swayed by misinformation or incomplete information regarding population trends.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 23,
-                            "topic": "Reversing Misconceptions",
-                            "description": "The need to correct misconceptions about overpopulation and educate the public on the reality of population decline.",
+                            "topic": "Bitcoin's illusory independence",
+                            "description": "Saylor's proclamation of Bitcoin's independence is a whisper in the hurricane of global finance.",
                             "depth": 2,
                             "children": []
                         }
                     ]
                 },
                 {
-                    "id": 24,
-                    "topic": "Cultural Preservation",
-                    "description": "The importance of preserving unique cultures and ethnic groups that are at risk due to declining populations.",
+                    "id": 23,
+                    "topic": "Bitcoin's place in the geopolitical power play",
+                    "description": "Bitcoin may think it's a player, but in the grand game of geopolitics, it's just a pawn on a crowded board.",
                     "depth": 1,
                     "children": [
                         {
+                            "id": 24,
+                            "topic": "US tariffs as a warning shot",
+                            "description": "US tariffs on gold may be just the opening salvo in a larger battle to tame the crypto beast.",
+                            "depth": 2,
+                            "children": []
+                        },
+                        {
                             "id": 25,
-                            "topic": "Japanese Culture",
-                            "description": "The significance of Japanese culture and the potential threat it faces due to population decline.",
+                            "topic": "Bitcoin's vulnerability to regulatory crackdowns",
+                            "description": "Bitcoin's bravado crumbles in the face of regulatory crackdowns that can strangle it in the crib.",
                             "depth": 2,
                             "children": []
                         },
                         {
                             "id": 26,
-                            "topic": "Ethnic Diversity",
-                            "description": "The value of maintaining ethnic diversity and the risks of losing entire ethnic groups.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 27,
-                            "topic": "Cultural Heritage",
-                            "description": "The need to protect and preserve cultural heritage in the face of population collapse.",
+                            "topic": "Geopolitical powers laughing at Bitcoin's naivety",
+                            "description": "In the corridors of power, Bitcoin's defiance is met with mocking laughter at its naivety.",
                             "depth": 2,
                             "children": []
                         }
                     ]
                 },
                 {
-                    "id": 28,
-                    "topic": "Role of AI",
-                    "description": "The potential of artificial intelligence to address population decline and its implications for the future.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 29,
-                            "topic": "Population Management",
-                            "description": "How AI can be used for population management strategies to counteract decline.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 30,
-                            "topic": "Technological Solutions",
-                            "description": "The role of technology, specifically AI, in finding solutions to demographic challenges.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 31,
-                            "topic": "Ethical Considerations",
-                            "description": "The ethical implications of relying on AI for addressing population decline and cultural preservation.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 32,
-            "topic": "Human Connection via Eye Contact",
-            "description": "Eye contact plays a crucial role in human interaction, allowing our brains to decipher emotions and build trust. When two people lock eyes, their emotional states synchronize, leading to a deeper connection.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 33,
-                    "topic": "Emotional Communication",
-                    "description": "Eye contact enables the transmission of emotions between individuals, as our brains can interpret subtle eye movements to understand how someone is feeling.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 34,
-                            "topic": "Trust Building",
-                            "description": "Through eye contact, we can gauge whether we can trust someone based on their eye movements and emotional cues, influencing our perception of their sincerity.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 35,
-                            "topic": "Emotional Synchronization",
-                            "description": "When two people maintain eye contact, their brains synchronize emotional states, leading to a shared connection and understanding of each other's feelings.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 36,
-                            "topic": "Nonverbal Communication",
-                            "description": "Eye contact serves as a powerful form of nonverbal communication, allowing individuals to convey emotions and intentions without speaking.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 37,
-                    "topic": "Mutual Understanding",
-                    "description": "Eye contact facilitates mutual understanding between individuals, as both parties can assess each other's emotions and intentions through shared gaze.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 38,
-                            "topic": "Empathy",
-                            "description": "Maintaining eye contact fosters empathy by enabling individuals to connect emotionally and understand each other's feelings, leading to a deeper sense of compassion.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 39,
-                            "topic": "Mind Reading",
-                            "description": "Our ability to interpret eye movements and emotional cues allows us to 'read' the minds of others, gaining insight into their thoughts and feelings.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 40,
-                            "topic": "Reciprocal Interaction",
-                            "description": "During eye contact, both individuals engage in reciprocal interaction, influencing each other's emotional states and fostering a shared connection.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 41,
-                    "topic": "Neurological Impact",
-                    "description": "Eye contact triggers neurological responses in the brain, leading to emotional synchronization and enhanced social bonding between individuals.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 42,
-                            "topic": "Mirror Neurons",
-                            "description": "Mirror neurons in the brain are activated during eye contact, allowing individuals to mirror each other's emotional states and create a sense of shared experience.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 43,
-                            "topic": "Social Connection",
-                            "description": "Eye contact promotes social connection by stimulating neural pathways associated with empathy, trust, and emotional bonding, enhancing interpersonal relationships.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 44,
-                            "topic": "Emotional Contagion",
-                            "description": "Through eye contact, individuals experience emotional contagion, where shared emotions and feelings are transferred between people, fostering a sense of unity.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 45,
-            "topic": "Overpopulation as Ideological Tool",
-            "description": "The belief that overpopulation is a significant issue used as a tool by some to discourage human reproduction and promote anti-human sentiments.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 46,
-                    "topic": "Anti-Human Sentiments",
-                    "description": "Feelings of hatred or disdain towards humanity as a whole, leading to a desire to limit human reproduction.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 47,
-                            "topic": "Impact on Society",
-                            "description": "The effects of anti-human sentiments on societal attitudes towards reproduction and population growth.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 48,
-                                    "topic": "Cultural Division",
-                                    "description": "The potential for anti-human sentiments to create division and conflict within societies regarding the value of human life and reproduction.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 49,
-                                    "topic": "Policy Implications",
-                                    "description": "How anti-human sentiments may influence policies related to reproduction, family planning, and population control.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 50,
-                                    "topic": "Psychological Impact",
-                                    "description": "The psychological effects on individuals and communities of being influenced by anti-human sentiments.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 51,
-                            "topic": "Global Spread",
-                            "description": "The dissemination of anti-human sentiments and ideologies beyond national borders, impacting populations worldwide.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 52,
-                                    "topic": "Cultural Exchange",
-                                    "description": "How anti-human sentiments may be spread through cultural exchange, media, and online platforms, influencing diverse populations globally.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 53,
-                                    "topic": "International Relations",
-                                    "description": "The implications of anti-human sentiments on diplomatic relations, cooperation, and conflict resolution among nations.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 54,
-                                    "topic": "Human Rights",
-                                    "description": "The potential violations of human rights that may occur as a result of anti-human ideologies and policies.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 55,
-                            "topic": "Counteracting Anti-Human Sentiments",
-                            "description": "Efforts and strategies to combat and resist the spread of anti-human sentiments and ideologies promoting limited human reproduction.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 56,
-                                    "topic": "Promoting Human Dignity",
-                                    "description": "Advocating for the inherent value and dignity of all human life as a response to anti-human sentiments.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 57,
-                                    "topic": "Educational Initiatives",
-                                    "description": "Implementing educational programs and campaigns to raise awareness about the dangers of anti-human ideologies and encourage positive attitudes towards reproduction.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 58,
-                                    "topic": "Policy Advocacy",
-                                    "description": "Engaging in advocacy efforts to shape policies that support human rights, reproductive freedom, and positive population growth.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 59,
-                    "topic": "Reproductive Rights",
-                    "description": "The rights of individuals to make decisions about their own reproduction, free from coercion or discrimination.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 60,
-                            "topic": "Family Planning",
-                            "description": "The importance of access to family planning services and resources to enable individuals to make informed choices about reproduction.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 61,
-                            "topic": "Gender Equality",
-                            "description": "The connection between reproductive rights and gender equality, ensuring that all individuals have equal opportunities to control their reproductive health.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 62,
-                            "topic": "Reproductive Health",
-                            "description": "The broader implications of reproductive rights on overall health and well-being, including access to healthcare services and information.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 63,
-                    "topic": "Nihilism and Overpopulation",
-                    "description": "The assertion that the concept of overpopulation is used as a pessimistic and nihilistic tool to discourage human reproduction and perpetuate negative beliefs about the future.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 64,
-                            "topic": "Technological Solutions",
-                            "description": "Exploring technological advancements and innovations as potential solutions to address concerns about overpopulation and sustainability.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 65,
-                            "topic": "Environmental Impact",
-                            "description": "Considering the environmental consequences of population growth and exploring sustainable practices to mitigate these effects.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 66,
-                            "topic": "Ethical Considerations",
-                            "description": "Examining the ethical implications of using overpopulation as a tool to promote anti-human sentiments and restrict reproductive rights.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 67,
-            "topic": "Bitcoin as a retirement investment",
-            "description": "The concept of using Bitcoin as a part of retirement savings and investment strategy, as highlighted in the tweet.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 68,
-                    "topic": "TRUMP's decision",
-                    "description": "The decision made by TRUMP to allow retirement accounts to save Bitcoin, which is considered significant news.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 69,
-                            "topic": "Regulatory implications",
-                            "description": "The potential impact of regulatory changes on retirement accounts being able to save Bitcoin, considering the evolving regulatory landscape.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 70,
-                                    "topic": "Compliance challenges",
-                                    "description": "The challenges that financial institutions and individuals may face in complying with regulations related to saving Bitcoin in retirement accounts.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 71,
-                                    "topic": "Market response",
-                                    "description": "How the market and investors are reacting to the news of retirement accounts being allowed to save Bitcoin, influencing market dynamics.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 72,
-                                    "topic": "Government oversight",
-                                    "description": "The role of government oversight in monitoring the inclusion of Bitcoin in retirement accounts, ensuring compliance and security.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 73,
-                            "topic": "Financial planning",
-                            "description": "The implications of including Bitcoin in retirement accounts on long-term financial planning and investment diversification.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 74,
-                                    "topic": "Risk management",
-                                    "description": "Strategies for managing the risks associated with incorporating Bitcoin into retirement savings, considering its volatility.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 75,
-                                    "topic": "Asset allocation",
-                                    "description": "The allocation of assets within retirement accounts to include Bitcoin, balancing risk and return objectives.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 76,
-                                    "topic": "Tax implications",
-                                    "description": "The tax considerations and implications of saving Bitcoin in retirement accounts, impacting overall financial planning.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 77,
-                            "topic": "Investor sentiment",
-                            "description": "How investors perceive the decision to allow retirement accounts to save Bitcoin, influencing their investment decisions and confidence.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 78,
-                                    "topic": "Market adoption",
-                                    "description": "The rate at which investors are adopting Bitcoin in their retirement accounts, reflecting changing investment trends.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 79,
-                                    "topic": "Educational initiatives",
-                                    "description": "Efforts to educate investors about the benefits and risks of saving Bitcoin in retirement accounts, shaping investor sentiment.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 80,
-                                    "topic": "Financial literacy",
-                                    "description": "The importance of financial literacy in understanding the implications of including Bitcoin in retirement savings, empowering investors.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 81,
-                    "topic": "Personal finance decisions",
-                    "description": "The impact of saving Bitcoin in retirement accounts on personal finance decisions and investment strategies.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 82,
-                            "topic": "Diversification benefits",
-                            "description": "The benefits of diversifying retirement savings by including Bitcoin, enhancing portfolio resilience and potential returns.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 83,
-                            "topic": "Long-term planning",
-                            "description": "The role of Bitcoin in long-term financial planning, considering its growth potential and risk profile for retirement savings.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 84,
-                            "topic": "Financial independence",
-                            "description": "The pursuit of financial independence through strategic investment decisions, including saving Bitcoin in retirement accounts.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 85,
-                    "topic": "Public opinion",
-                    "description": "The broader public opinion and discourse surrounding the decision to allow retirement accounts to save Bitcoin, reflecting societal attitudes.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 86,
-                            "topic": "Media coverage",
-                            "description": "The media's portrayal and coverage of the news about retirement accounts being allowed to save Bitcoin, shaping public perception.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 87,
-                            "topic": "Political commentary",
-                            "description": "Political commentary and analysis on TRUMP's decision regarding Bitcoin in retirement accounts, influencing public opinion.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 88,
-                            "topic": "Financial inclusion",
-                            "description": "The implications of enabling retirement accounts to save Bitcoin for financial inclusion and access to alternative investment options.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 89,
-            "topic": "Autonomy and self-definition",
-            "description": "The ability to make independent decisions and define oneself without being heavily influenced by external factors.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 90,
-                    "topic": "Individuality",
-                    "description": "The unique characteristics and qualities that distinguish a person from others.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 91,
-                            "topic": "Self-expression",
-                            "description": "The act of conveying one's thoughts, feelings, and identity through various forms such as art, fashion, or speech.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 92,
-                                    "topic": "Creativity",
-                                    "description": "The ability to generate new ideas, concepts, or solutions that are original and valuable.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 93,
-                                    "topic": "Authenticity",
-                                    "description": "The quality of being true to oneself and acting in alignment with one's values and beliefs.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 94,
-                                    "topic": "Freedom of expression",
-                                    "description": "The right to express one's opinions and ideas without fear of censorship or retaliation.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 95,
-                            "topic": "Personal identity",
-                            "description": "The distinct characteristics, beliefs, and values that define an individual's sense of self.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 96,
-                                    "topic": "Self-awareness",
-                                    "description": "The conscious knowledge and understanding of one's own character, emotions, and motivations.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 97,
-                                    "topic": "Self-acceptance",
-                                    "description": "The ability to embrace and be at peace with one's strengths and weaknesses.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 98,
-                                    "topic": "Self-discovery",
-                                    "description": "The process of exploring and uncovering aspects of oneself, leading to personal growth and development.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 99,
-                            "topic": "Non-conformity",
-                            "description": "The refusal to adhere to societal norms or expectations, choosing instead to follow one's own path.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 100,
-                                    "topic": "Rebellion",
-                                    "description": "The act of resisting authority or tradition in pursuit of personal freedom and autonomy.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 101,
-                                    "topic": "Innovation",
-                                    "description": "The introduction of new ideas, methods, or products that challenge existing norms and conventions.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 102,
-                                    "topic": "Self-reliance",
-                                    "description": "The ability to depend on oneself for guidance, support, and decision-making.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 103,
-                    "topic": "Influence and peer pressure",
-                    "description": "The impact of external opinions, societal norms, and peer expectations on an individual's self-perception and behavior.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 104,
-                            "topic": "Social validation",
-                            "description": "The seeking of approval and acceptance from others to feel validated and secure in one's beliefs and actions.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 105,
-                                    "topic": "Conformity",
-                                    "description": "The tendency to align one's attitudes, beliefs, and behaviors with those of a group to fit in and gain acceptance.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 106,
-                                    "topic": "Peer pressure",
-                                    "description": "The influence exerted by peers to conform to their standards, attitudes, or behaviors.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 107,
-                                    "topic": "Social comparison",
-                                    "description": "The process of evaluating oneself in relation to others to determine one's social standing and self-worth.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 108,
-                            "topic": "External validation",
-                            "description": "The reliance on external feedback and approval to validate one's self-worth and identity.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 109,
-                                    "topic": "Approval-seeking",
-                                    "description": "The constant search for praise, recognition, or validation from others to feel valued and accepted.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 110,
-                                    "topic": "People-pleasing",
-                                    "description": "The tendency to prioritize others' needs and expectations over one's own in order to gain approval and avoid conflict.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 111,
-                                    "topic": "Validation seeking behavior",
-                                    "description": "The habit of seeking external validation through actions, choices, or appearances to feel validated and worthy.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 112,
-                            "topic": "Social norms",
-                            "description": "The unwritten rules and expectations that guide behavior and attitudes within a society or group.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 113,
-                                    "topic": "Normative influence",
-                                    "description": "The pressure to conform to social norms and expectations to avoid rejection or disapproval.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 114,
-                                    "topic": "Deviance",
-                                    "description": "The act of going against societal norms and conventions, challenging the status quo.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 115,
-                                    "topic": "Cultural conformity",
-                                    "description": "The adherence to cultural norms, values, and practices to maintain harmony and belonging within a community.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 116,
-                    "topic": "Self-awareness and introspection",
-                    "description": "The process of examining one's thoughts, emotions, and behaviors to gain insight into one's true desires and values.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 117,
-                            "topic": "Mindfulness",
-                            "description": "The practice of being present and aware of one's thoughts, feelings, and surroundings without judgment.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 118,
-                                    "topic": "Present moment awareness",
-                                    "description": "The focus on the current moment and experiences without being distracted by past regrets or future worries.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 119,
-                                    "topic": "Non-judgmental observation",
-                                    "description": "The act of observing one's thoughts and emotions without labeling them as good or bad.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 120,
-                                    "topic": "Acceptance of the present",
-                                    "description": "The acknowledgment and acceptance of one's current thoughts, feelings, and experiences without resistance.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 121,
-                            "topic": "Self-reflection",
-                            "description": "The contemplation and analysis of one's thoughts, actions, and experiences to gain self-awareness and personal growth.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 122,
-                                    "topic": "Critical self-assessment",
-                                    "description": "The honest evaluation of one's strengths, weaknesses, and areas for improvement.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 123,
-                                    "topic": "Learning from mistakes",
-                                    "description": "The process of recognizing and understanding one's errors and using them as opportunities for growth and development.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 124,
-                                    "topic": "Goal setting",
-                                    "description": "The practice of defining specific objectives and targets to work towards personal and professional development.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "id": 125,
-                            "topic": "Emotional intelligence",
-                            "description": "The ability to recognize, understand, and manage one's own emotions as well as those of others.",
-                            "depth": 2,
-                            "children": [
-                                {
-                                    "id": 126,
-                                    "topic": "Self-regulation",
-                                    "description": "The capacity to control and manage one's emotions, impulses, and reactions in various situations.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 127,
-                                    "topic": "Empathy",
-                                    "description": "The ability to understand and share the feelings of others, showing compassion and support.",
-                                    "depth": 3,
-                                    "children": []
-                                },
-                                {
-                                    "id": 128,
-                                    "topic": "Social skills",
-                                    "description": "The aptitude for effective communication, conflict resolution, and relationship building with others.",
-                                    "depth": 3,
-                                    "children": []
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 129,
-            "topic": "Cadillac Cyclone as a futuristic concept car and automotive design marvel",
-            "description": "The 1959 Cadillac Cyclone is a groundbreaking concept car known for its futuristic design features and unique aesthetics. It embodies innovation and imagination in automotive design, pushing the boundaries of what a car can be.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 130,
-                    "topic": "Innovative design elements of the 1959 Cadillac Cyclone",
-                    "description": "The Cadillac Cyclone showcases cutting-edge design elements such as radar-powered crash sensors, sliding bubble canopies, and moon-cutting rear tailfins. These features contribute to its futuristic and unique appearance, setting it apart from traditional car designs of its time.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 131,
-                            "topic": "Radar-powered crash sensors",
-                            "description": "The inclusion of radar-powered crash sensors in the 1959 Cadillac Cyclone demonstrates advanced safety technology for that era. This innovative feature enhances the car's futuristic appeal and highlights its forward-thinking design.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 132,
-                            "topic": "Sliding bubble canopies",
-                            "description": "The sliding bubble canopies on the Cadillac Cyclone resemble those found on fighter jets, adding a touch of aerospace influence to the car's design. This unique feature not only enhances the vehicle's visual appeal but also showcases its futuristic and unconventional nature.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 133,
-                            "topic": "Moon-cutting rear tailfins",
-                            "description": "The rear tailfins of the 1959 Cadillac Cyclone are not only aesthetically striking but also evoke a sense of speed and power. Their sharp, angular design gives the impression that they could cut through the moon, emphasizing the car's futuristic and otherworldly aesthetic.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 134,
-                    "topic": "Exclusivity and rarity of the 1959 Cadillac Cyclone",
-                    "description": "The Cadillac Cyclone is a one-off concept car that was never mass-produced, residing exclusively in the GM Heritage Collection. Its limited availability and unique status as a crown jewel in a vault contribute to its mystique and allure as a rare automotive gem.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 135,
-                            "topic": "24k gold-plated wheels",
-                            "description": "The 1959 Cadillac Cyclone features 24k gold-plated wheels, adding a luxurious and extravagant touch to its design. This exclusive feature enhances the car's status as a unique and valuable collector's item, further emphasizing its rarity and desirability.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 136,
-                            "topic": "GM Heritage Collection",
-                            "description": "The Cadillac Cyclone is housed in the GM Heritage Collection, where it is preserved as a significant piece of automotive history. Its presence in this exclusive collection underscores its importance as a rare and iconic concept car that represents a bygone era of innovation and design.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 137,
-                            "topic": "Crown jewel in a vault",
-                            "description": "The 1959 Cadillac Cyclone is likened to a crown jewel in a vault due to its exclusive status and limited availability. This metaphor highlights the car's significance and value as a rare and precious artifact, further enhancing its mystique and desirability.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 138,
-                    "topic": "Aesthetic appeal and cultural significance of the 1959 Cadillac Cyclone",
-                    "description": "The 1959 Cadillac Cyclone's striking appearance, reminiscent of a James Bond dream car dipped in pink gold, holds both aesthetic appeal and cultural significance. Its unique design elements and luxurious features contribute to its iconic status as a symbol of automotive innovation and style.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 139,
-                            "topic": "James Bond dream car aesthetic",
-                            "description": "The Cadillac Cyclone's design, resembling a James Bond dream car dipped in pink gold, evokes a sense of sophistication and luxury. This aesthetic appeal contributes to the car's iconic status and cultural significance, aligning it with the glamorous world of espionage and adventure.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 140,
-                            "topic": "Luxurious pink gold exterior",
-                            "description": "The pink gold exterior of the 1959 Cadillac Cyclone adds a touch of luxury and opulence to its design, further enhancing its aesthetic appeal. This unique color choice sets the car apart and contributes to its cultural significance as a symbol of extravagance and style.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 141,
-                            "topic": "Iconic status in automotive history",
-                            "description": "The Cadillac Cyclone's unique design features and luxurious aesthetics have cemented its iconic status in automotive history. As a symbol of innovation and style, it holds cultural significance as a timeless representation of automotive excellence and creativity.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 142,
-            "topic": "Ethereum treasury companies",
-            "description": "Companies holding Ethereum as part of their treasury, potentially increasing accessibility to a broader range of investors.",
-            "depth": 0,
-            "children": [
-                {
-                    "id": 143,
-                    "topic": "Vitalik Buterin's perspective",
-                    "description": "Vitalik Buterin's viewpoint on the impact of Ethereum treasury companies on ETH access and the potential risks involved.",
-                    "depth": 1,
-                    "children": [
-                        {
-                            "id": 144,
-                            "topic": "Broadening ETH access",
-                            "description": "The positive aspect of Ethereum treasury companies in expanding access to Ethereum for a wider range of investors.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 145,
-                            "topic": "Warning of overleveraging",
-                            "description": "Vitalik Buterin's caution about the risk of the trend turning into an overleveraged game if not managed responsibly.",
-                            "depth": 2,
-                            "children": []
-                        },
-                        {
-                            "id": 146,
-                            "topic": "Responsible handling",
-                            "description": "The importance of handling Ethereum treasury companies in a responsible manner to avoid potential negative consequences.",
-                            "depth": 2,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 147,
-                    "topic": "Investor accessibility",
-                    "description": "The ability for a wider range of investors to access Ethereum through the involvement of treasury companies.",
-                    "depth": 1,
-                    "children": []
-                },
-                {
-                    "id": 148,
-                    "topic": "Risk management",
-                    "description": "The need to carefully manage the risks associated with Ethereum treasury companies to prevent the trend from becoming overleveraged.",
+                    "id": 27,
+                    "topic": "The fragility of digital sovereignty",
+                    "description": "In the digital realm, sovereignty is a fragile illusion shattered by the hammer blows of real-world power.",
                     "depth": 1,
                     "children": []
                 }

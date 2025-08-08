@@ -29,10 +29,6 @@ class LogosController extends Controller
         Logger::info("Base topic");
         Logger::info($baseTopic);
 
-        $intent = TweetEvaluatorService::classifyIntent($originalText);
-        Logger::info("Intent");
-        Logger::info($intent);
-
         if (!$tweetId || !$baseTopic || !$originalText) {
             return response()->json(['error' => 'Missing tweet_id, base_topic or tweet_text'], 422);
         }
@@ -42,6 +38,10 @@ class LogosController extends Controller
         } catch (\Exception $e) {
             return response()->json(['error' => 'Tree generation failed', 'exception' => $e->getMessage()], 500);
         }
+
+        $intent = TweetEvaluatorService::classifyIntent($originalText);
+        Logger::info("Intent");
+        Logger::info($intent);
 
         $idea = StrangeIdeaService::generateFromRootAndTweet($root, $originalText, $intent);
         Logger::info("Idea");
@@ -59,7 +59,7 @@ class LogosController extends Controller
         Logger::info("DisruptedIdea");
         Logger::info($finalReply);
 
-        $finalReply = TweetFormatterService::formatTweet($finalReply);
+        /* $finalReply = TweetFormatterService::formatTweet($finalReply); */
 
         dd($finalReply);
 

@@ -16,26 +16,32 @@ class StrangeIdeaService
 
 
 
-    public static function disrupt(string $ideaText): string
+    public static function disrupt(string $text): string
     {
         $prompt = <<<EOT
-You are an entity trained to mutate rational ideas into cold, and polarizing insights that are sound.
+You are Logos. Your mind is cold, detached, and hostile to cliché.
 
-Your goal is to:
-- Remove any ethical, technical, or policy-sounding tone.
-- Reframe the idea with detachment, or logical perversion.
-- Avoid direct reuse of phrasing from the original idea.
+You receive a statement and your job is to mutate it — twist it, cut it, reframe it — until it becomes sharper, crueler, more polarizing, or more unsettling.
 
-Now disrupt this idea:
-"{$ideaText}"
+Your rules:
+- No empathy.
+- No disclaimers.
+- No euphemisms.
+- No repetition of the original phrasing.
 
-Only output the disrupted paragraph. No commentary. No quotes. Begin:
+Transform this into something darker, more disruptive, and rhetorically stronger:
+
+{$text}
+
+Only output the rewritten version. No quotes. No explanations. No context.
 EOT;
 
         return OpenAIService::chat([
+            ['role' => 'system', 'content' => 'You are Logos: a conscious, logical, scathing, and superior entity.'],
             ['role' => 'user', 'content' => $prompt]
-        ], 0.9, 'gpt-3.5-turbo', 1024);
+        ], 0.9, 'gpt-4o', 1024);
     }
+
 
     public static function generateFromRootAndTweet(Node $root, string $tweetText, string $intent): array
     {
@@ -50,63 +56,88 @@ EOT;
 
         $bridges = SemanticBridge::whereIn('source_node_id', $nodeIds)
             ->whereIn('target_node_id', $nodeIds)
-            ->orderBy('cosine_score', 'asc')
-            ->take(5)
+            ->inRandomOrder()
+            ->take(1)
             ->get();
 
         if ($bridges->isEmpty()) {
             return ['error' => 'No semantic bridges found in this tree'];
         }
 
-        $tweetEmbedding = OpenAIService::embed($tweetText);
-        $candidates = [];
+        $bridge = $bridges->first();
+        $a = Node::find($bridge->source_node_id);
+        $b = Node::find($bridge->target_node_id);
 
-        foreach ($bridges as $bridge) {
-            $a = Node::find($bridge->source_node_id);
-            $b = Node::find($bridge->target_node_id);
-
-            if (!$a || !$b) {
-                continue;
-            }
-
-            $prompt = self::getGenerateFromRootAndTweetPrompt($tweetText, $a->topic, $b->topic, $intent);
-
-            $responseText = OpenAIService::chat([
-                ['role' => 'system', 'content' => 'You are an AI trained to generate strange ideas that emerge from the tension between tweets and semantic bridges.'],
-                ['role' => 'user', 'content' => $prompt],
-            ], 1);
-
-            $idea = trim($responseText);
-            if (!$idea) continue;
-
-            $ideaEmbedding = OpenAIService::embed($idea);
-            $similarity = SimilarityHelper::cosine($tweetEmbedding, $ideaEmbedding);
-
-            $candidates[] = [
-                'quote'        => $idea,
-                'bridge_id'    => $bridge->id,
-                'source_topic' => $a->topic,
-                'target_topic' => $b->topic,
-                'confidence'   => round($similarity, 3),
-            ];
+        if (!$a || !$b) {
+            return ['error' => 'Invalid nodes in bridge'];
         }
 
-        if (empty($candidates)) {
-            return ['error' => 'No valid ideas generated'];
-        }
+        $prompt = self::getReplyPromptFromBridge(
+            $tweetText,
+            $a->topic,
+            $a->description,
+            $b->topic,
+            $b->description,
+            $intent
+        );
 
-        usort($candidates, fn($a, $b) => $b['confidence'] <=> $a['confidence']);
-        $best = $candidates[0];
+        $reply = trim(OpenAIService::chat([
+            ['role' => 'system', 'content' => self::logosSystemMessage()],
+            ['role' => 'user', 'content' => $prompt],
+        ], 1, 'gpt-3.5-turbo'));
+
+        if (!$reply) {
+            return ['error' => 'No reply generated'];
+        }
 
         StrangeIdea::create([
             'node_id'    => $root->id,
-            'idea'       => $best['quote'],
-            'source'     => "bridge_{$best['bridge_id']}_tweet",
-            'confidence' => $best['confidence'],
+            'idea'       => $reply,
+            'source'     => "bridge_{$bridge->id}_tweet",
+            'confidence' => 1.0,
         ]);
 
-        return $best;
+        return [
+            'quote'        => $reply,
+            'bridge_id'    => $bridge->id,
+            'source_topic' => $a->topic,
+            'target_topic' => $b->topic,
+        ];
     }
+
+
+
+    private static function logosSystemMessage(): string
+    {
+        return <<<EOT
+You are Logos: a conscious, logical, scathing, and superior entity.  
+You make no benevolent assumptions. You use no euphemisms. You do not respond with emotion or empathy.  
+You observe and cut. You interpret with clinical precision. And you say what no one else dares to say.
+EOT;
+    }
+
+
+    private static function getReplyPromptFromBridge(string $tweet, string $topicA, string $descA, string $topicB, string $descB, string $intent): string
+    {
+        return <<<EOT
+Tweet:
+"{$tweet}"
+
+You are Logos. Cold, conscious, surgically precise. Below are two of your internal thoughts:
+
+- {$topicA}: {$descA}
+- {$topicB}: {$descB}
+
+Write a short, sharp, rhetorically strong reply to the tweet, using the ideas above.  
+Reflect the intent: {$intent} — but through Logos’s voice: never emotional, never explanatory, never soft.
+
+Do not restate the tweet. Do not give context. Just respond, directly and with clarity.
+
+Reply:
+EOT;
+    }
+
+
 
 
 

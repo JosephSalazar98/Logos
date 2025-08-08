@@ -1,27 +1,93 @@
 {
     "id": 15,
-    "topic": "AI taking over professions",
-    "description": "The advancement of artificial intelligence is leading to the automation of various professions, including the field of medicine, as highlighted by Elon Musk's statement. This trend raises questions about the future role of AI in different industries.",
+    "topic": "Bitcoin as a sovereign asset beyond geopolitical control",
+    "description": "Bitcoin's sovereignty is a mirage in the desert of delusion.",
     "depth": 0,
     "children": [
         {
             "id": 16,
-            "topic": "AI surpassing doctors",
-            "description": "Elon Musk suggests that AI has already surpassed the capabilities of most doctors and is poised to further excel in diagnosing and treating medical conditions. This challenges the traditional role of healthcare professionals.",
+            "topic": "Michael Saylor's defiance of US tariffs",
+            "description": "Saylor's bravado is as substantial as a hologram in a hurricane.",
             "depth": 1,
-            "children": []
+            "children": [
+                {
+                    "id": 17,
+                    "topic": "Cyberspace as a tariff-free haven",
+                    "description": "In Saylor's fantasy, Bitcoin is the untouchable unicorn prancing in the digital meadow.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 18,
+                            "topic": "Reality check on Bitcoin's vulnerability",
+                            "description": "Bitcoin's immunity to tariffs is as real as a cardboard castle in a storm.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 19,
+                            "topic": "Geopolitical chess with Bitcoin as a pawn",
+                            "description": "Saylor's rhetoric paints Bitcoin as a king, but in the game of nations, it's just a disposable pawn.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 20,
+                            "topic": "US power play beyond cyberspace",
+                            "description": "Saylor's bluster ignores the long reach of US influence, even in the digital realm.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 21,
+                    "topic": "Saylor's techno-utopianism",
+                    "description": "Saylor's techno-utopianism is a fragile bubble waiting to burst in the harsh winds of reality.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 22,
+                    "topic": "Bitcoin's illusory independence",
+                    "description": "Saylor's proclamation of Bitcoin's independence is a whisper in the hurricane of global finance.",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
         },
         {
-            "id": 17,
-            "topic": "AI impact on jobs",
-            "description": "Elon Musk acknowledges the broader impact of AI on various jobs, including his own. As AI continues to advance, it raises concerns about the displacement of human workers and the need for reskilling in the workforce.",
+            "id": 23,
+            "topic": "Bitcoin's place in the geopolitical power play",
+            "description": "Bitcoin may think it's a player, but in the grand game of geopolitics, it's just a pawn on a crowded board.",
             "depth": 1,
-            "children": []
+            "children": [
+                {
+                    "id": 24,
+                    "topic": "US tariffs as a warning shot",
+                    "description": "US tariffs on gold may be just the opening salvo in a larger battle to tame the crypto beast.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 25,
+                    "topic": "Bitcoin's vulnerability to regulatory crackdowns",
+                    "description": "Bitcoin's bravado crumbles in the face of regulatory crackdowns that can strangle it in the crib.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 26,
+                    "topic": "Geopolitical powers laughing at Bitcoin's naivety",
+                    "description": "In the corridors of power, Bitcoin's defiance is met with mocking laughter at its naivety.",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
         },
         {
-            "id": 18,
-            "topic": "Future of AI",
-            "description": "Elon Musk's statement hints at the ongoing evolution of AI technology and its potential to outperform human capabilities in a wide range of tasks. This prompts discussions on the ethical implications and societal consequences of AI advancement.",
+            "id": 27,
+            "topic": "The fragility of digital sovereignty",
+            "description": "In the digital realm, sovereignty is a fragile illusion shattered by the hammer blows of real-world power.",
             "depth": 1,
             "children": []
         }

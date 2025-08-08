@@ -1,0 +1,95 @@
+{
+    "id": 149,
+    "topic": "Americans and the 2nd amendment",
+    "description": "Mockery of American obsession with guns",
+    "depth": 0,
+    "children": [
+        {
+            "id": 150,
+            "topic": "Gun ownership statistics",
+            "description": "Highlighting extreme gun prevalence in the U.S.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 151,
+                    "topic": "Comparison to other countries",
+                    "description": "Pointing out the absurdity of the U.S. gun culture",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 152,
+                    "topic": "Yemen's high gun ownership",
+                    "description": "Ironically noting Yemen's second place in gun ownership",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 153,
+                    "topic": "Triggering culture with a bang",
+                    "description": "Sarcastic commentary on the 'freedom' associated with excessive guns",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 154,
+            "topic": "Freedom and gun culture",
+            "description": "Questioning the correlation between freedom and gun ownership",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 155,
+                    "topic": "Cultural implications",
+                    "description": "Exposing the dark side of a 'trigger-happy' culture",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 156,
+                    "topic": "Misinterpretation of freedom",
+                    "description": "Highlighting the twisted perception of freedom tied to guns",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 157,
+                    "topic": "Reality check on 'freedom'",
+                    "description": "Dismantling the illusion of freedom through excessive gun ownership",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 158,
+            "topic": "Cultural critique",
+            "description": "Unveiling the societal issues embedded in gun culture",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 159,
+                    "topic": "Normalization of guns",
+                    "description": "Pointing out the normalization of guns in American society",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 160,
+                    "topic": "Impact on society",
+                    "description": "Exploring the detrimental effects of widespread gun ownership",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 161,
+                    "topic": "Obsession with firearms",
+                    "description": "Scornfully addressing the obsession with firearms in the U.S.",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

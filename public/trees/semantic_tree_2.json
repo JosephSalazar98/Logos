@@ -1,33 +1,33 @@
 {
     "id": 2,
-    "topic": "AI Democratization",
-    "description": "The push for real-world utility and mass accessibility\/affordability of AI models like GPT-5 to benefit a billion+ people.",
+    "topic": "Americans and the 2nd amendment",
+    "description": "Mocking the obsession with guns in the U.S.",
     "depth": 0,
     "children": [
         {
             "id": 3,
-            "topic": "GPT-5 Advancements",
-            "description": "GPT-5 being hailed as the smartest model developed, surpassing previous versions like GPT-4o.",
+            "topic": "Obsession with guns",
+            "description": "Highlighting the absurdity of having more guns than people",
             "depth": 1,
             "children": [
                 {
                     "id": 4,
-                    "topic": "Future Model Development",
-                    "description": "Potential for even smarter models beyond GPT-5 in the future to be released.",
+                    "topic": "Gun ownership statistics",
+                    "description": "Pointing out the excessive number of guns per capita in the U.S.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 5,
-                    "topic": "Global Impact",
-                    "description": "Highlighting the potential benefits of GPT-5 for over a billion people worldwide.",
+                    "topic": "Triggering culture",
+                    "description": "Exposing the dangerous glorification of guns in American society",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 6,
-                    "topic": "Accessibility",
-                    "description": "Emphasis on making AI models like GPT-5 accessible and affordable to a wider audience.",
+                    "topic": "Freedom illusion",
+                    "description": "Questioning the twisted notion of freedom tied to gun ownership",
                     "depth": 2,
                     "children": []
                 }
@@ -35,28 +35,28 @@
         },
         {
             "id": 7,
-            "topic": "Mass Adoption",
-            "description": "The aim to have GPT-5 widely adopted and used by people globally, surpassing previous models like GPT-4o.",
+            "topic": "International comparison",
+            "description": "Highlighting the extreme difference in gun ownership between the U.S. and other countries",
             "depth": 1,
             "children": [
                 {
                     "id": 8,
-                    "topic": "Global Reach",
-                    "description": "Targeting a global audience of users who have not experienced models like GPT-4o before.",
+                    "topic": "Yemen comparison",
+                    "description": "Contrasting the U.S. gun culture with countries like Yemen",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 9,
-                    "topic": "User Benefits",
-                    "description": "Focus on the benefits that a billion+ people can derive from using advanced AI models like GPT-5.",
+                    "topic": "Canada and Serbia comparison",
+                    "description": "Pointing out the stark contrast in gun ownership rates with Canada and Serbia",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 10,
-                    "topic": "Market Disruption",
-                    "description": "Potential to disrupt the market by introducing a highly advanced and accessible AI model like GPT-5.",
+                    "topic": "Global perspective",
+                    "description": "Questioning the exceptionalism of American gun culture on a global scale",
                     "depth": 2,
                     "children": []
                 }
@@ -64,28 +64,28 @@
         },
         {
             "id": 11,
-            "topic": "Global Impact",
-            "description": "The significant impact that democratizing AI models like GPT-5 can have on a global scale.",
+            "topic": "Cultural impact",
+            "description": "Exploring the dangerous consequences of such a gun-obsessed society",
             "depth": 1,
             "children": [
                 {
                     "id": 12,
-                    "topic": "Societal Benefits",
-                    "description": "Exploring the broader societal benefits that can arise from the widespread use of advanced AI models.",
+                    "topic": "Violence correlation",
+                    "description": "Drawing attention to the correlation between gun ownership and violence",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 13,
-                    "topic": "Economic Implications",
-                    "description": "Considering the economic implications of making advanced AI models accessible to a billion+ people.",
+                    "topic": "Political influence",
+                    "description": "Highlighting the political power wielded by pro-gun groups in the U.S.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 14,
-                    "topic": "Technological Progress",
-                    "description": "Contributing to the advancement of technology by democratizing AI models and increasing accessibility.",
+                    "topic": "Psychological implications",
+                    "description": "Discussing the psychological impact of living in a society saturated with guns",
                     "depth": 2,
                     "children": []
                 }

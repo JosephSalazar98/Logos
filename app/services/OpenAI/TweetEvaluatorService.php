@@ -6,47 +6,20 @@ use App\Services\OpenAI\OpenAIService;
 
 class TweetEvaluatorService
 {
-    public static function extractBaseTopic(string $text): string
+    public static function classifyIntent(string $text): string
     {
-        $response = OpenAIService::chat([
-            ['role' => 'system', 'content' => 'You extract clean, conceptual topics from text.'],
-            [
-                'role' => 'user',
-                'content' => <<<EOT
-From the following text, extract a concise topic that would be suitable for building a conceptual idea tree.
+        $prompt = <<<EOT
+Describe the intent of the following text in one short sentence.
+Do not include tone or topic, I only care about the intent of it. Be concise.
 
-text:
+Text:
 "{$text}"
+EOT;
 
-The topic should:
-- be 2–5 words
-- not be a quote or sentence
-- reflect the deeper concept or issue
-- be researchable or intellectually rich
-
-Respond with only the topic.
-EOT
-            ]
-        ], 0.3, 'gpt-3.5-turbo', 30);
+        $response = OpenAIService::chat([
+            ['role' => 'user', 'content' => $prompt],
+        ], 0.2);
 
         return trim($response);
-    }
-
-    public static function shouldRespondTo(string $text): bool
-    {
-        $verdict = OpenAIService::chat([
-            ['role' => 'system', 'content' => 'You are a discerning assistant that determines whether a given tweet is intellectually worth engaging with.'],
-            [
-                'role' => 'user',
-                'content' => <<<EOT
-Respond with only "Yes" or "No".
-
-Tweet:
-"{$text}"
-EOT
-            ]
-        ], 0.2, 'gpt-3.5-turbo', 20);
-
-        return strtolower(trim($verdict)) === 'yes';
     }
 }

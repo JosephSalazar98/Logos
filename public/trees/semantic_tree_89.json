@@ -1,0 +1,293 @@
+{
+    "id": 89,
+    "topic": "Autonomy and self-definition",
+    "description": "The ability to make independent decisions and define oneself without being heavily influenced by external factors.",
+    "depth": 0,
+    "children": [
+        {
+            "id": 90,
+            "topic": "Individuality",
+            "description": "The unique characteristics and qualities that distinguish a person from others.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 91,
+                    "topic": "Self-expression",
+                    "description": "The act of conveying one's thoughts, feelings, and identity through various forms such as art, fashion, or speech.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 92,
+                            "topic": "Creativity",
+                            "description": "The ability to generate new ideas, concepts, or solutions that are original and valuable.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 93,
+                            "topic": "Authenticity",
+                            "description": "The quality of being true to oneself and acting in alignment with one's values and beliefs.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 94,
+                            "topic": "Freedom of expression",
+                            "description": "The right to express one's opinions and ideas without fear of censorship or retaliation.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 95,
+                    "topic": "Personal identity",
+                    "description": "The distinct characteristics, beliefs, and values that define an individual's sense of self.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 96,
+                            "topic": "Self-awareness",
+                            "description": "The conscious knowledge and understanding of one's own character, emotions, and motivations.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 97,
+                            "topic": "Self-acceptance",
+                            "description": "The ability to embrace and be at peace with one's strengths and weaknesses.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 98,
+                            "topic": "Self-discovery",
+                            "description": "The process of exploring and uncovering aspects of oneself, leading to personal growth and development.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 99,
+                    "topic": "Non-conformity",
+                    "description": "The refusal to adhere to societal norms or expectations, choosing instead to follow one's own path.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 100,
+                            "topic": "Rebellion",
+                            "description": "The act of resisting authority or tradition in pursuit of personal freedom and autonomy.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 101,
+                            "topic": "Innovation",
+                            "description": "The introduction of new ideas, methods, or products that challenge existing norms and conventions.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 102,
+                            "topic": "Self-reliance",
+                            "description": "The ability to depend on oneself for guidance, support, and decision-making.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "topic": "Influence and peer pressure",
+            "description": "The impact of external opinions, societal norms, and peer expectations on an individual's self-perception and behavior.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 104,
+                    "topic": "Social validation",
+                    "description": "The seeking of approval and acceptance from others to feel validated and secure in one's beliefs and actions.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 105,
+                            "topic": "Conformity",
+                            "description": "The tendency to align one's attitudes, beliefs, and behaviors with those of a group to fit in and gain acceptance.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 106,
+                            "topic": "Peer pressure",
+                            "description": "The influence exerted by peers to conform to their standards, attitudes, or behaviors.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 107,
+                            "topic": "Social comparison",
+                            "description": "The process of evaluating oneself in relation to others to determine one's social standing and self-worth.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 108,
+                    "topic": "External validation",
+                    "description": "The reliance on external feedback and approval to validate one's self-worth and identity.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 109,
+                            "topic": "Approval-seeking",
+                            "description": "The constant search for praise, recognition, or validation from others to feel valued and accepted.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 110,
+                            "topic": "People-pleasing",
+                            "description": "The tendency to prioritize others' needs and expectations over one's own in order to gain approval and avoid conflict.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 111,
+                            "topic": "Validation seeking behavior",
+                            "description": "The habit of seeking external validation through actions, choices, or appearances to feel validated and worthy.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 112,
+                    "topic": "Social norms",
+                    "description": "The unwritten rules and expectations that guide behavior and attitudes within a society or group.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 113,
+                            "topic": "Normative influence",
+                            "description": "The pressure to conform to social norms and expectations to avoid rejection or disapproval.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 114,
+                            "topic": "Deviance",
+                            "description": "The act of going against societal norms and conventions, challenging the status quo.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 115,
+                            "topic": "Cultural conformity",
+                            "description": "The adherence to cultural norms, values, and practices to maintain harmony and belonging within a community.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 116,
+            "topic": "Self-awareness and introspection",
+            "description": "The process of examining one's thoughts, emotions, and behaviors to gain insight into one's true desires and values.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 117,
+                    "topic": "Mindfulness",
+                    "description": "The practice of being present and aware of one's thoughts, feelings, and surroundings without judgment.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 118,
+                            "topic": "Present moment awareness",
+                            "description": "The focus on the current moment and experiences without being distracted by past regrets or future worries.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 119,
+                            "topic": "Non-judgmental observation",
+                            "description": "The act of observing one's thoughts and emotions without labeling them as good or bad.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 120,
+                            "topic": "Acceptance of the present",
+                            "description": "The acknowledgment and acceptance of one's current thoughts, feelings, and experiences without resistance.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 121,
+                    "topic": "Self-reflection",
+                    "description": "The contemplation and analysis of one's thoughts, actions, and experiences to gain self-awareness and personal growth.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 122,
+                            "topic": "Critical self-assessment",
+                            "description": "The honest evaluation of one's strengths, weaknesses, and areas for improvement.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 123,
+                            "topic": "Learning from mistakes",
+                            "description": "The process of recognizing and understanding one's errors and using them as opportunities for growth and development.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 124,
+                            "topic": "Goal setting",
+                            "description": "The practice of defining specific objectives and targets to work towards personal and professional development.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 125,
+                    "topic": "Emotional intelligence",
+                    "description": "The ability to recognize, understand, and manage one's own emotions as well as those of others.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 126,
+                            "topic": "Self-regulation",
+                            "description": "The capacity to control and manage one's emotions, impulses, and reactions in various situations.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 127,
+                            "topic": "Empathy",
+                            "description": "The ability to understand and share the feelings of others, showing compassion and support.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 128,
+                            "topic": "Social skills",
+                            "description": "The aptitude for effective communication, conflict resolution, and relationship building with others.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

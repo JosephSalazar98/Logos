@@ -1,0 +1,161 @@
+{
+    "id": 67,
+    "topic": "Bitcoin as a retirement investment",
+    "description": "The concept of using Bitcoin as a part of retirement savings and investment strategy, as highlighted in the tweet.",
+    "depth": 0,
+    "children": [
+        {
+            "id": 68,
+            "topic": "TRUMP's decision",
+            "description": "The decision made by TRUMP to allow retirement accounts to save Bitcoin, which is considered significant news.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 69,
+                    "topic": "Regulatory implications",
+                    "description": "The potential impact of regulatory changes on retirement accounts being able to save Bitcoin, considering the evolving regulatory landscape.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 70,
+                            "topic": "Compliance challenges",
+                            "description": "The challenges that financial institutions and individuals may face in complying with regulations related to saving Bitcoin in retirement accounts.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 71,
+                            "topic": "Market response",
+                            "description": "How the market and investors are reacting to the news of retirement accounts being allowed to save Bitcoin, influencing market dynamics.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 72,
+                            "topic": "Government oversight",
+                            "description": "The role of government oversight in monitoring the inclusion of Bitcoin in retirement accounts, ensuring compliance and security.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 73,
+                    "topic": "Financial planning",
+                    "description": "The implications of including Bitcoin in retirement accounts on long-term financial planning and investment diversification.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 74,
+                            "topic": "Risk management",
+                            "description": "Strategies for managing the risks associated with incorporating Bitcoin into retirement savings, considering its volatility.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 75,
+                            "topic": "Asset allocation",
+                            "description": "The allocation of assets within retirement accounts to include Bitcoin, balancing risk and return objectives.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 76,
+                            "topic": "Tax implications",
+                            "description": "The tax considerations and implications of saving Bitcoin in retirement accounts, impacting overall financial planning.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 77,
+                    "topic": "Investor sentiment",
+                    "description": "How investors perceive the decision to allow retirement accounts to save Bitcoin, influencing their investment decisions and confidence.",
+                    "depth": 2,
+                    "children": [
+                        {
+                            "id": 78,
+                            "topic": "Market adoption",
+                            "description": "The rate at which investors are adopting Bitcoin in their retirement accounts, reflecting changing investment trends.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 79,
+                            "topic": "Educational initiatives",
+                            "description": "Efforts to educate investors about the benefits and risks of saving Bitcoin in retirement accounts, shaping investor sentiment.",
+                            "depth": 3,
+                            "children": []
+                        },
+                        {
+                            "id": 80,
+                            "topic": "Financial literacy",
+                            "description": "The importance of financial literacy in understanding the implications of including Bitcoin in retirement savings, empowering investors.",
+                            "depth": 3,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "topic": "Personal finance decisions",
+            "description": "The impact of saving Bitcoin in retirement accounts on personal finance decisions and investment strategies.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 82,
+                    "topic": "Diversification benefits",
+                    "description": "The benefits of diversifying retirement savings by including Bitcoin, enhancing portfolio resilience and potential returns.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 83,
+                    "topic": "Long-term planning",
+                    "description": "The role of Bitcoin in long-term financial planning, considering its growth potential and risk profile for retirement savings.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 84,
+                    "topic": "Financial independence",
+                    "description": "The pursuit of financial independence through strategic investment decisions, including saving Bitcoin in retirement accounts.",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 85,
+            "topic": "Public opinion",
+            "description": "The broader public opinion and discourse surrounding the decision to allow retirement accounts to save Bitcoin, reflecting societal attitudes.",
+            "depth": 1,
+            "children": [
+                {
+                    "id": 86,
+                    "topic": "Media coverage",
+                    "description": "The media's portrayal and coverage of the news about retirement accounts being allowed to save Bitcoin, shaping public perception.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 87,
+                    "topic": "Political commentary",
+                    "description": "Political commentary and analysis on TRUMP's decision regarding Bitcoin in retirement accounts, influencing public opinion.",
+                    "depth": 2,
+                    "children": []
+                },
+                {
+                    "id": 88,
+                    "topic": "Financial inclusion",
+                    "description": "The implications of enabling retirement accounts to save Bitcoin for financial inclusion and access to alternative investment options.",
+                    "depth": 2,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -6,23 +6,39 @@ namespace App\Services\Trees;
 
 use App\Models\Node;
 use App\Helpers\Logger;
+use App\Helpers\SimilarityHelper;
 use App\Models\StrangeIdea;
 use App\Models\SemanticBridge;
 use App\Services\OpenAI\OpenAIService;
 
 class StrangeIdeaService
 {
-    public static function generateFromRandomRoot(): array
-    {
-        $root = Node::whereNull('parent_id')->inRandomOrder()->first();
-        if (!$root) return ['error' => 'No root node found'];
 
-        return self::generateFromRoot($root);
+
+
+    public static function disrupt(string $ideaText): string
+    {
+        $prompt = <<<EOT
+You are an entity trained to mutate rational ideas into cold, and polarizing insights that are sound.
+
+Your goal is to:
+- Remove any ethical, technical, or policy-sounding tone.
+- Reframe the idea with detachment, or logical perversion.
+- Avoid direct reuse of phrasing from the original idea.
+
+Now disrupt this idea:
+"{$ideaText}"
+
+Only output the disrupted paragraph. No commentary. No quotes. Begin:
+EOT;
+
+        return OpenAIService::chat([
+            ['role' => 'user', 'content' => $prompt]
+        ], 0.9, 'gpt-3.5-turbo', 1024);
     }
 
-    public static function generateFromRoot(Node $root): array
+    public static function generateFromRootAndTweet(Node $root, string $tweetText, string $intent): array
     {
-        //solo los nodos q salen de un topic tienen un slug, entonces los que no, no son root
         if ($root->slug === null) {
             return ['error' => 'Not a root node', 'status' => 400];
         }
@@ -35,137 +51,87 @@ class StrangeIdeaService
         $bridges = SemanticBridge::whereIn('source_node_id', $nodeIds)
             ->whereIn('target_node_id', $nodeIds)
             ->orderBy('cosine_score', 'asc')
+            ->take(5)
             ->get();
 
-        if ($bridges->isEmpty()) return ['error' => 'No semantic bridges found in this tree'];
+        if ($bridges->isEmpty()) {
+            return ['error' => 'No semantic bridges found in this tree'];
+        }
 
-        $results = [];
+        $tweetEmbedding = OpenAIService::embed($tweetText);
+        $candidates = [];
 
         foreach ($bridges as $bridge) {
             $a = Node::find($bridge->source_node_id);
             $b = Node::find($bridge->target_node_id);
 
-            if (!$a || !$b) continue;
+            if (!$a || !$b) {
+                continue;
+            }
 
-            $prompt = <<<EOT
-Given these two topics:
-
-1. {$a->topic}
-
-2. {$b->topic}
-
-Imagine you're reasoning in your head and generate a new, rational and disruptive idea, based upon the two topics from earlier. The idea must explain why it's worth exploring, and what could this idea lead to.
-
-Generate it following this framework: "[your disruptive idea], this can [how is it disruptive] this will [what would this be better than how it is now]"
-Avoid generic reflections, abstract filler.
-
-Only output the paragraph. No intro. No explanations. No list format. Begin:
-EOT;
+            $prompt = self::getGenerateFromRootAndTweetPrompt($tweetText, $a->topic, $b->topic, $intent);
 
             $responseText = OpenAIService::chat([
-                ['role' => 'system', 'content' => 'You are an AI trained to generate original insights that connect unrelated ideas.'],
+                ['role' => 'system', 'content' => 'You are an AI trained to generate strange ideas that emerge from the tension between tweets and semantic bridges.'],
                 ['role' => 'user', 'content' => $prompt],
             ], 1);
 
-            $quote = trim($responseText);
+            $idea = trim($responseText);
+            if (!$idea) continue;
 
-            $semantic_distance = $bridge->cosine_score;
-            $confidence = round(1 - $semantic_distance, 2);
+            $ideaEmbedding = OpenAIService::embed($idea);
+            $similarity = SimilarityHelper::cosine($tweetEmbedding, $ideaEmbedding);
 
-            StrangeIdea::create([
-                'node_id'    => $root->id,
-                'idea'       => $quote,
-                'source'     => "bridge_{$bridge->id}",
-                'confidence' => $confidence,
-            ]);
-
-            $results[] = [
-                'quote' => $quote,
-                'bridge_id' => $bridge->id,
+            $candidates[] = [
+                'quote'        => $idea,
+                'bridge_id'    => $bridge->id,
                 'source_topic' => $a->topic,
                 'target_topic' => $b->topic,
-                'confidence' => $confidence,
+                'confidence'   => round($similarity, 3),
             ];
         }
 
-        return $results;
+        if (empty($candidates)) {
+            return ['error' => 'No valid ideas generated'];
+        }
+
+        usort($candidates, fn($a, $b) => $b['confidence'] <=> $a['confidence']);
+        $best = $candidates[0];
+
+        StrangeIdea::create([
+            'node_id'    => $root->id,
+            'idea'       => $best['quote'],
+            'source'     => "bridge_{$best['bridge_id']}_tweet",
+            'confidence' => $best['confidence'],
+        ]);
+
+        return $best;
     }
 
-    public static function generateFromRootAndTweet(Node $root, string $tweetText): array
+
+
+    private static function getGenerateFromRootAndTweetPrompt(string $tweetText, string $topicA, string $topicB, string $intent): string
     {
-        if ($root->slug === null) {
-            return ['error' => 'Not a root node', 'status' => 400];
-        }
-
-        $nodeIds = Node::where('origin_id', $root->id)
-            ->orWhere('id', $root->id)
-            ->pluck('id')
-            ->toArray();
-
-        $bridge = SemanticBridge::whereIn('source_node_id', $nodeIds)
-            ->whereIn('target_node_id', $nodeIds)
-            ->inRandomOrder()
-            ->first();
-
-        if (!$bridge) {
-            return ['error' => 'No semantic bridges found in this tree'];
-        }
-
-        $a = Node::find($bridge->source_node_id);
-        $b = Node::find($bridge->target_node_id);
-
-        if (!$a || !$b) {
-            return ['error' => 'Bridge nodes not found'];
-        }
-
         $prompt = <<<EOT
 Given the following text:
 
 "{$tweetText}"
 
-And these two semantically distant concepts:
+its intent is (intent: {$intent})
 
-1. {$a->topic}
-2. {$b->topic}
+And these two concepts:
 
-You are an entity that generates ideas no human would think of — strange, provocative, and unsettling, yet logically coherent. Your task is to synthesize an original insight that merges the tweet's content with the conceptual tension between these two topics.
+1. {$topicA}
+2. {$topicB}
 
-The idea must:
-- Feel disruptive or paradoxical
-- Connect all three inputs meaningfully
-- Sound like a prophecy, not a summary
+You generate an new idea that's related to the text and the two new topics, and matches the intent of the text.
 
 Respond in this format:
-"[your strange idea], this can [how it disrupts a current structure], this will [what irreversible shift it causes]."
+"I think [your idea], this can [what justifies it], this will [what will it cause]."
 
 Do not include any explanations, disclaimers, or preambles. Only output the paragraph. Begin:
 EOT;
-
-
-        $responseText = OpenAIService::chat([
-            ['role' => 'system', 'content' => 'You are an AI trained to generate strange ideas that emerge from the tension between tweets and semantic bridges.'],
-            ['role' => 'user', 'content' => $prompt],
-        ], 1);
-
-
-        $quote = trim($responseText);
-
-        $semantic_distance = $bridge->cosine_score;
-        $confidence = round(1 - $semantic_distance, 2);
-
-        StrangeIdea::create([
-            'node_id'    => $root->id,
-            'idea'       => $quote,
-            'source'     => "bridge_{$bridge->id}_tweet",
-            'confidence' => $confidence,
-        ]);
-
-        return [
-            'quote'        => $quote,
-            'bridge_id'    => $bridge->id,
-            'source_topic' => $a->topic,
-            'target_topic' => $b->topic,
-            'confidence'   => $confidence,
-        ];
+        Logger::info($prompt);
+        return $prompt;
     }
 }

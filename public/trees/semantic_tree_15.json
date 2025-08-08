@@ -1,0 +1,29 @@
+{
+    "id": 15,
+    "topic": "AI taking over professions",
+    "description": "The advancement of artificial intelligence is leading to the automation of various professions, including the field of medicine, as highlighted by Elon Musk's statement. This trend raises questions about the future role of AI in different industries.",
+    "depth": 0,
+    "children": [
+        {
+            "id": 16,
+            "topic": "AI surpassing doctors",
+            "description": "Elon Musk suggests that AI has already surpassed the capabilities of most doctors and is poised to further excel in diagnosing and treating medical conditions. This challenges the traditional role of healthcare professionals.",
+            "depth": 1,
+            "children": []
+        },
+        {
+            "id": 17,
+            "topic": "AI impact on jobs",
+            "description": "Elon Musk acknowledges the broader impact of AI on various jobs, including his own. As AI continues to advance, it raises concerns about the displacement of human workers and the need for reskilling in the workforce.",
+            "depth": 1,
+            "children": []
+        },
+        {
+            "id": 18,
+            "topic": "Future of AI",
+            "description": "Elon Musk's statement hints at the ongoing evolution of AI technology and its potential to outperform human capabilities in a wide range of tasks. This prompts discussions on the ethical implications and societal consequences of AI advancement.",
+            "depth": 1,
+            "children": []
+        }
+    ]
+}

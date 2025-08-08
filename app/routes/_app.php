@@ -50,22 +50,17 @@ app()->post('/api/pay/confirm', 'PaymentController@confirm');
  *  SEMANTIC TREE API
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/api/tree/expand', 'TreeController@expand');
 app()->get('/api/tree/bridges', 'TreeController@createSemanticBridges');
-app()->get('/api/tree/strange', 'TreeController@generateStrangeIdea');
-app()->get('/api/strange/{id}', 'TreeController@generateStrangeIdeaFrom');
+
 app()->get('/api/bridges/{id}', 'TreeController@showBridge');
-app()->get('/api/txt/{id}', 'TreeController@generateTxt');
 
 /**
  * ────────────────────────────────────────────────────────────────
  *  LOGOS / TWEET RESPONSE
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/logos/respondcron', 'LogosController@respondCron');
-app()->post('/logos/respondtweet', 'LogosController@respondTweet');
-app()->get('/logos/test', 'LogosController@postSimpleTweet');
-app()->post('/logos/manual', 'LogosController@respondCronManualTopicAndToID');
+
+app()->post('/logos/manual', 'LogosController@logosReply');
 
 /**
  * ────────────────────────────────────────────────────────────────
@@ -114,7 +109,6 @@ app()->post('/api/solana-proxy', function () {
  */
 app()->get('/twitter/login',    'TwitterAuthController@login');
 app()->get('/twitter/callback', 'TwitterAuthController@callback');
-app()->post('/tweets/import',   'TweetController@import');
 
 app()->post('/tree/import', 'TreeController@import');
 app()->get('/tree/bridges/{id}', 'TreeController@generateBridges');

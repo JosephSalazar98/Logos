@@ -1,33 +1,33 @@
 {
     "id": 2,
-    "topic": "Ethereum as the main crypto of the decade",
-    "description": "Ethereum has emerged as a leading cryptocurrency platform with smart contract functionality. Its decentralized nature and active developer community have contributed to its popularity and potential for various applications.",
+    "topic": "AI Democratization",
+    "description": "The push for real-world utility and mass accessibility\/affordability of AI models like GPT-5 to benefit a billion+ people.",
     "depth": 0,
     "children": [
         {
             "id": 3,
-            "topic": "DeFi (Decentralized Finance) on Ethereum",
-            "description": "Decentralized Finance (DeFi) refers to financial services built on blockchain technology, often using smart contracts on the Ethereum network. DeFi applications enable users to access various financial services without traditional intermediaries.",
+            "topic": "GPT-5 Advancements",
+            "description": "GPT-5 being hailed as the smartest model developed, surpassing previous versions like GPT-4o.",
             "depth": 1,
             "children": [
                 {
                     "id": 4,
-                    "topic": "Automated Market Makers (AMMs)",
-                    "description": "AMMs are decentralized exchange mechanisms that use algorithms to set token prices. They enable liquidity provision and trading without order books, revolutionizing the way assets are exchanged in DeFi.",
+                    "topic": "Future Model Development",
+                    "description": "Potential for even smarter models beyond GPT-5 in the future to be released.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 5,
-                    "topic": "Lending Protocols",
-                    "description": "Lending protocols in DeFi allow users to borrow or lend assets without the need for a central authority. Smart contracts facilitate secure and transparent lending practices, opening up opportunities for decentralized borrowing and lending.",
+                    "topic": "Global Impact",
+                    "description": "Highlighting the potential benefits of GPT-5 for over a billion people worldwide.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 6,
-                    "topic": "Yield Farming",
-                    "description": "Yield farming involves users providing liquidity to DeFi protocols in exchange for rewards, typically in the form of additional tokens. It has become a popular way for users to earn passive income in the DeFi ecosystem.",
+                    "topic": "Accessibility",
+                    "description": "Emphasis on making AI models like GPT-5 accessible and affordable to a wider audience.",
                     "depth": 2,
                     "children": []
                 }
@@ -35,28 +35,28 @@
         },
         {
             "id": 7,
-            "topic": "Ethereum 2.0 and Proof of Stake",
-            "description": "Ethereum 2.0 is an upgrade to the Ethereum network that aims to improve scalability, security, and sustainability. It introduces a transition from Proof of Work (PoW) to Proof of Stake (PoS) consensus mechanism.",
+            "topic": "Mass Adoption",
+            "description": "The aim to have GPT-5 widely adopted and used by people globally, surpassing previous models like GPT-4o.",
             "depth": 1,
             "children": [
                 {
                     "id": 8,
-                    "topic": "Staking in Ethereum 2.0",
-                    "description": "Staking involves participants locking up their Ether as collateral to support the network and earn rewards. It plays a crucial role in securing the Ethereum blockchain and incentivizing network participation.",
+                    "topic": "Global Reach",
+                    "description": "Targeting a global audience of users who have not experienced models like GPT-4o before.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 9,
-                    "topic": "Sharding",
-                    "description": "Sharding is a scaling solution in Ethereum 2.0 that divides the network into smaller 'shards' to process transactions in parallel. This helps improve throughput and scalability while maintaining network security.",
+                    "topic": "User Benefits",
+                    "description": "Focus on the benefits that a billion+ people can derive from using advanced AI models like GPT-5.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 10,
-                    "topic": "Beacon Chain",
-                    "description": "The Beacon Chain is a PoS blockchain that coordinates the Ethereum 2.0 network and manages validator participation. It serves as the backbone for the transition to a fully PoS-based Ethereum ecosystem.",
+                    "topic": "Market Disruption",
+                    "description": "Potential to disrupt the market by introducing a highly advanced and accessible AI model like GPT-5.",
                     "depth": 2,
                     "children": []
                 }
@@ -64,28 +64,28 @@
         },
         {
             "id": 11,
-            "topic": "NFTs (Non-Fungible Tokens) on Ethereum",
-            "description": "NFTs are unique digital assets that represent ownership of a specific item or piece of content. Ethereum has become a popular platform for creating, buying, and selling NFTs, revolutionizing digital ownership and art.",
+            "topic": "Global Impact",
+            "description": "The significant impact that democratizing AI models like GPT-5 can have on a global scale.",
             "depth": 1,
             "children": [
                 {
                     "id": 12,
-                    "topic": "NFT Marketplaces",
-                    "description": "NFT marketplaces are platforms where users can buy, sell, and trade non-fungible tokens. These marketplaces provide a space for creators to showcase and monetize their digital artwork, collectibles, and other unique assets.",
+                    "topic": "Societal Benefits",
+                    "description": "Exploring the broader societal benefits that can arise from the widespread use of advanced AI models.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 13,
-                    "topic": "Use Cases of NFTs",
-                    "description": "NFTs have diverse use cases, including digital art, collectibles, gaming assets, virtual real estate, and more. They enable verifiable ownership and scarcity in the digital world, creating new opportunities for creators and collectors.",
+                    "topic": "Economic Implications",
+                    "description": "Considering the economic implications of making advanced AI models accessible to a billion+ people.",
                     "depth": 2,
                     "children": []
                 },
                 {
                     "id": 14,
-                    "topic": "NFT Standards (ERC-721, ERC-1155)",
-                    "description": "NFT standards like ERC-721 and ERC-1155 define the technical specifications for creating and managing non-fungible tokens on the Ethereum blockchain. These standards ensure interoperability and compatibility across different NFT platforms.",
+                    "topic": "Technological Progress",
+                    "description": "Contributing to the advancement of technology by democratizing AI models and increasing accessibility.",
                     "depth": 2,
                     "children": []
                 }

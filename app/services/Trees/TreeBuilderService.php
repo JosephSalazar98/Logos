@@ -25,71 +25,6 @@ class TreeBuilderService
     }
 
 
-    public static function expand(Node $node, int $maxDepth): void
-    {
-        if ($node->depth >= $maxDepth) return;
-
-        $usedTopics = Node::where('origin_id', $node->origin_id ?? $node->id)
-            ->pluck('topic')
-            ->map(fn($t) => strtolower(trim($t)))
-            ->unique()
-            ->values()
-            ->toArray();
-
-        $blacklist = implode(' | ', array_map(fn($t) => '"' . $t . '"', array_slice($usedTopics, 0, 50)));
-
-
-        $userPrompt = <<<EOT
-Given the topic "$node->topic", generate exactly 3, subtopic titles related to the topic from a different academic field. 
-Avoid anything conceptually similar to: [$blacklist].
-
-Each subtopic must:
-- be less than 10 words
-- be meaningfully related to the topic
-- Do NOT repeat structural patterns like "[X] in Y", "[X] for Z", or "[X] and A". Avoid using the same core term (like "quantum") in more than one suggestion
-
-Return the 3 subtopics separated by a pipe (|). Do NOT include numbering, explanations, or any other text.
-Example format: Subtopic A | Subtopic B | Subtopic C
-EOT;
-
-
-        $subtopicsText = OpenAIService::chat([
-            ['role' => 'user', 'content' => $userPrompt],
-        ], 0.5, 'gpt-3.5-turbo', 150, '0.8', '0.6');
-
-
-        $subtopics = array_filter(array_map('trim', explode('|', $subtopicsText)));
-        $subtopics = array_slice($subtopics, 0, 3);
-
-        foreach ($subtopics as $topic) {
-            $topic = trim($topic);
-
-            if (in_array(strtolower($topic), $usedTopics)) continue;
-            if (Node::where('topic', $topic)->exists()) continue;
-
-            $description = OpenAIService::chat([
-                ['role' => 'user', 'content' => "Explain the following topic in 2–3 concise sentences, assuming the reader is intelligent but unfamiliar with the concept: $topic"],
-            ], 0.5, 'gpt-3.5-turbo', 150);
-
-
-            $embedding = OpenAIService::embed($description);
-
-            $child = Node::create([
-                'topic' => $topic,
-                'description' => $description,
-                'embedding' => $embedding,
-                'parent_id' => $node->id,
-                'depth' => $node->depth + 1,
-                'origin_id' => $node->origin_id ?? $node->id,
-            ]);
-
-            self::expand($child, $maxDepth);
-        }
-
-        if (is_null($node->parent_id)) {
-            StrangeIdeaService::generateFromRoot($node);
-        }
-    }
 
 
     public static function createBridgesForRoot(Node $root): array
@@ -105,7 +40,7 @@ EOT;
 
                 $score = SimilarityHelper::cosine($a->embedding, $b->embedding);
 
-                if ($score <= 0.9 && $score >= 0.6) {
+                if ($score <= 0.7 && $score >= 0.6) {
                     $bridge = SemanticBridge::create([
                         'source_node_id' => $a->id,
                         'target_node_id' => $b->id,

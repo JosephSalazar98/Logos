@@ -6,24 +6,17 @@ use Leaf\Controller;
 use App\Models\Tweet;
 use App\Helpers\Logger;
 use App\Helpers\TextSanitizer;
-use App\Models\StrangeIdea;
 use App\Services\Trees\FastTreeService;
 use App\Services\Trees\StrangeIdeaService;
 use App\Services\Logos\ReplyComposerService;
-use App\Services\Logos\LogosResponderService;
 use App\Services\Twitter\TwitterOAuthService;
 use App\Services\OpenAI\TweetEvaluatorService;
+use App\Services\OpenAI\TweetFormatterService;
 
 class LogosController extends Controller
 {
-    public function respond()
-    {
-        $logos = new LogosResponderService();
-        $result = $logos->findAndReplyFromRootNode();
-        response()->json($result);
-    }
 
-    public function respondCronManualTopicAndToID()
+    public function logosReply()
     {
         if (request()->get('key') !== _env('LOGOS_CRON_KEY')) {
             return response()->json(['error' => 'Unauthorized'], 403);
@@ -33,29 +26,46 @@ class LogosController extends Controller
         $baseTopic = request()->get('base_topic');
         $originalText = request()->get('tweet_text');
 
+        Logger::info("Base topic");
+        Logger::info($baseTopic);
+
+        $intent = TweetEvaluatorService::classifyIntent($originalText);
+        Logger::info("Intent");
+        Logger::info($intent);
+
         if (!$tweetId || !$baseTopic || !$originalText) {
             return response()->json(['error' => 'Missing tweet_id, base_topic or tweet_text'], 422);
         }
 
         try {
-            $root = FastTreeService::generateTreeForTopic($baseTopic);
+            $root = FastTreeService::generateTreeForTopic($baseTopic, $originalText);
         } catch (\Exception $e) {
             return response()->json(['error' => 'Tree generation failed', 'exception' => $e->getMessage()], 500);
         }
 
-        $idea = StrangeIdeaService::generateFromRootAndTweet($root, $originalText);
-
+        $idea = StrangeIdeaService::generateFromRootAndTweet($root, $originalText, $intent);
+        Logger::info("Idea");
+        Logger::info($idea);
 
         $ideaText = $idea['quote'] ?? '[error generating idea]';
+        Logger::info("IdeaText");
+        Logger::info($ideaText);
 
+        /* $finalReply = (new ReplyComposerService())->generateReplyWithIdea($ideaText, $originalText);
+        Logger::info("FinalReply");
+        Logger::info($finalReply); */
 
+        $finalReply = StrangeIdeaService::disrupt($ideaText);
+        Logger::info("DisruptedIdea");
+        Logger::info($finalReply);
 
-        $replyText = (new ReplyComposerService())->generateReplyWithIdea($ideaText, $originalText);
-        $replyText = TextSanitizer::cleanGptReply($replyText);
+        $finalReply = TweetFormatterService::formatTweet($finalReply);
+
+        dd($finalReply);
 
         try {
             $oauth = new TwitterOAuthService();
-            $response = $oauth->postReplyToTweet($replyText, $tweetId);
+            $response = $oauth->postReplyToTweet($finalReply, $tweetId);
             $replyTweetId = $response['data']['id'] ?? null;
         } catch (\Throwable $e) {
             return response()->json([
@@ -69,7 +79,7 @@ class LogosController extends Controller
             'tweet_text'      => $originalText,
             'verdict'         => 'Yes',
             'base_topic'      => $baseTopic,
-            'generated_reply' => $replyText,
+            'generated_reply' => $finalReply,
             'tree_root_id'    => $root->id,
             'reply_tweet_id'  => $replyTweetId,
             'status'          => 'posted',
@@ -77,122 +87,6 @@ class LogosController extends Controller
     }
 
 
-
-
-    public function respondCron()
-    {
-        if (!$this->isAuthorized()) {
-            return response()->json(['error' => 'Unauthorized'], 403);
-        }
-
-        $tweet = Tweet::orderBy('x_created_at')->first();
-
-        if (!$tweet) {
-            return response()->json(['message' => 'No tweets to process.']);
-        }
-
-        /* if (!TweetEvaluatorService::shouldRespondTo($tweet->text)) {
-            return $this->respondNotWorthIt($tweet);
-        } */
-
-        $baseTopic = TweetEvaluatorService::extractBaseTopic($tweet->text);
-
-        try {
-            $root = FastTreeService::generateTreeForTopic($baseTopic);
-        } catch (\Exception $e) {
-            return $this->handleTreeError($tweet, $baseTopic, $e);
-        }
-
-        $replyText = (new ReplyComposerService())->generateReplyWithIdea($baseTopic, $tweet->text);
-
-        try {
-            $oauth = new TwitterOAuthService();
-            $response = $oauth->postReplyToTweet($replyText, $tweet->tweet_id);
-            $replyTweetId = $response['data']['id'] ?? null;
-        } catch (\Throwable $e) {
-            return response()->json([
-                'error'     => 'Failed to post tweet',
-                'exception' => $e->getMessage(),
-            ], 500);
-        }
-
-        return response()->json([
-            'tweet_id'        => $tweet->tweet_id,
-            'tweet_text'      => $tweet->text,
-            'verdict'         => 'Yes',
-            'base_topic'      => $baseTopic,
-            'generated_reply' => $replyText,
-            'tree_root_id'    => $root->id,
-            'reply_tweet_id'  => $replyTweetId,
-            'status'          => 'posted',
-        ]);
-    }
-
-    public function respondTweet()
-    {
-        $payload = request()->body();
-
-        $key = $payload['key'] ?? null;
-        $tweetIdParam = $payload['tweet_id'] ?? null;
-
-        if ($key !== _env('LOGOS_CRON_KEY')) {
-            return response()->json(['error' => 'Unauthorized'], 403);
-        }
-
-        // 🔎 Load tweet either manually by ID or fallback to oldest
-        if ($tweetIdParam) {
-            $tweet = Tweet::where('tweet_id', $tweetIdParam)->first();
-        } else {
-            $tweet = Tweet::orderBy('x_created_at')->first();
-        }
-
-        if (!$tweet) {
-            return response()->json(['message' => 'No tweets to process.']);
-        }
-
-        if (!TweetEvaluatorService::shouldRespondTo($tweet->text)) {
-            return $this->respondNotWorthIt($tweet);
-        }
-
-        $baseTopic = TweetEvaluatorService::extractBaseTopic($tweet->text);
-
-        try {
-            $root = FastTreeService::generateTreeForTopic($baseTopic);
-        } catch (\Exception $e) {
-            return $this->handleTreeError($tweet, $baseTopic, $e);
-        }
-
-        $replyText = (new ReplyComposerService())->generateReplyWithIdea($baseTopic, $tweet->text);
-
-        try {
-            $oauth = new TwitterOAuthService();
-            $response = $oauth->postReplyToTweet($replyText, $tweet->tweet_id);
-            $replyTweetId = $response['data']['id'] ?? null;
-        } catch (\Throwable $e) {
-            return response()->json([
-                'error'     => 'Failed to post tweet',
-                'exception' => $e->getMessage(),
-            ], 500);
-        }
-
-        return response()->json([
-            'tweet_id'            => $tweet->tweet_id,
-            'tweet_text'          => $tweet->text,
-            'verdict'             => 'Yes',
-            'base_topic'          => $baseTopic,
-            'generated_reply'     => $replyText,
-            'tree_root_id'        => $root->id,
-            'reply_tweet_id'      => $replyTweetId,
-            'status'              => 'posted',
-            'replied_to_tweet_id' => $tweet->tweet_id,
-        ]);
-    }
-
-    public function postSimpleTweet()
-    {
-        $oauth = new TwitterOAuthService();
-        return $oauth->postSimpleTweet("The value of a thought is not in its originality, but in its ability to destabilize what you considered finished.");
-    }
 
     // ------------------------------
     // Métodos protegidos auxiliares

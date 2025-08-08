@@ -35,7 +35,6 @@ class Logger
     {
         $timestamp = date('Y-m-d H:i:s');
 
-        // Force any type into string safely
         if (is_array($message) || is_object($message)) {
             $message = json_encode($message, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
         } else {

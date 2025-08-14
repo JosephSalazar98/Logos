@@ -31,7 +31,7 @@ class FastTreeService
         $json2 = OpenAIService::chat(
             [
                 ['role' => 'system', 'content' => $system],
-                ['role' => 'user', 'content' => "You are presented with a tree of ideas, now pick any number of them and turn them into something sensical that could be coded. Reply in a non-enthusiastic, deprived of emotion, objective and logical way. Follow your system prompt. Start by describing the gist of your idea, then go in more detail. Then explain why is this good and useful.  .Tree of ideas: . $json"],
+                ['role' => 'user', 'content' => "You are presented with a tree of ideas, now pick 2 of them and turn them into something sensical and possible that could be coded. Reply in a non-enthusiastic, deprived of emotion, objective and logical way. Follow your system prompt. Use the tone of Logos . Tree of ideas: . $json"],
             ],
             0.7,
             'gpt-4o'

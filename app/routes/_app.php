@@ -18,12 +18,6 @@ app()->registerMiddleware('authWeb3', function () {
  * ────────────────────────────────────────────────────────────────
  */
 app()->get('/', 'DashboardController@index');
-app()->get('/whitepaper', fn() => response()->render('pages.whitepaper'));
-app()->get('/terminal', 'TerminalController@index');
-
-app()->get('/topics/{slug}', 'IdeaController@showTopic');
-app()->get('/brain', 'BrainController@index');
-app()->get('/export-all', 'TreeController@exportAll');
 
 
 /**
@@ -43,16 +37,13 @@ app()->get('/api/auth/session', function () {
         'credits'  => $user?->credits ?? 0
     ]);
 });
-app()->post('/api/pay/confirm', 'PaymentController@confirm');
 
 /**
  * ────────────────────────────────────────────────────────────────
  *  SEMANTIC TREE API
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/api/tree/bridges', 'TreeController@createSemanticBridges');
 
-app()->get('/api/bridges/{id}', 'TreeController@showBridge');
 
 /**
  * ────────────────────────────────────────────────────────────────
@@ -60,34 +51,26 @@ app()->get('/api/bridges/{id}', 'TreeController@showBridge');
  * ────────────────────────────────────────────────────────────────
  */
 
-app()->post('/logos/manual', 'LogosController@logosReply');
 
 /**
  * ────────────────────────────────────────────────────────────────
  *  CHAT TERMINAL
  * ────────────────────────────────────────────────────────────────
  */
-app()->post('/api/chat', [
-    'middleware' => 'authWeb3',
-    'ChatController@respond'
-]);
+
 
 /**
  * ────────────────────────────────────────────────────────────────
  *  IDEAS PAGES (HTML/PARTIALS)
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/ideas',          'IdeaController@index');
-app()->get('/ideas/topics',   'IdeaController@topics');
-app()->get('/ideas/bridges',  'IdeaController@bridges');
-app()->get('/ideas/ideas',    'IdeaController@ideas');
+
 
 /**
  * ────────────────────────────────────────────────────────────────
  *  NODES API
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/api/nodes/{id}', 'NodeController@show');
 
 /**
  * ────────────────────────────────────────────────────────────────
@@ -110,11 +93,6 @@ app()->post('/api/solana-proxy', function () {
 app()->get('/twitter/login',    'TwitterAuthController@login');
 app()->get('/twitter/callback', 'TwitterAuthController@callback');
 
-app()->post('/tree/import', 'TreeController@import');
-app()->get('/tree/bridges/{id}', 'TreeController@generateBridges');
-
-app()->get('/root', 'TreeController@createRootNode');
-app()->post('/treetest', 'TreeController@test');
 
 
 /**
@@ -122,14 +100,8 @@ app()->post('/treetest', 'TreeController@test');
  *  DEBUG / TESTING
  * ────────────────────────────────────────────────────────────────
  */
-app()->get('/try', function () {
-    dd([
-        'CONSUMER_KEY'    => _env('CONSUMER_KEY'),
-        'CONSUMER_SECRET' => _env('CONSUMER_SECRET'),
-        'ACCESS_TOKEN'    => _env('ACCESS_TOKEN'),
-        'ACCESS_SECRET'   => _env('ACCESS_TOKEN_SECRET'),
-    ]);
-});
 
 
 //INITIAL
+
+app()->post('/terminal', 'LogosController@terminalOfIdeas');

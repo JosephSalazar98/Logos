@@ -6,7 +6,7 @@
     rel="stylesheet">
 <title>Logos AI</title>
 <link rel="shortcut icon" href="/assets/img/logo.png" type="image/png">
-@vite('css/new.css')
+@vite('css/app.css')
 @alpine
 <script>
     window.userWallet = "{{ session()->get('wallet') }}";
